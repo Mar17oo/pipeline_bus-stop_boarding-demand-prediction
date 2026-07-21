@@ -1121,3 +1121,85 @@ case, tuning made the tabular side of the comparison *stronger*, not weaker.
 | RUNBOOK.md | Full file inventory + reproduction commands (companion to this log) |
 | files_chapters/PROJECT_EFFORT_LOG.md | Narrative effort/challenge log for supervisor/viva use (companion to WRITING_HANDOFF.md, which stays frozen) |
 | experiment_log.md | This file |
+
+---
+
+## DEFERRED EXPERIMENTS — not run, reserved for future work
+
+Added 21 Jul 2026 at session freeze. None of the five items below have been
+run, implemented, or scoped beyond what is written here. Listed so that
+reopening the experimental phase later starts from a deliberate registry, not
+an ad hoc request.
+
+**D-1 — Heterophily-adapted GNN (H2GCN / GPR-GNN), AI23+OSM+SC**
+(a) What: implement H2GCN (Zhu et al. 2020) or GPR-GNN (Chien et al. 2021) —
+architectures designed explicitly for heterophilous graphs — on the headline
+feature set, same 33-fold LOBO protocol.
+(b) Hypothesis: Experiment Set 9 (GCN beats GATv2) and the D6 diagnostic
+(cross-borough edge assortativity 0.335 vs within-borough 0.509) both point
+to heterophily-under-cross-borough-testing as the mechanism; an architecture
+built for exactly that condition might close the remaining gap to tabular.
+(c) If it succeeded: strongest possible validation of the diagnosed
+mechanism — write as "an architecture chosen specifically for the diagnosed
+failure mode closes the gap." If it failed: further confirms the missing
+information is not recoverable by any architecture, however heterophily-aware
+— write as "the limitation is informational, not architectural."
+
+**D-2 — LSOA-grouped CV (interpolation / infill scenario)**
+(a) What: a leave-LSOA-out CV scheme (hold out one LSOA at a time, not one
+borough) — same-borough, different-micro-area neighbours stay in training.
+(b) Hypothesis: tests the interpolation-vs-extrapolation distinction directly
+— does GATv2 do better at infill (new stop in a known area) than at
+extrapolation (new stop in an unknown borough)?
+(c) If it succeeded: write as a policy-relevant refinement — GATv2 may be
+usable for the (more common) infill case even though it fails at the
+(rarer) whole-new-borough case. If it failed: write as evidence the gap is
+not specifically about contamination granularity, but a more general
+tabular-vs-graph result independent of split scheme.
+
+**D-3 — Multi-seed re-run of the v1-era AI23-only and OSM-only cells**
+(a) What: re-run AI23-only and OSM-only (all 7 models) across 3-5 seeds,
+matching the rigor Experiment Set 8's follow-up applied to the headline set.
+(b) Hypothesis: the AI23-only/OSM-only cells currently rest on single-seed
+(or archived v1) runs with undocumented variance — are the feature-set
+ablation conclusions robust to that variance?
+(c) If it succeeded (variance small): strengthens the existing ablation
+story with an explicit bound, one confirmatory footnote. If it failed
+(variance threatens a specific ordering, e.g. AI23-only vs OSM-only):
+requires softening exactly that claim, not the whole ablation section.
+
+**D-4 — GTFS spot-check of service_coverage on ~50 stops (construct validity)**
+(a) What: for ~50 sampled stops, pull the current GTFS/Bus Open Data Service
+stop_times.txt and independently compute the same
+(route×direction×time-window) count; compare to the BUSTO-derived value used.
+(b) Hypothesis: tests the load-bearing cold-start validity claim ("obtainable
+from GTFS for new stops") empirically rather than by argument alone (see D1
+in diagnostics_report.md for the precise provenance statement this would
+upgrade).
+(c) If it succeeded (close match): upgrades the claim from argued to
+empirically verified for a sample. If it failed (systematic divergence, e.g.
+schedule drift between the BUSTO period and current GTFS): requires either a
+hedged claim or an explicit, quantified limitations paragraph.
+
+**D-5 — AI23+SC and OSM+SC cells (completes the feature decomposition)**
+(a) What: two more ablation cells — AI23-only+SC, and confirm/re-verify
+OSM-only+SC — completing the 2×2(×SC) factorial (currently only
+AI23+OSM+SC and OSM+SC exist; AI23-only+SC does not).
+(b) Hypothesis: is service_coverage's large contribution (Finding 2)
+complementary to AI23 and OSM independently and comparably, or concentrated
+in one combination?
+(c) If it succeeded (comparable lift both ways): strengthens Finding 2 as a
+general, feature-set-independent effect. If it failed (lift concentrated in
+one combination): requires a more specific, still-honest version of Finding
+2 naming which combination it depends on.
+
+---
+
+## EXPERIMENTAL PHASE CLOSED
+
+**EXPERIMENTAL PHASE CLOSED — 21 Jul 2026. Code tagged v-final-results
+(111d3b6). Reopening requires: all chapters drafted; >=10 days to
+submission; item already listed in the deferred registry above; supervisor
+approval. Decision date: [NOT SPECIFIED — no submission date has been
+established anywhere in this project's records; insert the actual date
+before treating this line as binding, do not infer one].**
