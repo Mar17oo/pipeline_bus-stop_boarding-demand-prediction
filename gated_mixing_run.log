@@ -1,0 +1,128 @@
+Features: 17 (AI23+OSM+SC, headline set)
+Building multigraph (K=5 KNN + route, same as frozen config)...
+  124,234 directed edges  (6.2s)
+
+Full run: 33 boroughs x 3 seeds.
+
+
+============================================================================
+SEED 42
+============================================================================
+  [ 1/33] Barking and Dagenham            n= 364  Gated=0.678  mean_alpha=0.505  (193s)
+  [ 2/33] Barnet                          n= 993  Gated=0.676  mean_alpha=0.479  (184s)
+  [ 3/33] Bexley                          n= 672  Gated=0.661  mean_alpha=0.441  (187s)
+  [ 4/33] Brent                           n= 575  Gated=0.616  mean_alpha=0.487  (186s)
+  [ 5/33] Bromley                         n=1179  Gated=0.645  mean_alpha=0.349  (181s)
+  [ 6/33] Camden                          n= 424  Gated=0.501  mean_alpha=0.665  (188s)
+  [ 7/33] City of London                  n= 101  Gated=0.552  mean_alpha=0.294  (191s)
+  [ 8/33] Croydon                         n=1019  Gated=0.665  mean_alpha=0.458  (183s)
+  [ 9/33] Ealing                          n= 683  Gated=0.630  mean_alpha=0.577  (186s)
+  [10/33] Enfield                         n= 707  Gated=0.658  mean_alpha=0.486  (186s)
+  [11/33] Greenwich                       n= 659  Gated=0.657  mean_alpha=0.481  (186s)
+  [12/33] Hackney                         n= 442  Gated=0.494  mean_alpha=0.681  (192s)
+  [13/33] Hammersmith and Fulham          n= 276  Gated=0.689  mean_alpha=0.506  (190s)
+  [14/33] Haringey                        n= 461  Gated=0.624  mean_alpha=0.457  (188s)
+  [15/33] Harrow                          n= 432  Gated=0.607  mean_alpha=0.529  (189s)
+  [16/33] Havering                        n= 691  Gated=0.702  mean_alpha=0.418  (186s)
+  [17/33] Hillingdon                      n= 706  Gated=0.737  mean_alpha=0.408  (224s)
+  [18/33] Hounslow                        n= 651  Gated=0.616  mean_alpha=0.413  (223s)
+  [19/33] Islington                       n= 349  Gated=0.584  mean_alpha=0.617  (230s)
+  [20/33] Kensington and Chelsea          n= 260  Gated=0.577  mean_alpha=0.525  (216s)
+  [21/33] Kingston upon Thames            n= 391  Gated=0.687  mean_alpha=0.560  (201s)
+  [22/33] Lambeth                         n= 577  Gated=0.614  mean_alpha=0.506  (201s)
+  [23/33] Lewisham                        n= 609  Gated=0.591  mean_alpha=0.556  (198s)
+  [24/33] Merton                          n= 457  Gated=0.643  mean_alpha=0.503  (198s)
+  [25/33] Newham                          n= 465  Gated=0.567  mean_alpha=0.434  (198s)
+  [26/33] Redbridge                       n= 539  Gated=0.653  mean_alpha=0.522  (198s)
+  [27/33] Richmond upon Thames            n= 484  Gated=0.677  mean_alpha=0.521  (201s)
+  [28/33] Southwark                       n= 583  Gated=0.589  mean_alpha=0.525  (199s)
+  [29/33] Sutton                          n= 421  Gated=0.613  mean_alpha=0.491  (199s)
+  [30/33] Tower Hamlets                   n= 381  Gated=0.594  mean_alpha=0.632  (200s)
+  [31/33] Waltham Forest                  n= 492  Gated=0.685  mean_alpha=0.538  (197s)
+  [32/33] Wandsworth                      n= 481  Gated=0.619  mean_alpha=0.522  (197s)
+  [33/33] Westminster                     n= 419  Gated=0.546  mean_alpha=0.738  (198s)
+Seed 42 done in 107.9 min. Mean WMAPE=0.6257  Mean alpha=0.4988
+
+============================================================================
+SEED 142
+============================================================================
+  [ 1/33] Barking and Dagenham            n= 364  Gated=0.670  mean_alpha=0.523  (198s)
+  [ 2/33] Barnet                          n= 993  Gated=0.667  mean_alpha=0.556  (190s)
+  [ 3/33] Bexley                          n= 672  Gated=0.678  mean_alpha=0.656  (196s)
+  [ 4/33] Brent                           n= 575  Gated=0.616  mean_alpha=0.485  (195s)
+  [ 5/33] Bromley                         n=1179  Gated=0.650  mean_alpha=0.444  (189s)
+  [ 6/33] Camden                          n= 424  Gated=0.503  mean_alpha=0.705  (198s)
+  [ 7/33] City of London                  n= 101  Gated=0.584  mean_alpha=0.531  (202s)
+  [ 8/33] Croydon                         n=1019  Gated=0.662  mean_alpha=0.596  (191s)
+  [ 9/33] Ealing                          n= 683  Gated=0.633  mean_alpha=0.518  (195s)
+  [10/33] Enfield                         n= 707  Gated=0.669  mean_alpha=0.558  (196s)
+  [11/33] Greenwich                       n= 659  Gated=0.651  mean_alpha=0.426  (196s)
+  [12/33] Hackney                         n= 442  Gated=0.487  mean_alpha=0.546  (198s)
+  [13/33] Hammersmith and Fulham          n= 276  Gated=0.709  mean_alpha=0.444  (199s)
+  [14/33] Haringey                        n= 461  Gated=0.634  mean_alpha=0.643  (198s)
+  [15/33] Harrow                          n= 432  Gated=0.619  mean_alpha=0.522  (197s)
+  [16/33] Havering                        n= 691  Gated=0.712  mean_alpha=0.547  (196s)
+  [17/33] Hillingdon                      n= 706  Gated=0.753  mean_alpha=0.449  (194s)
+  [18/33] Hounslow                        n= 651  Gated=0.620  mean_alpha=0.524  (197s)
+  [19/33] Islington                       n= 349  Gated=0.587  mean_alpha=0.668  (198s)
+  [20/33] Kensington and Chelsea          n= 260  Gated=0.563  mean_alpha=0.409  (199s)
+  [21/33] Kingston upon Thames            n= 391  Gated=0.686  mean_alpha=0.634  (197s)
+  [22/33] Lambeth                         n= 577  Gated=0.616  mean_alpha=0.514  (196s)
+  [23/33] Lewisham                        n= 609  Gated=0.599  mean_alpha=0.551  (196s)
+  [24/33] Merton                          n= 457  Gated=0.660  mean_alpha=0.509  (198s)
+  [25/33] Newham                          n= 465  Gated=0.570  mean_alpha=0.529  (197s)
+  [26/33] Redbridge                       n= 539  Gated=0.653  mean_alpha=0.583  (195s)
+  [27/33] Richmond upon Thames            n= 484  Gated=0.684  mean_alpha=0.516  (198s)
+  [28/33] Southwark                       n= 583  Gated=0.589  mean_alpha=0.437  (194s)
+  [29/33] Sutton                          n= 421  Gated=0.626  mean_alpha=0.524  (198s)
+  [30/33] Tower Hamlets                   n= 381  Gated=0.590  mean_alpha=0.423  (197s)
+  [31/33] Waltham Forest                  n= 492  Gated=0.653  mean_alpha=0.517  (196s)
+  [32/33] Wandsworth                      n= 481  Gated=0.624  mean_alpha=0.559  (198s)
+  [33/33] Westminster                     n= 419  Gated=0.557  mean_alpha=0.368  (198s)
+Seed 142 done in 107.9 min. Mean WMAPE=0.6295  Mean alpha=0.5280
+
+============================================================================
+SEED 242
+============================================================================
+  [ 1/33] Barking and Dagenham            n= 364  Gated=0.657  mean_alpha=0.541  (198s)
+  [ 2/33] Barnet                          n= 993  Gated=0.678  mean_alpha=0.545  (191s)
+  [ 3/33] Bexley                          n= 672  Gated=0.675  mean_alpha=0.584  (195s)
+  [ 4/33] Brent                           n= 575  Gated=0.625  mean_alpha=0.522  (196s)
+  [ 5/33] Bromley                         n=1179  Gated=0.668  mean_alpha=0.535  (191s)
+  [ 6/33] Camden                          n= 424  Gated=0.504  mean_alpha=0.639  (197s)
+  [ 7/33] City of London                  n= 101  Gated=0.565  mean_alpha=0.712  (201s)
+  [ 8/33] Croydon                         n=1019  Gated=0.662  mean_alpha=0.557  (193s)
+  [ 9/33] Ealing                          n= 683  Gated=0.657  mean_alpha=0.497  (195s)
+  [10/33] Enfield                         n= 707  Gated=0.656  mean_alpha=0.539  (194s)
+  [11/33] Greenwich                       n= 659  Gated=0.657  mean_alpha=0.524  (194s)
+  [12/33] Hackney                         n= 442  Gated=0.488  mean_alpha=0.564  (197s)
+  [13/33] Hammersmith and Fulham          n= 276  Gated=0.689  mean_alpha=0.625  (198s)
+  [14/33] Haringey                        n= 461  Gated=0.632  mean_alpha=0.576  (196s)
+  [15/33] Harrow                          n= 432  Gated=0.602  mean_alpha=0.459  (197s)
+  [16/33] Havering                        n= 691  Gated=0.702  mean_alpha=0.547  (199s)
+  [17/33] Hillingdon                      n= 706  Gated=0.726  mean_alpha=0.447  (198s)
+  [18/33] Hounslow                        n= 651  Gated=0.614  mean_alpha=0.492  (199s)
+  [19/33] Islington                       n= 349  Gated=0.581  mean_alpha=0.682  (203s)
+  [20/33] Kensington and Chelsea          n= 260  Gated=0.575  mean_alpha=0.438  (204s)
+  [21/33] Kingston upon Thames            n= 391  Gated=0.690  mean_alpha=0.557  (201s)
+  [22/33] Lambeth                         n= 577  Gated=0.605  mean_alpha=0.524  (200s)
+  [23/33] Lewisham                        n= 609  Gated=0.596  mean_alpha=0.592  (199s)
+  [24/33] Merton                          n= 457  Gated=0.654  mean_alpha=0.563  (203s)
+  [25/33] Newham                          n= 465  Gated=0.584  mean_alpha=0.602  (203s)
+  [26/33] Redbridge                       n= 539  Gated=0.664  mean_alpha=0.488  (200s)
+  [27/33] Richmond upon Thames            n= 484  Gated=0.667  mean_alpha=0.505  (203s)
+  [28/33] Southwark                       n= 583  Gated=0.583  mean_alpha=0.579  (200s)
+  [29/33] Sutton                          n= 421  Gated=0.611  mean_alpha=0.489  (204s)
+  [30/33] Tower Hamlets                   n= 381  Gated=0.592  mean_alpha=0.534  (202s)
+  [31/33] Waltham Forest                  n= 492  Gated=0.676  mean_alpha=0.493  (202s)
+  [32/33] Wandsworth                      n= 481  Gated=0.631  mean_alpha=0.492  (203s)
+  [33/33] Westminster                     n= 419  Gated=0.551  mean_alpha=0.452  (201s)
+Seed 242 done in 109.3 min. Mean WMAPE=0.6277  Mean alpha=0.5367
+
+============================================================================
+ALL SEEDS DONE. Total time: 325.2 min
+Mean WMAPE across all seeds x folds: 0.6277 (sd=0.0555)
+Per-seed mean WMAPE: {42: 0.6257212121212121, 142: 0.6295212121212121, 242: 0.6277393939393939}
+Mean alpha across all seeds x test stops: 0.5212
+============================================================================
+Saved -> results_cv_gated_all_seeds.csv | results_gated_alpha_all_seeds.csv

@@ -1,0 +1,6 @@
+borough,ridge_alpha,rf_n_estimators,rf_min_samples_leaf,rf_max_features,rf_max_depth,xgb_subsample,xgb_n_estimators,xgb_max_depth,xgb_learning_rate,xgb_colsample_bytree
+Barking and Dagenham,100.0,300,5,0.5,30,0.6,200,6,0.05,0.7
+Barnet,46.41588833612777,300,5,0.5,30,0.9,300,10,0.01,0.8
+Bexley,100.0,300,5,0.5,30,0.9,300,10,0.01,0.8
+Brent,68.12920690579608,300,5,0.5,30,0.6,200,6,0.05,0.7
+Bromley,31.622776601683793,300,5,0.5,30,0.6,200,6,0.05,0.7

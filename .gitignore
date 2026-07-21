@@ -1,0 +1,15 @@
+# Raw source data: 1GB+, individual files up to 119.6MB (exceeds GitHub's
+# 100MB per-file limit). Not a "result" -- regenerable via step1-step3d,
+# documented in RUNBOOK.md. Excluded from the freeze commit deliberately;
+# remove this line if you want it version-controlled anyway.
+data/
+
+# Python bytecode cache -- never meaningful to version.
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts (report.pdf itself is NOT excluded, only intermediates)
+pdf_report/*.aux
+pdf_report/*.log
+pdf_report/*.out
+pdf_report/*.toc

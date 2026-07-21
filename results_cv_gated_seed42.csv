@@ -1,0 +1,34 @@
+borough,n_test,model,WMAPE,RMSE,MAE
+Barking and Dagenham,364,Gated,0.6783,531.619,199.765
+Barnet,993,Gated,0.6763,314.433,144.637
+Bexley,672,Gated,0.6607,306.566,99.971
+Brent,575,Gated,0.6155,469.946,234.041
+Bromley,1179,Gated,0.6449,162.493,65.588
+Camden,424,Gated,0.5007,412.459,202.189
+City of London,101,Gated,0.5523,669.437,359.938
+Croydon,1019,Gated,0.6653,271.814,109.542
+Ealing,683,Gated,0.6305,461.345,208.155
+Enfield,707,Gated,0.6578,355.54,158.76
+Greenwich,659,Gated,0.6569,518.8,187.477
+Hackney,442,Gated,0.4941,360.562,194.682
+Hammersmith and Fulham,276,Gated,0.6887,643.005,326.54
+Haringey,461,Gated,0.6242,622.236,282.937
+Harrow,432,Gated,0.607,274.723,142.838
+Havering,691,Gated,0.7024,351.403,117.673
+Hillingdon,706,Gated,0.7368,520.783,175.547
+Hounslow,651,Gated,0.616,332.681,153.81
+Islington,349,Gated,0.5841,606.347,303.474
+Kensington and Chelsea,260,Gated,0.5765,402.503,249.918
+Kingston upon Thames,391,Gated,0.687,462.455,160.063
+Lambeth,577,Gated,0.6142,794.529,305.491
+Lewisham,609,Gated,0.5912,393.529,174.091
+Merton,457,Gated,0.6432,404.63,166.68
+Newham,465,Gated,0.5671,383.102,217.408
+Redbridge,539,Gated,0.6533,343.99,160.722
+Richmond upon Thames,484,Gated,0.6768,259.327,125.648
+Southwark,583,Gated,0.589,673.262,283.637
+Sutton,421,Gated,0.6131,209.425,99.777
+Tower Hamlets,381,Gated,0.5941,296.177,168.889
+Waltham Forest,492,Gated,0.6854,478.969,216.788
+Wandsworth,481,Gated,0.6191,559.645,263.114
+Westminster,419,Gated,0.5463,669.735,356.292

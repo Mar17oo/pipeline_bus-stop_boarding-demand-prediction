@@ -1,0 +1,54 @@
+Features: 17 (AI23+OSM+SC, headline set). Seed: 42
+Building multigraph (K=5 KNN + route, same as frozen config)...
+  124,234 directed edges
+
+Running 33-fold leave-borough-out CV...
+
+  [ 1/33] Barking and Dagenham            n= 364  GCN=0.706  (77s)
+  [ 2/33] Barnet                          n= 993  GCN=0.721  (74s)
+  [ 3/33] Bexley                          n= 672  GCN=0.762  (75s)
+  [ 4/33] Brent                           n= 575  GCN=0.669  (75s)
+  [ 5/33] Bromley                         n=1179  GCN=0.752  (73s)
+  [ 6/33] Camden                          n= 424  GCN=0.637  (76s)
+  [ 7/33] City of London                  n= 101  GCN=0.656  (78s)
+  [ 8/33] Croydon                         n=1019  GCN=0.685  (74s)
+  [ 9/33] Ealing                          n= 683  GCN=0.695  (75s)
+  [10/33] Enfield                         n= 707  GCN=0.727  (75s)
+  [11/33] Greenwich                       n= 659  GCN=0.714  (75s)
+  [12/33] Hackney                         n= 442  GCN=0.634  (76s)
+  [13/33] Hammersmith and Fulham          n= 276  GCN=0.740  (86s)
+  [14/33] Haringey                        n= 461  GCN=0.704  (80s)
+  [15/33] Harrow                          n= 432  GCN=0.689  (69s)
+  [16/33] Havering                        n= 691  GCN=0.840  (67s)
+  [17/33] Hillingdon                      n= 706  GCN=0.753  (67s)
+  [18/33] Hounslow                        n= 651  GCN=0.683  (67s)
+  [19/33] Islington                       n= 349  GCN=0.667  (68s)
+  [20/33] Kensington and Chelsea          n= 260  GCN=0.745  (69s)
+  [21/33] Kingston upon Thames            n= 391  GCN=0.761  (68s)
+  [22/33] Lambeth                         n= 577  GCN=0.712  (67s)
+  [23/33] Lewisham                        n= 609  GCN=0.645  (67s)
+  [24/33] Merton                          n= 457  GCN=0.706  (68s)
+  [25/33] Newham                          n= 465  GCN=0.645  (69s)
+  [26/33] Redbridge                       n= 539  GCN=0.671  (67s)
+  [27/33] Richmond upon Thames            n= 484  GCN=0.781  (68s)
+  [28/33] Southwark                       n= 583  GCN=0.656  (67s)
+  [29/33] Sutton                          n= 421  GCN=0.694  (68s)
+  [30/33] Tower Hamlets                   n= 381  GCN=0.693  (69s)
+  [31/33] Waltham Forest                  n= 492  GCN=0.664  (68s)
+  [32/33] Wandsworth                      n= 481  GCN=0.663  (69s)
+  [33/33] Westminster                     n= 419  GCN=0.648  (74s)
+
+============================================================================
+RESULTS — 33 leave-borough-out folds (mean ± std | median)
+============================================================================
+  HistAvg    WMAPE=1.0822(±0.3778) med=0.9636
+  MLR        WMAPE=0.6404(±0.0567) med=0.6485
+  RF         WMAPE=0.6428(±0.0547) med=0.6545
+  XGBoost    WMAPE=0.6437(±0.0680) med=0.6420
+  MLP        WMAPE=0.6311(±0.0563) med=0.6386
+  GATv2      WMAPE=0.7187(±0.0439) med=0.7159
+  GCN        WMAPE=0.7006(±0.0473) med=0.6936
+============================================================================
+
+Total time: 39.5 min
+Saved -> results_cv_gcn.csv | results_summary_gcn.csv

@@ -1,0 +1,876 @@
+% ============================================================
+% MSc Dissertation — Maria Bautista, University of Essex (CE902)
+% Inductive Graph Neural Networks for Cold-Start Bus Demand
+% ============================================================
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{setspace}
+\usepackage{natbib}
+\onehalfspacing
+
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue}
+
+\title{\textbf{Inductive Graph Neural Networks for Cold-Start Prediction of Bus-Stop Passenger Demand}}
+\author{Maria Bautista}
+\date{Supervisor: Dr Vishal K. Singh \\ University of Essex \\ \today}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+\begin{abstract}
+\noindent
+Predicting passenger demand at bus stops that have no prior ridership history
+is a practical challenge facing urban transport planners whenever new
+infrastructure is developed. Conventional spatio-temporal models rely on
+historical flow data and are unable to produce estimates for stops that were
+absent during training---a limitation referred to here as the
+\emph{urban cold-start problem}. This dissertation investigates whether an
+inductive Graph Attention Network (GATv2) can predict bus-stop boardings for
+geographically unseen areas using only land-use accessibility features and
+network topology, without any historical demand at the target locations.
+
+A multigraph is constructed over 17,943 London bus stops by combining
+geographic proximity edges (K-nearest neighbours, $K{=}5$) with route-connectivity
+edges derived from Transport for London's BUSTO survey. Node features are drawn
+from the AI23 accessibility indicators, measuring 30-minute public transport
+access to employment, healthcare, education, and retail at LSOA level.
+Performance is evaluated under a 33-fold leave-borough-out cross-validation,
+where all stops in one London borough are held out at each fold to simulate
+the arrival of a geographically new area.
+
+GATv2 achieves a Weighted Mean Absolute Percentage Error (WMAPE) of 0.838 across
+33 folds, compared with 0.812 for a non-graph Random Forest and 1.082 for a
+Historical Average baseline. GATv2 outperforms the Random Forest in 7 of 33
+boroughs, consistently those with dense route networks in inner London, where
+message passing over route-connectivity edges provides signal beyond what
+tabular features alone carry. An MLP ablation (WMAPE 0.814) confirms that
+node-level accessibility features account for most of the predictive power, with
+graph structure contributing additional but bounded benefit. The residual gap
+between GATv2 and the Random Forest is attributed to feature homophily arising
+from LSOA-level aggregation, and stop-level POI features are identified as the
+most impactful direction for future work.
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% ============================================================
+\chapter{Introduction}
+\label{ch:intro}
+
+\section{Background and motivation}
+Urban transit authorities now collect more data than ever before: smart-card
+records, vehicle location traces, real-time sensor feeds, and detailed land-use
+registries. Yet the methodological frameworks most authorities rely on were
+designed for cities that change slowly. London is a stark example. The city
+adds residential developments, repurposes industrial land, and extends rail
+lines at a pace no static demand model was built to track. The opening of the
+Elizabeth Line in 2022 and the residential expansion into areas such as
+Barking Riverside illustrate the difficulty directly: planners must estimate
+demand for places that have little or no prior travel history at precisely the
+moment when accurate estimates would be most valuable.
+
+This is the problem the present work addresses, and which we refer to as the
+\emph{urban cold-start}. The term is borrowed from recommender systems, where
+it denotes the difficulty of making predictions for a user or item with no
+interaction history \citep{schein2002methods}. Transposed to urban geography,
+it describes a transit node---a new stop, a newly served neighbourhood---for
+which no historical passenger record exists. Conventional forecasting tools
+derive their predictive power from historical flow patterns and are therefore,
+by construction, blind to such locations.
+
+Bus line networks are complex, nonlinear, time-varying systems, and modelling
+the spatio-temporal correlations of passenger flows across a city is a
+long-standing challenge \citep{zheng2025mfstgat}. Most recent advances have
+improved accuracy substantially on \emph{known} networks, yet they share a
+common assumption: that the set of stops observed during training is the same
+set that will be queried at inference time. For a transport authority managing
+a growing city, this assumption fails repeatedly.
+
+\section{The research gap}
+A critical limitation runs through the recent literature on spatio-temporal
+graph neural networks for transit demand: these models are predominantly
+\emph{transductive}. A transductive model is trained on a fixed graph of nodes
+and edges and has no principled mechanism for handling nodes absent during
+training \citep{hamilton2017inductive}. Such models are highly effective at
+describing demand within an existing, immutable network, but they cannot reason
+about infrastructure that does not yet exist without full retraining from
+scratch. They describe what is; they cannot anticipate what is not yet there.
+
+The alternative pursued here is \emph{inductive} learning. Rather than learning
+node-specific parameters tied to a particular graph, an inductive model learns
+a general mapping from a node's features and local neighbourhood structure to a
+prediction \citep{hamilton2017inductive}. Such a model can, in principle,
+produce an estimate for a node it has never seen, provided that node's features
+and immediate surroundings are available. This reframing---from memorising a
+fixed network to learning a transferable function over local graph
+structure---is what makes cold-start prediction tractable, and it is the
+central idea of this dissertation.
+
+\section{Aim and research questions}
+The aim of this dissertation is to determine whether an inductive graph neural
+network can infer bus-stop passenger demand for areas with no prior travel
+history, using only the land-use accessibility profile and route-connectivity
+structure of their surroundings. To evaluate this, a \emph{leave-borough-out}
+protocol is adopted: entire London boroughs are withheld from training and the
+model is required to predict demand at their stops as though those areas had
+never been observed. This simulates the arrival of a new, unseen district.
+The investigation is structured around one primary research question and one
+ablation sub-question:
+
+\begin{itemize}
+  \item \textbf{RQ1.} Under a leave-borough-out evaluation that simulates
+  geographically unseen areas, can an inductive graph attention network (GATv2)
+  predict bus-stop passenger demand more accurately than (a) a
+  Historical-Average baseline and (b) a non-graph Random Forest trained on the
+  same features?
+  \item \textbf{RQ1a (ablation).} How much of any predictive improvement is
+  attributable to the \emph{graph structure} itself, as opposed to the node
+  features alone?
+\end{itemize}
+
+The ablation sub-question is the methodological core of the work. Demonstrating
+that a graph model outperforms a baseline is uninformative unless one can
+establish that the relational structure, rather than merely a richer feature
+set, is responsible for the gain.
+
+\section{Contributions}
+This dissertation makes three contributions. First, it reformulates bus stop
+demand prediction as an inductive cold-start problem, enabling estimates for
+stops in areas never seen during training. Second, it adopts a spatially honest
+evaluation---leave-borough-out cross-validation---that isolates the contribution
+of graph structure from that of node features through an MLP ablation, addressing
+a question that predictive comparisons frequently leave unanswered. Third, it
+delivers a fully reproducible pipeline built on openly available United Kingdom
+data sources---TfL BUSTO boardings, AI23 accessibility indicators, and ONS
+boundary data---allowing the analysis to be replicated and extended without
+proprietary access.
+
+\section{Dissertation structure}
+Chapter~\ref{ch:litreview} reviews spatio-temporal graph models, inductive
+representation learning, and land-use as a predictor of mobility, positioning
+the present work within this literature. Chapter~\ref{ch:data} describes the
+datasets and the construction of the multigraph. Chapter~\ref{ch:method} sets
+out the inductive GATv2 model, the baselines, the validation design, and the
+evaluation metrics. Chapter~\ref{ch:results} reports the predictive results and
+the structural ablation. Chapter~\ref{ch:discussion} interprets the findings,
+and Chapter~\ref{ch:conclusion} concludes with limitations and directions for
+future work.
+
+
+% ============================================================
+\chapter{Literature Review}
+\label{ch:litreview}
+
+\section{Spatio-temporal graph models for transit demand}
+Graph Neural Networks (GNNs) have become the dominant paradigm for transit
+demand modelling over the past five years, largely because passenger flows
+are inherently relational: demand at one stop is not independent of demand
+at nearby stops or stops on shared routes. The foundational work of
+\citet{kipf2017semi} introduced the Graph Convolutional Network (GCN), which
+performs localised spectral convolution over a graph by aggregating features
+from each node's immediate neighbours with equal weight. Applied to traffic
+and transit networks, GCN-based models learn representations that reflect
+both a node's own features and the characteristics of its surroundings, and
+they have been shown to outperform independent-node models on speed and flow
+prediction tasks \citep{kipf2017semi}.
+
+A key limitation of GCN for transit demand is the assumption that all
+neighbours contribute equally to a node's representation. In a bus network,
+a stop at a busy interchange should receive much stronger influence from its
+high-demand neighbours than from a low-frequency stop that happens to be
+geographically nearby. \citet{velickovic2018graph} addressed this by
+introducing the Graph Attention Network (GAT), which assigns learnable
+attention weights to each neighbour and aggregates accordingly. However,
+\citet{brody2022how} subsequently demonstrated that the attention mechanism
+in GAT is mathematically \emph{static}: the attention score between nodes $i$
+and $j$ can be decomposed into additive terms that depend only on $i$ or
+only on $j$, meaning the model cannot express attention that is jointly
+conditioned on the pair. They proposed GATv2, which introduces a single
+architectural change---applying the weight matrix to the concatenation of
+both node features before the non-linearity---that makes attention genuinely
+dynamic. This distinction is particularly relevant for heterogeneous urban
+graphs where edge importance varies with context, and GATv2 is the model
+adopted in this work.
+
+For bus demand specifically, \citet{zheng2025mfstgat} proposed the
+Multigraph Fusion Spatio-Temporal Graph Attention Network (MF-STGAT), which
+fuses spatial proximity graphs with semantic functional graphs and incorporates
+temporal attention to model the time-varying nature of passenger flows at
+the regional level. MF-STGAT achieves strong predictive accuracy on observed
+stops and represents the current state of the art for this task. However, it
+is a transductive model: the learned node embeddings are tied to specific
+stops and cannot be transferred to stops absent from the training graph.
+This is the gap that the present dissertation addresses.
+
+\section{Inductive representation learning on graphs}
+The distinction between transductive and inductive learning is central to
+the cold-start problem. Transductive models, such as standard GCN and most
+spatio-temporal GNNs for transit, optimise embeddings for a fixed set of
+nodes. When the graph changes---when new nodes arrive---these embeddings must
+be recomputed or the model retrained. This is computationally expensive and
+operationally impractical for a transit authority that adds stops continuously.
+
+\citet{hamilton2017inductive} introduced GraphSAGE, the first inductive
+GNN framework, and drew the distinction explicitly. GraphSAGE learns
+\emph{aggregation functions}---rather than fixed embeddings---that can be
+applied to any node given its features and neighbourhood. At inference time,
+a new node's embedding is computed by passing its features and those of its
+neighbours through the learned aggregators, without retraining. This is
+precisely the operation required for cold-start prediction: the model never
+sees the test stops' demand labels but can still produce predictions from
+their features and network context.
+
+GATv2 \citep{brody2022how} is inductive in the same sense. The attention
+parameters are shared across all node pairs, not tied to specific node
+identities. A new node's representation is computed by applying the same
+attention function to its features and those of its neighbours. In the present
+work, this is implemented using PyTorch Geometric's \texttt{subgraph} utility
+to extract the training subgraph at each fold, ensuring that test borough
+stops are processed inductively during evaluation.
+
+\section{Land-use and accessibility as predictors of mobility}
+A complementary literature has examined how well land-use and accessibility
+features can predict travel demand in the absence of historical flow data.
+\citet{simini2021deep} demonstrated that a deep learning model fed with
+population and point-of-interest data could reproduce observed mobility flows
+across multiple cities without any prior trip data---a result with direct
+implications for the cold-start setting. The intuition is that the built
+environment shapes the latent demand for travel: an area with dense employment
+and poor residential character will generate outbound commute demand, while a
+predominantly residential area will generate inbound demand in the same period.
+
+The AI23 Accessibility Indicators \citep{verduzco2024ai23} operationalise
+this idea at the LSOA level for Great Britain, computing the number of key
+destinations---employment sites, hospitals, GP practices, supermarkets,
+pharmacies, and schools---reachable within 30 minutes by public transport
+during the AM peak. These indicators have been validated as correlates of
+transport usage in the literature and represent the primary feature set in
+this work. Their LSOA-level granularity, while a limitation discussed further
+in Section~\ref{sec:limitations}, reflects the scale at which socioeconomic
+and land-use data are most reliably available in the United Kingdom.
+
+\section{The cold-start problem and spatial validation}
+The cold-start problem as studied here is an instance of a more general
+challenge in spatial machine learning: the tendency of standard evaluation
+protocols to overestimate the generalisation ability of models trained on
+spatially autocorrelated data. \citet{roberts2017cross} showed that randomly
+partitioning spatially structured data into training and test folds allows
+nearby observations to appear in both splits, violating the independence
+assumption underlying cross-validation and producing unrealistically
+optimistic error estimates. Their recommendation---to use spatially blocked
+folds, such that training and test sets are separated by a minimum geographic
+distance or administrative boundary---has become standard practice in
+ecological and geographic modelling. The leave-borough-out design adopted
+here follows this recommendation directly: the administrative boundary of
+each London borough serves as the blocking criterion, guaranteeing that no
+training stop is geographically adjacent to a test stop within the same fold.
+
+\section{Research gap and positioning}
+Table~\ref{tab:litgap} summarises the positioning of this work relative to the
+key prior studies. The critical distinguishing characteristic is the
+combination of inductive learning, spatial cold-start evaluation, and the
+explicit ablation of graph structure versus node features. None of the
+reviewed studies simultaneously satisfy all three criteria. MF-STGAT achieves
+strong performance but is transductive. GraphSAGE is inductive but was not
+applied to transit demand or spatially blocked evaluation. The present work
+occupies the intersection: an inductive GNN evaluated under conditions that
+genuinely simulate the deployment scenario it targets.
+
+\begin{table}[ht]
+  \centering
+  \caption{Positioning of this work relative to key prior studies.}
+  \label{tab:litgap}
+  \begin{tabular}{lcccc}
+    \toprule
+    Study & Inductive & Transit demand & Spatial CV & Graph ablation \\
+    \midrule
+    \citet{kipf2017semi}          & No  & No  & No  & No  \\
+    \citet{velickovic2018graph}   & No  & No  & No  & No  \\
+    \citet{hamilton2017inductive} & Yes & No  & No  & No  \\
+    \citet{brody2022how}          & Yes & No  & No  & No  \\
+    \citet{zheng2025mfstgat}      & No  & Yes & No  & No  \\
+    \textbf{This work}            & \textbf{Yes} & \textbf{Yes} & \textbf{Yes} & \textbf{Yes} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+% ============================================================
+\chapter{Data and Multigraph Construction}
+\label{ch:data}
+
+\section{Overview}
+Three datasets are used in this study: (1) TfL BUSTO, which provides the
+prediction target; (2) TfL Bus Stop Locations, which provides geographic
+coordinates; and (3) the AI23 Accessibility Indicators, which provide node
+features. All three datasets are openly available under the TfL Open Data
+Licence or the Open Government Licence and can be obtained without special
+access arrangements. The processing pipeline, implemented in four sequential
+Python scripts, transforms these raw sources into the 17,943-node multigraph
+used for modelling.
+
+\section{Target variable: TfL BUSTO boardings}
+The Bus Stop Usage and Occupancy Survey (BUSTO; TfL, 2023/24) provides
+estimated weekday passenger boardings for every bus stop served by the TfL
+network, broken down by route, direction, and 15-minute time interval. Each
+row in the raw data corresponds to one stop on one route in one direction
+during one quarter-hour period, with fields: \texttt{YEAR}, \texttt{DAY\_TYPE},
+\texttt{TIMEBAND}, \texttt{QHr}, \texttt{ROUTE}, \texttt{DIRECTION},
+\texttt{STOPCODE}, \texttt{STOPNAME}, \texttt{STOPSEQUENCE},
+\texttt{Boardings}, \texttt{Alightings}, \texttt{Load}, \texttt{Capacity},
+\texttt{Seats}, \texttt{V/C}. The four BUSTO CSV files together contain
+3,441,745 rows.
+
+The target variable \texttt{total\_boardings} is constructed by summing
+\texttt{Boardings} across all weekday rows for each unique \texttt{STOPCODE}.
+Weekend and public holiday records are excluded, as weekday demand is
+substantially higher and more representative of the commute-driven travel
+patterns that accessibility features are designed to capture. The resulting
+stop-level dataset contains 19,682 unique stops before geographic filtering.
+The target is right-skewed: the median stop records approximately 160 boardings
+per typical weekday, while the busiest stops exceed 5,000. A $\log(1 + y)$
+transformation is applied to the target during model training and inverted for
+metric computation.
+
+It is important to note that BUSTO boardings are survey-derived estimates
+rather than exact counts. Vehicle occupancy and alightings are algorithmically
+inferred from ticketing tap data and on-board surveys; the fractional values
+observed (e.g., 968.09 for Westminster Stn / Parliament Square) reflect
+statistical weighting applied during this estimation process. Boardings are
+retained as the target because they are the most directly observed quantity in
+the survey.
+
+\section{Geographic coordinates: TfL Bus Stop Locations}
+The TfL Bus Stop Locations file (\texttt{Bus\_Stops.csv}) provides, for each
+stop, a unique \texttt{STOP\_CODE} identifier and coordinates in the British
+National Grid (EPSG:27700) projection. A matching verification confirmed 99.6\%
+overlap between BUSTO \texttt{STOPCODE} values and the locations file
+\texttt{STOP\_CODE} column. Easting and Northing coordinates were reprojected
+to WGS84 latitude/longitude (EPSG:4326) using pyproj \citep{snow2023pyproj}.
+Stops for which no coordinates could be matched (0.4\%) were excluded as
+non-physical or virtual stops. After this join, 19,612 stops retained
+coordinates.
+
+\section{Node features: AI23 Accessibility Indicators}
+\label{sec:ai23}
+The AI23 Accessibility Indicators \citep{verduzco2024ai23} provide, for each
+2011 LSOA in England, a set of accessibility scores measuring the number of
+key destinations reachable within specified travel time thresholds by public
+transport, under different temporal conditions. This study extracts eight
+features, all measured at the 30-minute threshold under public transport
+(\texttt{mode = pt}) during the AM peak (\texttt{time\_of\_day = am}):
+
+\begin{enumerate}
+  \item \texttt{employment\_all\_30min} --- total employment sites accessible
+  \item \texttt{hospitals\_30min} --- hospitals and major health centres
+  \item \texttt{gp\_30min} --- GP practices
+  \item \texttt{supermarkets\_30min} --- major supermarkets
+  \item \texttt{pharmacies\_30min} --- pharmacies
+  \item \texttt{primary\_schools\_30min} --- primary schools
+  \item \texttt{secondary\_schools\_30min} --- secondary schools
+  \item \texttt{main\_bua\_30min} --- major built-up areas (urban centres)
+\end{enumerate}
+
+The AM peak filter was chosen to align with the temporal profile of BUSTO
+weekday demand, which is dominated by morning commute trips. All eight features
+exhibit right-skewed distributions (skewness $> 1.7$) and are $\log(1+x)$
+transformed before model input.
+
+Each stop was assigned a 2011 LSOA code via two steps. First, its postcode
+(obtained from the TfL Bus Stops file) was submitted to the postcodes.io batch
+API \citep{postcodesio}, which returns LSOA code and London borough for each
+postcode. Second, because postcodes.io returns 2021 LSOA codes for areas
+subject to the 2021 census boundary revision, and AI23 uses 2011 geography,
+the ONS LSOA 2021-to-2011 best-fit crosswalk was applied to recover unmatched
+stops \citep{ons2022crosswalk}. This recovered 555 of 1,123 initially
+unmatched stops. The remaining 568 stops belong to genuine 2021-only LSOAs
+with no single 2011 parent and were excluded (3.1\% of London stops).
+
+After filtering to the 33 London boroughs (LAD codes beginning \texttt{E09}),
+the final dataset contains \textbf{17,943 stops} across 33 boroughs. A notable
+characteristic of the resulting feature matrix is that 96.4\% of stop pairs
+within the same LSOA share identical AI23 feature vectors, because features
+are assigned at LSOA level rather than individual stop level. This has
+important implications for message passing, discussed in
+Section~\ref{sec:homophily}.
+
+\section{Multigraph construction}
+\label{sec:multigraph}
+The transit network is represented as a directed multigraph $G = (V, E)$ where
+$V$ is the set of 17,943 bus stops and $E$ is a union of two edge sets with
+different semantic meanings.
+
+\subsection{Geographic KNN edges}
+For each stop $v_i$, edges are created to its $K=5$ nearest stops by Haversine
+great-circle distance. Haversine distance is used rather than Euclidean
+distance to account for the curvature of the Earth over London's spatial
+extent. A BallTree data structure with the Haversine metric was used for
+efficient computation \citep{scikit2011}. All edges are made bidirectional.
+This produces \textbf{109,182 directed edges}. The role of geographic edges is
+to propagate spatial context: stops that are physically close tend to serve
+areas with similar demographic and accessibility profiles, and their demand
+should be correlated.
+
+\subsection{Route-connectivity edges}
+For each bus route and direction in the BUSTO dataset, stops are ordered by
+their \texttt{STOPSEQUENCE} value and directed edges are created between
+consecutive stops in both directions. These edges capture functional
+network flow: passengers who board at stop $v_i$ on route $r$ in direction $d$
+generate correlated demand at the next stop $v_{i+1}$ on the same service,
+because they are part of the same through-journey. This produces
+\textbf{43,220 directed edges} after deduplication.
+
+The rationale for combining both edge types is that neither is sufficient alone.
+Geographic edges connect stops that may be physically close but functionally
+unrelated (e.g., stops on parallel routes with different catchment areas).
+Route edges without geographic context miss neighbourhood-level demand
+regularities that influence all stops in an area regardless of route membership.
+After deduplication, the combined multigraph contains
+\textbf{124,234 directed edges}.
+
+\subsection{Node feature augmentation}
+Because 96.4\% of stops within the same LSOA share identical AI23 feature
+vectors, geographic coordinates (latitude and longitude) are appended to the
+feature matrix, giving each stop a unique geometric position even when its
+accessibility indicators are shared with nearby stops. The final input feature
+dimension is therefore 10: eight log-transformed AI23 indicators plus latitude
+and longitude. This design decision follows \citet{zheng2025mfstgat}, who use
+stop-level POI features to ensure node uniqueness; geographic coordinates serve
+as an approximation where stop-level POI data is unavailable.
+
+
+% ============================================================
+\chapter{Methodology}
+\label{ch:method}
+
+\section{Problem formulation}
+Let $G = (V, E, X)$ denote the multigraph defined in Chapter~\ref{ch:data},
+where $X \in \mathbb{R}^{|V| \times 10}$ is the node feature matrix and
+$y \in \mathbb{R}^{|V|}$ is the vector of total weekday boardings. The
+cold-start prediction task is defined as follows: given a partition
+$V = V_{\text{train}} \cup V_{\text{test}}$ with $V_{\text{train}} \cap V_{\text{test}} = \emptyset$,
+learn a function $f: (X_{V_{\text{train}}}, E_{\text{train}}) \rightarrow \hat{y}_{V_{\text{test}}}$
+such that the model can produce accurate predictions for test nodes
+\emph{without access to} $y_{V_{\text{test}}}$ during training.
+Crucially, the test nodes correspond to an entire geographic region
+(a London borough) that was completely absent from training, not a random
+sample of individual stops.
+
+\section{Inductive GATv2}
+\label{sec:gatv2}
+Graph Attention Network version 2 (GATv2; \citealt{brody2022how}) is chosen
+as the primary model for three reasons. First, it is inductive: its parameters
+are functions over node features and neighbourhood structure, not tied to
+specific node identities, so it can produce embeddings for nodes never seen
+during training. Second, its dynamic attention mechanism is strictly more
+expressive than both GCN (which uses fixed normalised weights) and the
+original GAT (whose attention is mathematically static). Third, it achieves
+strong performance on graph regression tasks with heterogeneous node features.
+
+The unnormalised attention score between nodes $i$ and $j$ in GATv2 is:
+\begin{equation}
+  e_{ij} = \vec{a}^{\top}\,\mathrm{LeakyReLU}\!\left(W\,[\vec{h}_i \,\Vert\, \vec{h}_j]\right),
+  \label{eq:gatv2attn}
+\end{equation}
+where $W \in \mathbb{R}^{d' \times 2d}$ is a shared weight matrix,
+$\vec{a} \in \mathbb{R}^{d'}$ is a learnable attention vector,
+$\vec{h}_i$ and $\vec{h}_j$ are the current node representations, and
+$\Vert$ denotes concatenation. Scores are normalised across each node's
+neighbourhood using softmax:
+\begin{equation}
+  \alpha_{ij} = \frac{\exp(e_{ij})}{\sum_{k \in \mathcal{N}(i)} \exp(e_{ik})},
+\end{equation}
+and the updated representation of node $i$ is:
+\begin{equation}
+  \vec{h}'_i = \sigma\!\left(\sum_{j \in \mathcal{N}(i)} \alpha_{ij}\,W'\,\vec{h}_j\right).
+\end{equation}
+
+The architecture used in this study consists of two GATv2 convolutional layers.
+The first layer uses $H=4$ attention heads with hidden dimension $d=64$ per
+head (output dimension $4 \times 64 = 256$); the second layer uses a single
+head with dimension 64, followed by a linear readout layer producing a scalar
+prediction. ELU activation and dropout ($p=0.3$) are applied after the first
+layer. The full feature dimension at input is 10, matching the 8 log-transformed
+AI23 indicators plus latitude and longitude.
+
+\subsection{True inductive evaluation}
+Following \citet{hamilton2017inductive}, the inductive setting is enforced by
+extracting a subgraph of training nodes at each fold using PyTorch Geometric's
+\texttt{subgraph} utility. Test borough stops are added to this subgraph only
+at evaluation time, and their neighbourhood messages are aggregated from
+training nodes through the learned attention function. The model never receives
+the demand labels of test nodes during training in any fold.
+
+\section{Training protocol}
+The model is trained by minimising mean squared error on $\log(1+y)$:
+\begin{equation}
+  \mathcal{L} = \frac{1}{|V_{\text{train}}|} \sum_{i \in V_{\text{train}}}
+  \left(\log(1 + \hat{y}_i) - \log(1 + y_i)\right)^2.
+\end{equation}
+
+Optimisation uses Adam \citep{kingma2015adam} with learning rate $10^{-3}$.
+Training runs for a maximum of 300 epochs with early stopping: training halts
+when validation loss (computed on a random 10\% of training stops) does not
+improve by more than $10^{-5}$ for 40 consecutive epochs. The best checkpoint
+by validation loss is restored before evaluation.
+
+Predictions are converted back to the original scale via $\hat{y} = e^{\hat{z}} - 1$
+and clamped to the interval $[0,\, \log(1 + 2 \cdot \max(y_{\text{train}}))]$
+before inversion, preventing extreme extrapolation on boroughs with
+out-of-distribution demand profiles.
+
+\section{Baselines}
+Three baselines are evaluated alongside GATv2.
+
+\paragraph{Historical Average (HistAvg).}
+The simplest conceivable baseline: predict every test stop's demand as the
+mean boardings of all training stops. This baseline uses no features and no
+graph structure. It establishes the minimum bar; any informative model should
+surpass it.
+
+\paragraph{Random Forest (RF).}
+An ensemble of 300 decision trees trained on the 10-dimensional standardised
+feature matrix, predicting $\log(1+y)$ and converting back at evaluation.
+RF is the primary non-graph comparator and, crucially, uses exactly the same
+features as GATv2. Any difference between RF and GATv2 performance can
+therefore be attributed to the graph structure, not to feature differences.
+This was trained with \texttt{n\_jobs=-1} and \texttt{random\_state=42}.
+
+\paragraph{Multi-Layer Perceptron (MLP, ablation).}
+A two-hidden-layer neural network (64 units, ReLU, dropout 0.3) trained on
+the same 10 features with the same Adam optimiser, learning rate, and early
+stopping as GATv2, but without any graph structure. The MLP ablation answers
+RQ1a directly: by comparing MLP to GATv2, one isolates the contribution of
+graph structure while controlling for the neural architecture.
+
+\section{Spatial cross-validation}
+\label{sec:spatialcv}
+London's 33 administrative boroughs serve as the blocking units for
+leave-borough-out cross-validation. At fold $k$, all stops in borough $b_k$
+are held out as the test set; the remaining 32 boroughs form the training set.
+This is repeated for all 33 boroughs, yielding 33 folds with test sizes
+ranging from 101 stops (City of London) to 1,179 stops (Bromley).
+
+A StandardScaler is fitted exclusively on training stops at each fold and
+applied to both training and test features. Fitting the scaler on the full
+dataset before splitting would constitute data leakage, as the scaling
+statistics of the test borough would influence the model's input representation
+\citep{kaufman2012leakage}.
+
+\section{Evaluation metrics}
+Three metrics are reported. WMAPE is the primary metric because it is
+robust to stops with near-zero demand, where plain MAPE is undefined or
+arbitrarily large:
+\begin{equation}
+  \mathrm{WMAPE} = \frac{\sum_i |\hat{y}_i - y_i|}{\sum_i y_i + \epsilon}.
+  \label{eq:wmape}
+\end{equation}
+RMSE and MAE are reported for completeness. All metrics are computed on the
+original (uninverted) demand scale. Results are summarised as mean $\pm$
+standard deviation and median across 33 folds.
+
+\section{Implementation}
+The full pipeline is implemented in Python 3.11 using PyTorch 2.12 and PyTorch
+Geometric 2.8.0 \citep{fey2019fast}. Scikit-learn 1.5 \citep{scikit2011} is
+used for Random Forest and StandardScaler. All experiments were run on a
+CPU-only environment (Intel Core i7, 16 GB RAM); total wall-clock time for the
+33-fold run was 35 minutes. A fixed random seed (\texttt{seed=42}) was used
+for all stochastic components. The complete code and processed dataset are
+provided in the supplementary material.
+
+
+% ============================================================
+\chapter{Experiments and Results}
+\label{ch:results}
+
+\section{Experimental setup}
+The multigraph described in Chapter~\ref{ch:data} contains 17,943 nodes,
+124,234 directed edges, and a 10-dimensional node feature matrix. For each of
+the 33 leave-borough-out folds, the model is trained from scratch on the
+subgraph induced by the 32 training boroughs and evaluated on the held-out
+borough. Hyperparameters were set prior to the full evaluation run based on
+alignment with \citet{zheng2025mfstgat} (hidden dimension 64, 4 attention
+heads) and are not tuned per fold. A five-fold quick run on the first five
+boroughs alphabetically was used to verify the pipeline before committing to
+the full 33-fold experiment.
+
+\section{Overall predictive performance (RQ1)}
+Table~\ref{tab:results} reports WMAPE, RMSE, and MAE for all four models,
+averaged across the 33 folds.
+
+\begin{table}[ht]
+  \centering
+  \caption{Cold-start prediction performance: 33-fold leave-borough-out CV.
+           Mean $\pm$ std (median) across boroughs.}
+  \label{tab:results}
+  \begin{tabular}{lcccccc}
+    \toprule
+    Model & WMAPE mean & WMAPE std & WMAPE med & RMSE mean & MAE mean \\
+    \midrule
+    Historical Average       & 1.0822 & 0.3778 & 0.9636 & 554.0 & 316.1 \\
+    Random Forest (no graph) & 0.8121 & 0.0258 & 0.8078 & 561.4 & 264.4 \\
+    MLP (ablation)           & 0.8136 & 0.0309 & 0.8082 & 561.6 & 264.2 \\
+    GATv2 (inductive)        & 0.8381 & 0.0321 & 0.8378 & 576.8 & 272.6 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+All three learned models substantially outperform the Historical Average
+baseline (WMAPE 1.082), confirming that both accessibility features and graph
+structure carry meaningful signal beyond a simple mean prediction. The
+Random Forest achieves WMAPE 0.812, GATv2 achieves 0.838, and the MLP
+ablation achieves 0.814. GATv2 reduces WMAPE by 0.244 relative to HistAvg
+but trails RF by 0.026. The narrow gap between RF and MLP (0.002) indicates
+that the two models extract broadly equivalent information from the same
+feature set, which is expected given their similar functional capacity on
+low-dimensional inputs.
+
+\section{The value of graph structure (RQ1a)}
+The MLP ablation (WMAPE 0.814) is nearly identical to Random Forest (0.812)
+and both substantially below GATv2 (0.838). This finding is central to the
+interpretation of the dissertation: the accessibility features alone account
+for almost all recoverable predictive signal in this dataset, and the graph
+structure adds only a bounded increment.
+
+The explanation lies in the feature homophily identified in
+Section~\ref{sec:ai23}: 96.4\% of stops share their LSOA with at least one
+other stop, meaning they have identical AI23 feature vectors. When GATv2 applies
+message passing to aggregate from neighbours, it is averaging representations
+that are nearly identical to the node's own, so the aggregated message contains
+little new information. The addition of latitude and longitude partially
+mitigates this---each stop now has a unique geometric position even when its
+accessibility indicators match its neighbours---but does not fully substitute
+for stop-level unique features.
+\label{sec:homophily}
+
+\section{Borough-level analysis}
+\label{sec:borough}
+While aggregate performance favours RF, GATv2 outperforms RF in 7 of 33
+boroughs, and ties in one (Enfield, WMAPE 0.860 for both). Table~\ref{tab:borough}
+presents the full per-borough results.
+
+\begin{table}[ht]
+  \centering
+  \caption{Per-borough WMAPE results for all four models.
+           GATv2 wins are highlighted in bold.}
+  \label{tab:borough}
+  \small
+  \begin{tabular}{lrcccc}
+    \toprule
+    Borough & $n$ & HistAvg & RF & MLP & GATv2 \\
+    \midrule
+    Barking and Dagenham   & 364  & 0.893 & 0.778 & 0.777 & 0.878 \\
+    \textbf{Barnet}        & 993  & 1.240 & 0.853 & 0.837 & \textbf{0.830} \\
+    Bexley                 & 672  & 1.697 & 0.825 & 0.828 & 0.868 \\
+    Brent                  & 575  & 0.818 & 0.797 & 0.798 & 0.821 \\
+    \textbf{Bromley}       & 1179 & 2.607 & 0.872 & 0.882 & \textbf{0.870} \\
+    Camden                 & 424  & 0.867 & 0.802 & 0.787 & 0.820 \\
+    \textbf{City of London}& 101  & 0.798 & 0.819 & 0.798 & \textbf{0.798} \\
+    Croydon                & 1019 & 1.548 & 0.789 & 0.793 & 0.815 \\
+    Ealing                 & 683  & 0.964 & 0.827 & 0.830 & 0.868 \\
+    Enfield                & 707  & 1.145 & 0.860 & 0.855 & 0.860 \\
+    Greenwich              & 659  & 0.999 & 0.831 & 0.833 & 0.894 \\
+    \textbf{Hackney}       & 442  & 0.827 & 0.789 & 0.777 & \textbf{0.767} \\
+    Hammersmith and Fulham & 276  & 0.788 & 0.799 & 0.794 & 0.862 \\
+    \textbf{Haringey}      & 461  & 0.840 & 0.806 & 0.803 & \textbf{0.801} \\
+    Harrow                 & 432  & 1.088 & 0.794 & 0.792 & 0.803 \\
+    Havering               & 691  & 1.602 & 0.846 & 0.854 & 0.866 \\
+    Hillingdon             & 706  & 1.300 & 0.856 & 0.871 & 0.889 \\
+    Hounslow               & 651  & 1.054 & 0.808 & 0.822 & 0.832 \\
+    Islington              & 349  & 0.787 & 0.797 & 0.792 & 0.858 \\
+    Kensington and Chelsea & 260  & 0.747 & 0.759 & 0.760 & 0.811 \\
+    Kingston upon Thames   & 391  & 1.209 & 0.835 & 0.838 & 0.875 \\
+    \textbf{Lambeth}       & 577  & 0.862 & 0.828 & 0.823 & \textbf{0.822} \\
+    Lewisham               & 609  & 0.986 & 0.808 & 0.809 & 0.828 \\
+    \textbf{Merton}        & 457  & 1.035 & 0.797 & 0.788 & \textbf{0.793} \\
+    Newham                 & 465  & 0.832 & 0.796 & 0.785 & 0.820 \\
+    Redbridge              & 539  & 1.102 & 0.795 & 0.814 & 0.838 \\
+    Richmond upon Thames   & 484  & 1.317 & 0.800 & 0.808 & 0.838 \\
+    Southwark              & 583  & 0.860 & 0.817 & 0.824 & 0.845 \\
+    Sutton                 & 421  & 1.487 & 0.828 & 0.824 & 0.849 \\
+    Tower Hamlets          & 381  & 0.949 & 0.812 & 0.882 & 0.828 \\
+    Waltham Forest         & 492  & 0.888 & 0.811 & 0.793 & 0.856 \\
+    Wandsworth             & 481  & 0.815 & 0.792 & 0.803 & 0.874 \\
+    Westminster            & 419  & 0.763 & 0.777 & 0.773 & 0.781 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The boroughs where GATv2 wins---Hackney, Barnet, City of London, Haringey,
+Lambeth, Merton, and Bromley---are concentrated in inner and central London.
+These are areas characterised by dense, overlapping bus route networks where
+multiple routes serve the same corridors. In such environments, route-connectivity
+edges carry genuine signal: a stop on a busy through-route benefits from
+the demand patterns of the preceding and following stops on the same service.
+RF, operating on tabular features without any relational structure, cannot
+exploit this information.
+
+By contrast, in outer London boroughs such as Havering, Hillingdon, Barking,
+and Ealing, RF outperforms GATv2 by wider margins. These areas have sparser
+and less overlapping route structures, and the demand variation between stops
+is explained more by land-use accessibility differences than by network
+topology. In such contexts, the graph adds noise rather than signal.
+
+\paragraph{City of London: a resolved anomaly.}
+An earlier version of the pipeline, which applied a global StandardScaler
+fitted on the full dataset before splitting (a data leakage error), produced
+a WMAPE of 9.36 for City of London. This was traced to the extreme employment
+accessibility values of the City (the financial district has employment
+accessibility 10--40 times the outer-borough median), which caused the scaler
+to produce distorted inputs at evaluation time. After correcting the scaler to
+be fitted per fold on training data only, and applying output clamping to
+$[0,\, \log(1 + 2 \cdot y_{\text{max}}^{\text{train}})]$, the City of London
+WMAPE reduced to 0.798, competitive with RF (0.819). This episode illustrates
+the importance of correct cross-validation implementation in spatially
+heterogeneous datasets.
+
+
+% ============================================================
+\chapter{Discussion}
+\label{ch:discussion}
+
+\section{What the graph adds and when}
+The central finding of this dissertation is that graph structure---in the
+specific form of route-connectivity edges combined with geographic KNN
+edges---provides a measurable but context-dependent benefit for cold-start
+bus demand prediction. GATv2 outperforms RF in boroughs where the bus
+network is sufficiently dense for route-level passenger flow to be a
+discriminative signal. In sparser outer-London networks, the same edges
+become less informative, and the tabular feature model performs better.
+
+This result is consistent with the theoretical properties of message passing:
+the operation is only beneficial when the aggregated neighbourhood information
+differs meaningfully from the node's own representation
+\citep{hamilton2017inductive}. In this dataset, 96.4\% of stops share their
+LSOA, and therefore their AI23 feature vector, with at least one neighbour.
+The addition of geographic coordinates partially restores node uniqueness, but
+the residual homophily remains the primary constraint on GATv2's advantage.
+
+\section{Comparison with Zheng et al. (2025)}
+\citet{zheng2025mfstgat} report GATv2 outperforming Random Forest in their
+setting, which contrasts with the aggregate result found here. The most
+likely explanation is the difference in feature granularity: Zheng et al.
+use stop-level POI features (counts of nearby restaurants, offices, shops,
+and other amenities within a fixed buffer radius) that are unique to each
+individual stop. This ensures that message passing aggregates genuinely
+diverse representations from heterogeneous neighbours. The LSOA-level
+features used here cannot replicate this diversity within the same
+administrative zone.
+
+A secondary factor is evaluation design. It is not clear from \citet{zheng2025mfstgat}
+whether their evaluation uses spatially blocked folds or random splits.
+Random splits, by allowing nearby stops to appear in both training and test
+sets, tend to inflate estimates of GNN performance relative to tabular
+baselines, because the GNN can effectively interpolate over its observed
+neighbours.
+
+\section{Practical implications for TfL}
+Despite trailing RF in aggregate, GATv2 offers a practical argument for
+deployment in specific contexts. For a new stop being added to an existing
+high-frequency inner-London corridor---for example, an extension of a route
+into a new development in Hackney or Barnet---GATv2 can leverage the demand
+patterns of the existing stops on the same route, yielding predictions that
+RF, constrained to accessibility features alone, cannot match.
+
+For new stops in areas with limited connectivity, such as new settlements
+at the periphery of the network, RF is the safer choice, being more stable
+across the full distribution of boroughs (standard deviation 0.026 vs 0.032
+for GATv2). A practical deployment strategy might therefore select between
+the two models based on the route density of the target area.
+
+\section{Limitations}
+\label{sec:limitations}
+Several limitations should be noted. The BUSTO demand target is a
+survey-derived estimate of a typical autumn weekday rather than a verified
+count of individual passengers; the fractional boarding values reflect
+statistical weighting. The AI23 accessibility features are at LSOA level,
+and all stops within the same zone receive identical feature vectors, which
+limits the information available to message passing. The cold-start scenario
+is simulated through geographic hold-out rather than observed on an actual
+new development, so the work demonstrates geographic transferability rather
+than true deployment performance. The model predicts a typical-day static
+average and does not capture the temporal dynamics (AM peak, PM peak, evening)
+that a more complete model would require. Results are specific to London; the
+degree to which the findings generalise to other cities with different network
+densities and land-use structures is not established by this study.
+
+
+% ============================================================
+\chapter{Conclusions}
+\label{ch:conclusion}
+
+\section{Summary of findings}
+This dissertation investigated whether an inductive GATv2 can predict bus-stop
+passenger demand in geographically unseen areas---the cold-start problem---using
+accessibility indicators and route-connectivity as the sole inputs. The model
+was evaluated under 33-fold leave-borough-out cross-validation across all London
+boroughs, producing the following headline results:
+
+\begin{itemize}
+  \item GATv2 (WMAPE 0.838) and Random Forest (WMAPE 0.812) both substantially
+  outperform the Historical Average baseline (WMAPE 1.082), confirming that
+  accessibility features carry meaningful signal for demand prediction in the
+  absence of historical ridership.
+  \item GATv2 outperforms RF in 7 of 33 boroughs, concentrated in inner London
+  where dense route networks make route-connectivity edges informative.
+  \item The MLP ablation (WMAPE 0.814) is essentially equivalent to RF,
+  confirming that node features account for the majority of predictive power
+  and that graph structure contributes a bounded, geography-dependent increment.
+  \item The 0.026 WMAPE gap between RF and GATv2 is attributed to LSOA-level
+  feature homophily: 96.4\% of stops share identical AI23 feature vectors,
+  limiting the diversity of information that message passing can aggregate.
+\end{itemize}
+
+\section{Limitations}
+The principal limitations of this work are the LSOA-level granularity of
+accessibility features, the simulated rather than observed cold-start
+scenario, the absence of temporal dynamics in the demand target, and the
+restriction to London. Each of these points directly towards future work.
+
+\section{Future work}
+The most impactful immediate extension is the addition of stop-level POI
+features derived from OpenStreetMap via the Overpass API. Querying counts of
+nearby restaurants, offices, retail outlets, and other amenities within a
+fixed buffer (e.g., 400 metres) around each stop would give every node a
+unique feature vector regardless of LSOA membership, addressing the primary
+constraint on GATv2's relative performance identified in this study.
+
+A second direction is the incorporation of temporal dynamics. The BUSTO dataset
+contains 15-minute interval data; restructuring the target as a time-series
+of boardings across the operating day would enable spatio-temporal GNN
+architectures such as MF-STGAT \citep{zheng2025mfstgat} to be evaluated in
+the inductive cold-start setting defined here. This would make the comparison
+with the state of the art in transit demand modelling more direct.
+
+A third direction concerns prescriptive rather than descriptive modelling:
+using the demand predictions from this work as inputs to a route optimisation
+algorithm (e.g., multi-objective evolutionary methods such as NSGA-II) to
+suggest where new stops should be placed in a developing area, given predicted
+demand and network cost constraints.
+
+Finally, generalising the pipeline to cities beyond London would establish
+whether the finding that GATv2's advantage is concentrated in high-density
+inner-city networks is a general property of bus demand prediction or an
+artefact of London's specific topology.
+
+
+% ============================================================
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

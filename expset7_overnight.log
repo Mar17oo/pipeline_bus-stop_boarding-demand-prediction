@@ -1,0 +1,123 @@
+=== [1/2] Functional-similarity edges (--func-sim) (Fri Jul 17 10:46:47     2026) ===
+Features: 17 (8 AI23 + 6 OSM-POI + lat + lon  [OSM enriched])
+Building multigraph (17,943 nodes)...
+  KNN edges (K=5): 109,182  (0.9s)
+  Route edges:                43,220  (4.8s)
+  Functional-sim edges (rho>0.99, top-10):  133,646  (2.8s)
+  Combined (deduplicated):    237,302 total directed edges
+Pre-warming PyG kernel (one-time JIT compile)...
+  Done.
+
+Running 33-fold leave-borough-out CV...
+
+  [ 1/33] Barking and Dagenham            n= 364  HA=0.893  IDW=0.803  MLR=0.704  RF=0.694  XGB=0.671  MLP=0.681  GATv2=0.713  (295s)
+  [ 2/33] Barnet                          n= 993  HA=1.240  IDW=0.858  MLR=0.694  RF=0.660  XGB=0.658  MLP=0.673  GATv2=0.767  (285s)
+  [ 3/33] Bexley                          n= 672  HA=1.697  IDW=0.856  MLR=0.693  RF=0.685  XGB=0.692  MLP=0.683  GATv2=0.782  (285s)
+  [ 4/33] Brent                           n= 575  HA=0.818  IDW=0.856  MLR=0.631  RF=0.652  XGB=0.642  MLP=0.622  GATv2=0.770  (300s)
+  [ 5/33] Bromley                         n=1179  HA=2.607  IDW=0.948  MLR=0.664  RF=0.654  XGB=0.650  MLP=0.658  GATv2=0.732  (285s)
+  [ 6/33] Camden                          n= 424  HA=0.867  IDW=0.839  MLR=0.521  RF=0.523  XGB=0.539  MLP=0.502  GATv2=0.668  (301s)
+  [ 7/33] City of London                  n= 101  HA=0.798  IDW=0.871  MLR=0.566  RF=0.573  XGB=0.567  MLP=0.565  GATv2=0.799  (294s)
+  [ 8/33] Croydon                         n=1019  HA=1.548  IDW=0.857  MLR=0.675  RF=0.678  XGB=0.660  MLP=0.667  GATv2=0.774  (291s)
+  [ 9/33] Ealing                          n= 683  HA=0.964  IDW=0.873  MLR=0.650  RF=0.669  XGB=0.634  MLP=0.639  GATv2=0.714  (305s)
+  [10/33] Enfield                         n= 707  HA=1.145  IDW=0.876  MLR=0.678  RF=0.702  XGB=0.701  MLP=0.665  GATv2=0.722  (299s)
+  [11/33] Greenwich                       n= 659  HA=0.999  IDW=0.854  MLR=0.664  RF=0.656  XGB=0.636  MLP=0.657  GATv2=0.721  (305s)
+  [12/33] Hackney                         n= 442  HA=0.827  IDW=0.806  MLR=0.499  RF=0.533  XGB=0.506  MLP=0.491  GATv2=0.619  (314s)
+  [13/33] Hammersmith and Fulham          n= 276  HA=0.788  IDW=0.808  MLR=0.697  RF=0.673  XGB=0.694  MLP=0.688  GATv2=0.705  (316s)
+  [14/33] Haringey                        n= 461  HA=0.840  IDW=0.819  MLR=0.657  RF=0.662  XGB=0.684  MLP=0.633  GATv2=0.806  (301s)
+  [15/33] Harrow                          n= 432  HA=1.088  IDW=0.828  MLR=0.634  RF=0.632  XGB=0.601  MLP=0.614  GATv2=0.744  (303s)
+  [16/33] Havering                        n= 691  HA=1.602  IDW=0.875  MLR=0.712  RF=0.722  XGB=0.879  MLP=0.715  GATv2=0.798  (298s)
+  [17/33] Hillingdon                      n= 706  HA=1.300  IDW=0.924  MLR=0.712  RF=0.765  XGB=0.762  MLP=0.733  GATv2=0.801  (304s)
+  [18/33] Hounslow                        n= 651  HA=1.054  IDW=0.909  MLR=0.638  RF=0.654  XGB=0.638  MLP=0.616  GATv2=0.691  (311s)
+  [19/33] Islington                       n= 349  HA=0.787  IDW=0.808  MLR=0.589  RF=0.587  XGB=0.588  MLP=0.587  GATv2=0.702  (324s)
+  [20/33] Kensington and Chelsea          n= 260  HA=0.747  IDW=0.841  MLR=0.599  RF=0.548  XGB=0.551  MLP=0.577  GATv2=0.697  (325s)
+  [21/33] Kingston upon Thames            n= 391  HA=1.209  IDW=0.893  MLR=0.711  RF=0.708  XGB=0.678  MLP=0.692  GATv2=0.794  (328s)
+  [22/33] Lambeth                         n= 577  HA=0.862  IDW=0.879  MLR=0.644  RF=0.630  XGB=0.621  MLP=0.608  GATv2=0.733  (305s)
+  [23/33] Lewisham                        n= 609  HA=0.986  IDW=0.863  MLR=0.598  RF=0.607  XGB=0.623  MLP=0.600  GATv2=0.662  (290s)
+  [24/33] Merton                          n= 457  HA=1.035  IDW=0.848  MLR=0.665  RF=0.657  XGB=0.677  MLP=0.656  GATv2=0.793  (296s)
+  [25/33] Newham                          n= 465  HA=0.832  IDW=0.832  MLR=0.569  RF=0.608  XGB=0.615  MLP=0.574  GATv2=0.657  (297s)
+  [26/33] Redbridge                       n= 539  HA=1.102  IDW=0.799  MLR=0.682  RF=0.685  XGB=0.652  MLP=0.668  GATv2=0.797  (298s)
+  [27/33] Richmond upon Thames            n= 484  HA=1.317  IDW=0.887  MLR=0.648  RF=0.659  XGB=0.678  MLP=0.680  GATv2=0.751  (297s)
+  [28/33] Southwark                       n= 583  HA=0.860  IDW=0.810  MLR=0.581  RF=0.616  XGB=0.592  MLP=0.577  GATv2=0.783  (294s)
+  [29/33] Sutton                          n= 421  HA=1.487  IDW=0.830  MLR=0.646  RF=0.675  XGB=0.691  MLP=0.638  GATv2=0.790  (299s)
+  [30/33] Tower Hamlets                   n= 381  HA=0.949  IDW=0.822  MLR=0.574  RF=0.604  XGB=0.585  MLP=0.586  GATv2=0.745  (301s)
+  [31/33] Waltham Forest                  n= 492  HA=0.888  IDW=0.867  MLR=0.718  RF=0.640  XGB=0.661  MLP=0.674  GATv2=0.716  (293s)
+  [32/33] Wandsworth                      n= 481  HA=0.815  IDW=0.796  MLR=0.634  RF=0.641  XGB=0.638  MLP=0.628  GATv2=0.687  (288s)
+  [33/33] Westminster                     n= 419  HA=0.763  IDW=0.768  MLR=0.583  RF=0.561  XGB=0.579  MLP=0.551  GATv2=0.625  (288s)
+
+============================================================================
+RESULTS — 33 leave-borough-out folds  (mean ± std  |  median)
+============================================================================
+  HistAvg   WMAPE=1.0822(±0.3778) med=0.9636  RMSE=554.0(±178.5)  MAE=316.1(±71.1)
+  IDW       WMAPE=0.8487(±0.0396) med=0.8542  RMSE=568.8(±191.4)  MAE=275.1(±112.1)
+  MLR       WMAPE=0.6404(±0.0567) med=0.6485  RMSE=452.1(±155.5)  MAE=205.5(±79.1)
+  RF        WMAPE=0.6428(±0.0547) med=0.6545  RMSE=466.9(±161.1)  MAE=205.9(±77.7)
+  XGBoost   WMAPE=0.6437(±0.0680) med=0.6420  RMSE=455.6(±158.1)  MAE=205.8(±78.1)
+  MLP       WMAPE=0.6303(±0.0569) med=0.6382  RMSE=439.5(±151.7)  MAE=201.7(±76.3)
+  GATv2     WMAPE=0.7352(±0.0533) med=0.7334  RMSE=512.8(±181.6)  MAE=238.1(±98.9)
+============================================================================
+
+Total time: 165.3 min
+Saved -> results_cv_multigraph.csv  |  results_summary_multigraph.csv
+=== [1/2] DONE -> results_*_func_sim.csv ===
+=== [2/2] Zheng G1/G2/G3 fusion architecture (Fri Jul 17 13:32:20     2026) ===
+Features: 17 (AI23+OSM+SC, headline set)
+Building G1 (geographic: KNN+route)...
+  G1: 124,234 directed edges  (6.1s)
+Building G2 (functional similarity: rho>0.99, top-10)...
+  G2: 133,646 directed edges  (2.6s)
+  G3 (union): 237,302 directed edges
+Pre-warming PyG kernel...
+  Done.
+
+Running 33-fold leave-borough-out CV...
+
+  [ 1/33] Barking and Dagenham            n= 364  GATv2-Fusion=0.730  (308s)
+  [ 2/33] Barnet                          n= 993  GATv2-Fusion=0.739  (288s)
+  [ 3/33] Bexley                          n= 672  GATv2-Fusion=0.754  (296s)
+  [ 4/33] Brent                           n= 575  GATv2-Fusion=0.679  (296s)
+  [ 5/33] Bromley                         n=1179  GATv2-Fusion=0.669  (284s)
+  [ 6/33] Camden                          n= 424  GATv2-Fusion=0.741  (300s)
+  [ 7/33] City of London                  n= 101  GATv2-Fusion=0.657  (306s)
+  [ 8/33] Croydon                         n=1019  GATv2-Fusion=0.700  (287s)
+  [ 9/33] Ealing                          n= 683  GATv2-Fusion=0.715  (296s)
+  [10/33] Enfield                         n= 707  GATv2-Fusion=0.800  (293s)
+  [11/33] Greenwich                       n= 659  GATv2-Fusion=0.719  (297s)
+  [12/33] Hackney                         n= 442  GATv2-Fusion=0.669  (299s)
+  [13/33] Hammersmith and Fulham          n= 276  GATv2-Fusion=0.704  (301s)
+  [14/33] Haringey                        n= 461  GATv2-Fusion=0.702  (297s)
+  [15/33] Harrow                          n= 432  GATv2-Fusion=0.696  (302s)
+  [16/33] Havering                        n= 691  GATv2-Fusion=0.772  (295s)
+  [17/33] Hillingdon                      n= 706  GATv2-Fusion=0.766  (295s)
+  [18/33] Hounslow                        n= 651  GATv2-Fusion=0.767  (295s)
+  [19/33] Islington                       n= 349  GATv2-Fusion=0.632  (300s)
+  [20/33] Kensington and Chelsea          n= 260  GATv2-Fusion=0.673  (312s)
+  [21/33] Kingston upon Thames            n= 391  GATv2-Fusion=0.797  (324s)
+  [22/33] Lambeth                         n= 577  GATv2-Fusion=0.694  (313s)
+  [23/33] Lewisham                        n= 609  GATv2-Fusion=0.710  (314s)
+  [24/33] Merton                          n= 457  GATv2-Fusion=0.704  (320s)
+  [25/33] Newham                          n= 465  GATv2-Fusion=0.642  (319s)
+  [26/33] Redbridge                       n= 539  GATv2-Fusion=0.780  (316s)
+  [27/33] Richmond upon Thames            n= 484  GATv2-Fusion=0.670  (317s)
+  [28/33] Southwark                       n= 583  GATv2-Fusion=0.673  (316s)
+  [29/33] Sutton                          n= 421  GATv2-Fusion=0.766  (319s)
+  [30/33] Tower Hamlets                   n= 381  GATv2-Fusion=0.678  (322s)
+  [31/33] Waltham Forest                  n= 492  GATv2-Fusion=0.672  (316s)
+  [32/33] Wandsworth                      n= 481  GATv2-Fusion=0.674  (316s)
+  [33/33] Westminster                     n= 419  GATv2-Fusion=0.587  (314s)
+
+============================================================================
+RESULTS — 33 leave-borough-out folds (mean ± std | median)
+============================================================================
+  HistAvg        WMAPE=1.0822(±0.3778) med=0.9636
+  MLR            WMAPE=0.6404(±0.0567) med=0.6485
+  RF             WMAPE=0.6428(±0.0547) med=0.6545
+  XGBoost        WMAPE=0.6437(±0.0680) med=0.6420
+  MLP            WMAPE=0.6311(±0.0563) med=0.6386
+  GATv2          WMAPE=0.7187(±0.0439) med=0.7159
+  GATv2-Fusion   WMAPE=0.7070(±0.0500) med=0.7020
+============================================================================
+
+Total time: 167.9 min
+Saved -> results_cv_zheng_fusion.csv | results_summary_zheng_fusion.csv
+=== [2/2] DONE -> results_*_zheng_fusion.csv ===
+=== EXPERIMENT SET 7 FINISHED (Fri Jul 17 16:20:31     2026) ===
