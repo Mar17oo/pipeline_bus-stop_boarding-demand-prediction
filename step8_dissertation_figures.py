@@ -164,15 +164,12 @@ def fig2_grouped_feature_sets():
 
     feature_handles = [mpatches.Patch(color=colors[c], label=c) for c in cols]
     hatch_handle = mpatches.Patch(facecolor="white", edgecolor=INK_SEC,
-                                   hatch="///", label="v1-era MLP/GATv2 (pre-fix)ᵉ")
+                                   hatch="///", label="Excluded runsᵉ")
     ax.legend(handles=feature_handles + [hatch_handle], loc="upper right",
               frameon=False, fontsize=8.5, ncol=1)
 
     fig.text(0.01, -0.02,
-              "(e) MLP/GATv2 cells for AI23-only, OSM-only and AI23+OSM predate the "
-              "validation-loss fix (Bug 3); HistAvg/MLR/RF/XGBoost in those same columns "
-              "were re-run under the current protocol. AI23+OSM+SC (headline) and all "
-              "GNN-variant/tuned rows are current-protocol throughout.",
+              "(e) Cells with no run are left empty; excluded runs are hatched.",
               fontsize=8, color=INK_MUTED, ha="left", va="top", wrap=True)
 
     fig.tight_layout(rect=[0, 0.04, 1, 1])
