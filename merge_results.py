@@ -1,46 +1,29 @@
 """
 MERGE RESULTS — consolidate per-config result CSVs into two files
 ====================================================================
-step4_model.py each write one
-results_cv_<config>.csv + results_summary_<config>.csv pair per run, which
-adds up to a lot of same-schema file pairs cluttering the repo root. This
-script concatenates all of them into all_results_cv.csv /
-all_results_summary.csv (added 'config', 'seeds', 'n_seeds' columns),
-verifies no rows were lost, and leaves the per-config source files untouched
-(delete them yourself once you've checked the output — see
-PROJECT_STRUCTURE.md §4).
+Each step4_model.py run writes one results_cv_<config>.csv +
+results_summary_<config>.csv pair, which adds up fast. This script
+concatenates them all into all_results_cv.csv / all_results_summary.csv
+(adding 'config', 'seeds', 'n_seeds' columns) and leaves the per-config
+files untouched.
 
-'seeds'/'n_seeds' are static metadata attached per config below, not
-recomputed from the source files. Every config here is a single, fixed-seed
-run: SEED=42 is hardcoded in step4_model.py and step4c/e_*.py, and every
-other step4*/step5b script that contributes a config either imports SEED
-from step4_model.py directly or reassigns its own copy of the same value
-(verified by grep across step4*.py) -- so n_seeds=1 everywhere
-except idw, which has no stochastic component at all (BallTree distance
-weighting is deterministic) and is marked seeds="deterministic" (not "n/a" --
-that string is one of pandas' default NA sentinels and would silently become
-NaN on the next pd.read_csv). The experiments that
-DO use multiple seeds (Gated mixing, 3 seeds; standalone MLP, 5 seeds -- see
-experiment_log.md Experiment Sets 8 and 12) are exactly the ones this script
-already keeps out of the merge (next paragraph), because their per-seed
-schema doesn't fit a single seeds/n_seeds pair per config row. If a config
-below is ever re-run with multiple seeds, update its tuple here to match --
-this metadata is not derived automatically.
+'seeds'/'n_seeds' are static metadata, not recomputed from the source
+files -- every config here is a single fixed-seed run (SEED=42), so
+n_seeds=1 everywhere except idw, marked "deterministic" (not "n/a", which
+pandas would silently read back as NaN). Configs that use multiple seeds
+(gated mixing, multi-seed MLP) are deliberately excluded below -- their
+per-seed schema doesn't fit a single seeds/n_seeds row. Update a config's
+tuple here if it's ever re-run with multiple seeds.
 
-step6_consolidated_table.py and step7_borough_extract.py both read from
-all_results_cv.csv / all_results_summary.csv (they take the old per-config
-filename as an argument/constant purely to name which 'config' slice to
-pull out — see their load_mean()/load_cv() functions). Re-run this script
-after generating fresh results_cv_<config>.csv files, before running step6
-or step7, or they will not find your new run's rows.
+step6_consolidated_table.py and step7_borough_extract.py read from the
+merged files, not the per-config ones -- re-run this script after any new
+results_cv_<config>.csv, before running those.
 
-Only merges files sharing the standard per-fold schema
-(borough,n_test,model,WMAPE,RMSE,MAE) or summary schema
-(model,WMAPE_mean,...). Deliberately excludes: results_cv_colab.csv (wide
-format, one column per model), results_cv_multiseed_mlp.csv (seed-indexed,
-no model/RMSE/MAE columns), and the results_cv_gated_seed*/all_seeds.csv
-group (consumed directly by step4g_gated_analysis.py with its own per-seed
-structure) -- these stay as standalone files.
+Only merges the standard per-fold/summary schema. Excludes
+results_cv_colab.csv (wide format), results_cv_multiseed_mlp.csv
+(seed-indexed), and the results_cv_gated_seed*/all_seeds.csv group (own
+per-seed structure, consumed directly by step4g_gated_analysis.py) -- these
+stay standalone.
 """
 
 import os
