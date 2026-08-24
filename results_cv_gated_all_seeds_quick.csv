@@ -1,6 +1,0 @@
-borough,n_test,model,WMAPE,RMSE,MAE,seed
-Barking and Dagenham,364,Gated,0.6783,531.619,199.765,42
-Barnet,993,Gated,0.6763,314.433,144.637,42
-Bexley,672,Gated,0.6607,306.566,99.971,42
-Brent,575,Gated,0.6155,469.946,234.041,42
-Bromley,1179,Gated,0.6449,162.493,65.588,42

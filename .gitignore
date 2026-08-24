@@ -38,6 +38,11 @@ data_and_software_availability_FILLED.tex
 
 # Comparison against supervisor feedback -- not for public upload.
 supervisor_comparison_results.xlsx
+# 5-fold smoke-test byproducts (--quick flag) -- zero scientific value, no
+# number anywhere is cited from one of these. The real, full result each
+# is a smoke test *for* stays tracked.
+*_quick.csv
+
 # Consolidated into supplementary_experiments.ipynb (same code, one file
 # instead of six loose scripts). Kept on local disk, not tracked.
 scan_sl_routes.py
