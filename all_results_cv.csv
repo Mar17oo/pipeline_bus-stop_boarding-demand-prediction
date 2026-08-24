@@ -1,0 +1,2905 @@
+config,seeds,n_seeds,borough,n_test,model,WMAPE,RMSE,MAE
+ai23_only,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+ai23_only,42,1,Barking and Dagenham,364,RF,0.7779,574.976,229.096
+ai23_only,42,1,Barking and Dagenham,364,MLP,0.7736,587.208,227.815
+ai23_only,42,1,Barking and Dagenham,364,GATv2,0.7979,596.615,234.968
+ai23_only,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+ai23_only,42,1,Barnet,993,RF,0.8534,375.222,182.521
+ai23_only,42,1,Barnet,993,MLP,0.8341,374.387,178.394
+ai23_only,42,1,Barnet,993,GATv2,0.8392,389.126,179.475
+ai23_only,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+ai23_only,42,1,Bexley,672,RF,0.8245,363.375,124.749
+ai23_only,42,1,Bexley,672,MLP,0.8292,367.942,125.47
+ai23_only,42,1,Bexley,672,GATv2,0.8381,371.4,126.818
+ai23_only,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+ai23_only,42,1,Brent,575,RF,0.7969,577.836,302.987
+ai23_only,42,1,Brent,575,MLP,0.7972,580.488,303.121
+ai23_only,42,1,Brent,575,GATv2,0.812,590.127,308.737
+ai23_only,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+ai23_only,42,1,Bromley,1179,RF,0.8723,226.063,88.708
+ai23_only,42,1,Bromley,1179,MLP,0.8705,229.449,88.522
+ai23_only,42,1,Bromley,1179,GATv2,0.8747,230.952,88.953
+ai23_only,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+ai23_only,42,1,Camden,424,RF,0.8016,584.409,323.71
+ai23_only,42,1,Camden,424,MLP,0.7905,606.934,319.219
+ai23_only,42,1,Camden,424,GATv2,0.7883,601.301,318.326
+ai23_only,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+ai23_only,42,1,City of London,101,RF,0.8192,944.307,533.829
+ai23_only,42,1,City of London,101,MLP,0.8014,915.029,522.266
+ai23_only,42,1,City of London,101,GATv2,0.8254,949.234,537.864
+ai23_only,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+ai23_only,42,1,Croydon,1019,RF,0.7888,319.03,129.883
+ai23_only,42,1,Croydon,1019,MLP,0.7878,321.294,129.72
+ai23_only,42,1,Croydon,1019,GATv2,0.8115,328.176,133.622
+ai23_only,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+ai23_only,42,1,Ealing,683,RF,0.8267,581.335,272.928
+ai23_only,42,1,Ealing,683,MLP,0.8311,592.286,274.396
+ai23_only,42,1,Ealing,683,GATv2,0.8362,602.984,276.069
+ai23_only,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+ai23_only,42,1,Enfield,707,RF,0.8599,451.886,207.544
+ai23_only,42,1,Enfield,707,MLP,0.8516,449.265,205.541
+ai23_only,42,1,Enfield,707,GATv2,0.8625,457.274,208.172
+ai23_only,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+ai23_only,42,1,Greenwich,659,RF,0.8307,617.31,237.087
+ai23_only,42,1,Greenwich,659,MLP,0.8337,620.563,237.943
+ai23_only,42,1,Greenwich,659,GATv2,0.8556,629.717,244.185
+ai23_only,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+ai23_only,42,1,Hackney,442,RF,0.7886,530.679,310.696
+ai23_only,42,1,Hackney,442,MLP,0.7788,521.32,306.829
+ai23_only,42,1,Hackney,442,GATv2,0.7809,534.917,307.656
+ai23_only,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+ai23_only,42,1,Hammersmith and Fulham,276,RF,0.799,777.878,378.836
+ai23_only,42,1,Hammersmith and Fulham,276,MLP,0.7874,769.727,373.336
+ai23_only,42,1,Hammersmith and Fulham,276,GATv2,0.8094,786.684,383.745
+ai23_only,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+ai23_only,42,1,Haringey,461,RF,0.8061,782.655,365.393
+ai23_only,42,1,Haringey,461,MLP,0.8052,774.953,364.954
+ai23_only,42,1,Haringey,461,GATv2,0.8187,791.301,371.103
+ai23_only,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+ai23_only,42,1,Harrow,432,RF,0.7936,386.231,186.731
+ai23_only,42,1,Harrow,432,MLP,0.7997,386.876,188.166
+ai23_only,42,1,Harrow,432,GATv2,0.815,395.799,191.78
+ai23_only,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+ai23_only,42,1,Havering,691,RF,0.8462,439.772,141.768
+ai23_only,42,1,Havering,691,MLP,0.8457,440.896,141.689
+ai23_only,42,1,Havering,691,GATv2,0.8577,447.447,143.702
+ai23_only,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+ai23_only,42,1,Hillingdon,706,RF,0.8556,597.118,203.847
+ai23_only,42,1,Hillingdon,706,MLP,0.8707,610.462,207.438
+ai23_only,42,1,Hillingdon,706,GATv2,0.8917,617.37,212.453
+ai23_only,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+ai23_only,42,1,Hounslow,651,RF,0.8079,437.944,201.716
+ai23_only,42,1,Hounslow,651,MLP,0.8195,443.914,204.631
+ai23_only,42,1,Hounslow,651,GATv2,0.8307,452.171,207.408
+ai23_only,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+ai23_only,42,1,Islington,349,RF,0.7974,758.895,414.279
+ai23_only,42,1,Islington,349,MLP,0.7921,755.328,411.535
+ai23_only,42,1,Islington,349,GATv2,0.8142,781.503,423.008
+ai23_only,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+ai23_only,42,1,Kensington and Chelsea,260,RF,0.7586,534.803,328.879
+ai23_only,42,1,Kensington and Chelsea,260,MLP,0.7645,552.289,331.439
+ai23_only,42,1,Kensington and Chelsea,260,GATv2,0.7862,572.027,340.823
+ai23_only,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+ai23_only,42,1,Kingston upon Thames,391,RF,0.8351,577.109,194.584
+ai23_only,42,1,Kingston upon Thames,391,MLP,0.8357,578.429,194.721
+ai23_only,42,1,Kingston upon Thames,391,GATv2,0.8595,586.489,200.261
+ai23_only,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+ai23_only,42,1,Lambeth,577,RF,0.8275,953.206,411.575
+ai23_only,42,1,Lambeth,577,MLP,0.8218,955.826,408.743
+ai23_only,42,1,Lambeth,577,GATv2,0.834,971.479,414.791
+ai23_only,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+ai23_only,42,1,Lewisham,609,RF,0.8078,534.462,237.876
+ai23_only,42,1,Lewisham,609,MLP,0.8075,535.186,237.768
+ai23_only,42,1,Lewisham,609,GATv2,0.823,547.382,242.329
+ai23_only,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+ai23_only,42,1,Merton,457,RF,0.7969,502.03,206.505
+ai23_only,42,1,Merton,457,MLP,0.7883,498.665,204.271
+ai23_only,42,1,Merton,457,GATv2,0.7897,503.244,204.628
+ai23_only,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+ai23_only,42,1,Newham,465,RF,0.7962,542.463,305.25
+ai23_only,42,1,Newham,465,MLP,0.7862,535.159,301.42
+ai23_only,42,1,Newham,465,GATv2,0.7907,544.761,303.161
+ai23_only,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+ai23_only,42,1,Redbridge,539,RF,0.7946,455.294,195.503
+ai23_only,42,1,Redbridge,539,MLP,0.8092,475.884,199.1
+ai23_only,42,1,Redbridge,539,GATv2,0.8345,487.976,205.303
+ai23_only,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+ai23_only,42,1,Richmond upon Thames,484,RF,0.7997,336.764,148.449
+ai23_only,42,1,Richmond upon Thames,484,MLP,0.8078,338.631,149.949
+ai23_only,42,1,Richmond upon Thames,484,GATv2,0.8043,344.876,149.3
+ai23_only,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+ai23_only,42,1,Southwark,583,RF,0.8174,880.177,393.599
+ai23_only,42,1,Southwark,583,MLP,0.8241,876.642,396.852
+ai23_only,42,1,Southwark,583,GATv2,0.8431,899.319,406.017
+ai23_only,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+ai23_only,42,1,Sutton,421,RF,0.8278,287.035,134.712
+ai23_only,42,1,Sutton,421,MLP,0.8251,289.209,134.281
+ai23_only,42,1,Sutton,421,GATv2,0.8311,293.745,135.254
+ai23_only,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+ai23_only,42,1,Tower Hamlets,381,RF,0.8118,407.99,230.769
+ai23_only,42,1,Tower Hamlets,381,MLP,0.8395,392.461,238.669
+ai23_only,42,1,Tower Hamlets,381,GATv2,0.8116,397.234,230.72
+ai23_only,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+ai23_only,42,1,Waltham Forest,492,RF,0.8106,543.906,256.401
+ai23_only,42,1,Waltham Forest,492,MLP,0.7959,534.532,251.747
+ai23_only,42,1,Waltham Forest,492,GATv2,0.8132,544.118,257.197
+ai23_only,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+ai23_only,42,1,Wandsworth,481,RF,0.7917,709.705,336.46
+ai23_only,42,1,Wandsworth,481,MLP,0.7971,706.248,338.765
+ai23_only,42,1,Wandsworth,481,GATv2,0.8231,727.543,349.798
+ai23_only,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+ai23_only,42,1,Westminster,419,RF,0.7772,933.545,506.828
+ai23_only,42,1,Westminster,419,MLP,0.7753,927.353,505.621
+ai23_only,42,1,Westminster,419,GATv2,0.79,938.418,515.169
+ai23_only_fastbaselines,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+ai23_only_fastbaselines,42,1,Barking and Dagenham,364,MLR,0.789,590.127,232.346
+ai23_only_fastbaselines,42,1,Barking and Dagenham,364,RF,0.7735,574.036,227.786
+ai23_only_fastbaselines,42,1,Barking and Dagenham,364,XGBoost,0.811,574.886,238.826
+ai23_only_fastbaselines,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+ai23_only_fastbaselines,42,1,Barnet,993,MLR,0.8346,372.324,178.488
+ai23_only_fastbaselines,42,1,Barnet,993,RF,0.8494,374.703,181.657
+ai23_only_fastbaselines,42,1,Barnet,993,XGBoost,0.8442,379.872,180.547
+ai23_only_fastbaselines,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+ai23_only_fastbaselines,42,1,Bexley,672,MLR,0.8305,369.486,125.665
+ai23_only_fastbaselines,42,1,Bexley,672,RF,0.8251,363.935,124.85
+ai23_only_fastbaselines,42,1,Bexley,672,XGBoost,0.8251,367.113,124.842
+ai23_only_fastbaselines,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+ai23_only_fastbaselines,42,1,Brent,575,MLR,0.7952,578.711,302.351
+ai23_only_fastbaselines,42,1,Brent,575,RF,0.7982,578.167,303.487
+ai23_only_fastbaselines,42,1,Brent,575,XGBoost,0.787,569.184,299.239
+ai23_only_fastbaselines,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+ai23_only_fastbaselines,42,1,Bromley,1179,MLR,0.8834,228.543,89.839
+ai23_only_fastbaselines,42,1,Bromley,1179,RF,0.8724,225.717,88.721
+ai23_only_fastbaselines,42,1,Bromley,1179,XGBoost,0.8811,226.108,89.607
+ai23_only_fastbaselines,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+ai23_only_fastbaselines,42,1,Camden,424,MLR,0.7839,584.501,316.562
+ai23_only_fastbaselines,42,1,Camden,424,RF,0.8023,585.818,323.991
+ai23_only_fastbaselines,42,1,Camden,424,XGBoost,0.8026,569.818,324.107
+ai23_only_fastbaselines,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+ai23_only_fastbaselines,42,1,City of London,101,MLR,0.7934,877.24,517.046
+ai23_only_fastbaselines,42,1,City of London,101,RF,0.8273,953.623,539.144
+ai23_only_fastbaselines,42,1,City of London,101,XGBoost,0.8285,960.509,539.897
+ai23_only_fastbaselines,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+ai23_only_fastbaselines,42,1,Croydon,1019,MLR,0.7892,321.452,129.951
+ai23_only_fastbaselines,42,1,Croydon,1019,RF,0.788,318.48,129.751
+ai23_only_fastbaselines,42,1,Croydon,1019,XGBoost,0.801,323.558,131.884
+ai23_only_fastbaselines,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+ai23_only_fastbaselines,42,1,Ealing,683,MLR,0.8329,590.768,274.991
+ai23_only_fastbaselines,42,1,Ealing,683,RF,0.8277,582.868,273.271
+ai23_only_fastbaselines,42,1,Ealing,683,XGBoost,0.825,575.415,272.377
+ai23_only_fastbaselines,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+ai23_only_fastbaselines,42,1,Enfield,707,MLR,0.8466,443.482,204.325
+ai23_only_fastbaselines,42,1,Enfield,707,RF,0.8592,451.219,207.37
+ai23_only_fastbaselines,42,1,Enfield,707,XGBoost,0.8723,457.533,210.544
+ai23_only_fastbaselines,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+ai23_only_fastbaselines,42,1,Greenwich,659,MLR,0.8368,621.09,238.824
+ai23_only_fastbaselines,42,1,Greenwich,659,RF,0.8328,618.225,237.673
+ai23_only_fastbaselines,42,1,Greenwich,659,XGBoost,0.831,619.387,237.157
+ai23_only_fastbaselines,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+ai23_only_fastbaselines,42,1,Hackney,442,MLR,0.7701,509.399,303.425
+ai23_only_fastbaselines,42,1,Hackney,442,RF,0.792,531.132,312.028
+ai23_only_fastbaselines,42,1,Hackney,442,XGBoost,0.795,529.847,313.235
+ai23_only_fastbaselines,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+ai23_only_fastbaselines,42,1,Hammersmith and Fulham,276,MLR,0.7943,775.336,376.599
+ai23_only_fastbaselines,42,1,Hammersmith and Fulham,276,RF,0.8006,777.795,379.608
+ai23_only_fastbaselines,42,1,Hammersmith and Fulham,276,XGBoost,0.8105,783.174,384.271
+ai23_only_fastbaselines,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+ai23_only_fastbaselines,42,1,Haringey,461,MLR,0.793,756.355,359.434
+ai23_only_fastbaselines,42,1,Haringey,461,RF,0.8076,783.969,366.042
+ai23_only_fastbaselines,42,1,Haringey,461,XGBoost,0.8056,782.039,365.136
+ai23_only_fastbaselines,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+ai23_only_fastbaselines,42,1,Harrow,432,MLR,0.7976,384.833,187.693
+ai23_only_fastbaselines,42,1,Harrow,432,RF,0.7934,385.883,186.695
+ai23_only_fastbaselines,42,1,Harrow,432,XGBoost,0.7908,382.749,186.091
+ai23_only_fastbaselines,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+ai23_only_fastbaselines,42,1,Havering,691,MLR,0.8533,447.235,142.969
+ai23_only_fastbaselines,42,1,Havering,691,RF,0.8484,440.342,142.136
+ai23_only_fastbaselines,42,1,Havering,691,XGBoost,0.8848,441.37,148.241
+ai23_only_fastbaselines,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+ai23_only_fastbaselines,42,1,Hillingdon,706,MLR,0.8737,610.569,208.144
+ai23_only_fastbaselines,42,1,Hillingdon,706,RF,0.8546,596.748,203.602
+ai23_only_fastbaselines,42,1,Hillingdon,706,XGBoost,0.9016,587.494,214.798
+ai23_only_fastbaselines,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+ai23_only_fastbaselines,42,1,Hounslow,651,MLR,0.8225,445.671,205.367
+ai23_only_fastbaselines,42,1,Hounslow,651,RF,0.8093,438.048,202.084
+ai23_only_fastbaselines,42,1,Hounslow,651,XGBoost,0.8081,429.96,201.761
+ai23_only_fastbaselines,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+ai23_only_fastbaselines,42,1,Islington,349,MLR,0.7777,736.954,404.016
+ai23_only_fastbaselines,42,1,Islington,349,RF,0.7987,758.93,414.964
+ai23_only_fastbaselines,42,1,Islington,349,XGBoost,0.7938,755.251,412.384
+ai23_only_fastbaselines,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+ai23_only_fastbaselines,42,1,Kensington and Chelsea,260,MLR,0.767,550.667,332.499
+ai23_only_fastbaselines,42,1,Kensington and Chelsea,260,RF,0.7608,535.229,329.823
+ai23_only_fastbaselines,42,1,Kensington and Chelsea,260,XGBoost,0.7611,526.662,329.952
+ai23_only_fastbaselines,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+ai23_only_fastbaselines,42,1,Kingston upon Thames,391,MLR,0.8468,582.398,197.312
+ai23_only_fastbaselines,42,1,Kingston upon Thames,391,RF,0.8345,577.797,194.438
+ai23_only_fastbaselines,42,1,Kingston upon Thames,391,XGBoost,0.8477,583.766,197.517
+ai23_only_fastbaselines,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+ai23_only_fastbaselines,42,1,Lambeth,577,MLR,0.8225,947.18,409.086
+ai23_only_fastbaselines,42,1,Lambeth,577,RF,0.8273,952.409,411.464
+ai23_only_fastbaselines,42,1,Lambeth,577,XGBoost,0.835,954.717,415.294
+ai23_only_fastbaselines,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+ai23_only_fastbaselines,42,1,Lewisham,609,MLR,0.8118,538.764,239.04
+ai23_only_fastbaselines,42,1,Lewisham,609,RF,0.8088,534.586,238.167
+ai23_only_fastbaselines,42,1,Lewisham,609,XGBoost,0.8134,540.433,239.515
+ai23_only_fastbaselines,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+ai23_only_fastbaselines,42,1,Merton,457,MLR,0.7901,499.344,204.732
+ai23_only_fastbaselines,42,1,Merton,457,RF,0.7947,503.194,205.94
+ai23_only_fastbaselines,42,1,Merton,457,XGBoost,0.8053,499.057,208.671
+ai23_only_fastbaselines,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+ai23_only_fastbaselines,42,1,Newham,465,MLR,0.7903,537.467,302.996
+ai23_only_fastbaselines,42,1,Newham,465,RF,0.8008,544.232,307.029
+ai23_only_fastbaselines,42,1,Newham,465,XGBoost,0.8017,547.906,307.355
+ai23_only_fastbaselines,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+ai23_only_fastbaselines,42,1,Redbridge,539,MLR,0.817,480.092,201.015
+ai23_only_fastbaselines,42,1,Redbridge,539,RF,0.7935,455.285,195.228
+ai23_only_fastbaselines,42,1,Redbridge,539,XGBoost,0.7985,457.578,196.452
+ai23_only_fastbaselines,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+ai23_only_fastbaselines,42,1,Richmond upon Thames,484,MLR,0.8106,343.627,150.479
+ai23_only_fastbaselines,42,1,Richmond upon Thames,484,RF,0.7989,336.905,148.298
+ai23_only_fastbaselines,42,1,Richmond upon Thames,484,XGBoost,0.7966,328.467,147.883
+ai23_only_fastbaselines,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+ai23_only_fastbaselines,42,1,Southwark,583,MLR,0.8242,867.56,396.891
+ai23_only_fastbaselines,42,1,Southwark,583,RF,0.8184,881.452,394.115
+ai23_only_fastbaselines,42,1,Southwark,583,XGBoost,0.8323,882.959,400.817
+ai23_only_fastbaselines,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+ai23_only_fastbaselines,42,1,Sutton,421,MLR,0.8214,289.481,133.682
+ai23_only_fastbaselines,42,1,Sutton,421,RF,0.8309,287.985,135.215
+ai23_only_fastbaselines,42,1,Sutton,421,XGBoost,0.8416,285.87,136.97
+ai23_only_fastbaselines,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+ai23_only_fastbaselines,42,1,Tower Hamlets,381,MLR,0.8507,389.167,241.848
+ai23_only_fastbaselines,42,1,Tower Hamlets,381,RF,0.8143,407.8,231.48
+ai23_only_fastbaselines,42,1,Tower Hamlets,381,XGBoost,0.8357,414.461,237.585
+ai23_only_fastbaselines,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+ai23_only_fastbaselines,42,1,Waltham Forest,492,MLR,0.7889,528.75,249.535
+ai23_only_fastbaselines,42,1,Waltham Forest,492,RF,0.8113,543.913,256.619
+ai23_only_fastbaselines,42,1,Waltham Forest,492,XGBoost,0.8591,562.827,271.719
+ai23_only_fastbaselines,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+ai23_only_fastbaselines,42,1,Wandsworth,481,MLR,0.7955,702.443,338.057
+ai23_only_fastbaselines,42,1,Wandsworth,481,RF,0.7913,710.858,336.271
+ai23_only_fastbaselines,42,1,Wandsworth,481,XGBoost,0.7873,704.925,334.6
+ai23_only_fastbaselines,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+ai23_only_fastbaselines,42,1,Westminster,419,MLR,0.7625,909.474,497.293
+ai23_only_fastbaselines,42,1,Westminster,419,RF,0.7761,933.239,506.142
+ai23_only_fastbaselines,42,1,Westminster,419,XGBoost,0.7679,916.817,500.758
+ai23_osm,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+ai23_osm,42,1,Barking and Dagenham,364,RF,0.7577,549.517,223.131
+ai23_osm,42,1,Barking and Dagenham,364,MLP,0.7807,584.806,229.899
+ai23_osm,42,1,Barking and Dagenham,364,GATv2,0.8107,598.893,238.739
+ai23_osm,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+ai23_osm,42,1,Barnet,993,RF,0.8271,371.33,176.882
+ai23_osm,42,1,Barnet,993,MLP,0.8146,370.155,174.211
+ai23_osm,42,1,Barnet,993,GATv2,0.817,377.112,174.72
+ai23_osm,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+ai23_osm,42,1,Bexley,672,RF,0.8124,358.14,122.92
+ai23_osm,42,1,Bexley,672,MLP,0.8225,364.016,124.456
+ai23_osm,42,1,Bexley,672,GATv2,0.8169,362.614,123.603
+ai23_osm,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+ai23_osm,42,1,Brent,575,RF,0.8042,580.765,305.774
+ai23_osm,42,1,Brent,575,MLP,0.7948,578.086,302.205
+ai23_osm,42,1,Brent,575,GATv2,0.8139,589.066,309.453
+ai23_osm,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+ai23_osm,42,1,Bromley,1179,RF,0.8418,221.511,85.61
+ai23_osm,42,1,Bromley,1179,MLP,0.838,221.537,85.22
+ai23_osm,42,1,Bromley,1179,GATv2,0.8256,226.021,83.956
+ai23_osm,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+ai23_osm,42,1,Camden,424,RF,0.756,564.948,305.31
+ai23_osm,42,1,Camden,424,MLP,0.7714,586.963,311.515
+ai23_osm,42,1,Camden,424,GATv2,0.7561,561.776,305.327
+ai23_osm,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+ai23_osm,42,1,City of London,101,RF,0.8258,954.533,538.123
+ai23_osm,42,1,City of London,101,MLP,0.8014,914.865,522.253
+ai23_osm,42,1,City of London,101,GATv2,0.8114,929.966,528.793
+ai23_osm,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+ai23_osm,42,1,Croydon,1019,RF,0.7926,318.137,130.504
+ai23_osm,42,1,Croydon,1019,MLP,0.7939,320.058,130.718
+ai23_osm,42,1,Croydon,1019,GATv2,0.8156,327.479,134.303
+ai23_osm,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+ai23_osm,42,1,Ealing,683,RF,0.8159,586.218,269.373
+ai23_osm,42,1,Ealing,683,MLP,0.8096,579.271,267.296
+ai23_osm,42,1,Ealing,683,GATv2,0.8089,586.247,267.064
+ai23_osm,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+ai23_osm,42,1,Enfield,707,RF,0.8448,447.196,203.896
+ai23_osm,42,1,Enfield,707,MLP,0.8342,440.67,201.336
+ai23_osm,42,1,Enfield,707,GATv2,0.8474,450.913,204.534
+ai23_osm,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+ai23_osm,42,1,Greenwich,659,RF,0.8178,610.639,233.385
+ai23_osm,42,1,Greenwich,659,MLP,0.8242,614.599,235.205
+ai23_osm,42,1,Greenwich,659,GATv2,0.8234,616.205,234.998
+ai23_osm,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+ai23_osm,42,1,Hackney,442,RF,0.7674,516.662,302.346
+ai23_osm,42,1,Hackney,442,MLP,0.7664,510.078,301.928
+ai23_osm,42,1,Hackney,442,GATv2,0.7774,536.299,306.295
+ai23_osm,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+ai23_osm,42,1,Hammersmith and Fulham,276,RF,0.7832,760.977,371.357
+ai23_osm,42,1,Hammersmith and Fulham,276,MLP,0.7798,757.075,369.73
+ai23_osm,42,1,Hammersmith and Fulham,276,GATv2,0.7842,763.572,371.818
+ai23_osm,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+ai23_osm,42,1,Haringey,461,RF,0.7876,771.427,357.005
+ai23_osm,42,1,Haringey,461,MLP,0.7801,759.116,353.568
+ai23_osm,42,1,Haringey,461,GATv2,0.7954,782.979,360.522
+ai23_osm,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+ai23_osm,42,1,Harrow,432,RF,0.7803,374.378,183.616
+ai23_osm,42,1,Harrow,432,MLP,0.7822,379.045,184.068
+ai23_osm,42,1,Harrow,432,GATv2,0.7935,387.64,186.72
+ai23_osm,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+ai23_osm,42,1,Havering,691,RF,0.8153,407.882,136.593
+ai23_osm,42,1,Havering,691,MLP,0.8292,434.077,138.925
+ai23_osm,42,1,Havering,691,GATv2,0.8256,435.089,138.316
+ai23_osm,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+ai23_osm,42,1,Hillingdon,706,RF,0.857,599.945,204.166
+ai23_osm,42,1,Hillingdon,706,MLP,0.8726,607.806,207.901
+ai23_osm,42,1,Hillingdon,706,GATv2,0.8903,617.11,212.103
+ai23_osm,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+ai23_osm,42,1,Hounslow,651,RF,0.8035,435.06,200.621
+ai23_osm,42,1,Hounslow,651,MLP,0.8008,434.187,199.954
+ai23_osm,42,1,Hounslow,651,GATv2,0.8272,450.424,206.533
+ai23_osm,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+ai23_osm,42,1,Islington,349,RF,0.764,728.021,396.928
+ai23_osm,42,1,Islington,349,MLP,0.7834,746.064,406.998
+ai23_osm,42,1,Islington,349,GATv2,0.7915,756.568,411.196
+ai23_osm,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+ai23_osm,42,1,Kensington and Chelsea,260,RF,0.7609,531.578,329.853
+ai23_osm,42,1,Kensington and Chelsea,260,MLP,0.7422,528.063,321.76
+ai23_osm,42,1,Kensington and Chelsea,260,GATv2,0.7549,548.247,327.256
+ai23_osm,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+ai23_osm,42,1,Kingston upon Thames,391,RF,0.8192,566.184,190.864
+ai23_osm,42,1,Kingston upon Thames,391,MLP,0.8154,565.226,189.979
+ai23_osm,42,1,Kingston upon Thames,391,GATv2,0.8421,574.439,196.213
+ai23_osm,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+ai23_osm,42,1,Lambeth,577,RF,0.8244,938.568,410.044
+ai23_osm,42,1,Lambeth,577,MLP,0.8231,955.883,409.386
+ai23_osm,42,1,Lambeth,577,GATv2,0.8275,962.275,411.562
+ai23_osm,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+ai23_osm,42,1,Lewisham,609,RF,0.7926,522.002,233.376
+ai23_osm,42,1,Lewisham,609,MLP,0.7903,522.189,232.724
+ai23_osm,42,1,Lewisham,609,GATv2,0.7967,529.513,234.611
+ai23_osm,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+ai23_osm,42,1,Merton,457,RF,0.7779,489.667,201.581
+ai23_osm,42,1,Merton,457,MLP,0.7829,492.906,202.878
+ai23_osm,42,1,Merton,457,GATv2,0.7784,495.005,201.705
+ai23_osm,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+ai23_osm,42,1,Newham,465,RF,0.765,521.108,293.314
+ai23_osm,42,1,Newham,465,MLP,0.7555,514.002,289.646
+ai23_osm,42,1,Newham,465,GATv2,0.7633,527.054,292.653
+ai23_osm,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+ai23_osm,42,1,Redbridge,539,RF,0.7781,438.465,191.448
+ai23_osm,42,1,Redbridge,539,MLP,0.8022,465.3,197.369
+ai23_osm,42,1,Redbridge,539,GATv2,0.8104,471.571,199.38
+ai23_osm,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+ai23_osm,42,1,Richmond upon Thames,484,RF,0.7587,315.133,140.845
+ai23_osm,42,1,Richmond upon Thames,484,MLP,0.7754,322.19,143.951
+ai23_osm,42,1,Richmond upon Thames,484,GATv2,0.7772,338.194,144.284
+ai23_osm,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+ai23_osm,42,1,Southwark,583,RF,0.8035,869.136,386.944
+ai23_osm,42,1,Southwark,583,MLP,0.8157,872.991,392.784
+ai23_osm,42,1,Southwark,583,GATv2,0.8342,890.516,401.7
+ai23_osm,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+ai23_osm,42,1,Sutton,421,RF,0.8392,287.86,136.576
+ai23_osm,42,1,Sutton,421,MLP,0.837,286.329,136.215
+ai23_osm,42,1,Sutton,421,GATv2,0.8357,288.695,136.008
+ai23_osm,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+ai23_osm,42,1,Tower Hamlets,381,RF,0.8031,395.399,228.31
+ai23_osm,42,1,Tower Hamlets,381,MLP,0.8229,389.724,233.945
+ai23_osm,42,1,Tower Hamlets,381,GATv2,0.7996,399.252,227.321
+ai23_osm,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+ai23_osm,42,1,Waltham Forest,492,RF,0.7584,512.547,239.867
+ai23_osm,42,1,Waltham Forest,492,MLP,0.7538,508.516,238.408
+ai23_osm,42,1,Waltham Forest,492,GATv2,0.7572,512.496,239.503
+ai23_osm,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+ai23_osm,42,1,Wandsworth,481,RF,0.7767,694.042,330.097
+ai23_osm,42,1,Wandsworth,481,MLP,0.7783,692.993,330.767
+ai23_osm,42,1,Wandsworth,481,GATv2,0.7868,706.751,334.383
+ai23_osm,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+ai23_osm,42,1,Westminster,419,RF,0.804,949.074,524.339
+ai23_osm,42,1,Westminster,419,MLP,0.7704,921.53,502.404
+ai23_osm,42,1,Westminster,419,GATv2,0.797,944.794,519.742
+ai23_osm_fastbaselines,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+ai23_osm_fastbaselines,42,1,Barking and Dagenham,364,MLR,0.7951,588.416,234.16
+ai23_osm_fastbaselines,42,1,Barking and Dagenham,364,RF,0.7606,549.191,223.974
+ai23_osm_fastbaselines,42,1,Barking and Dagenham,364,XGBoost,0.7404,523.161,218.044
+ai23_osm_fastbaselines,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+ai23_osm_fastbaselines,42,1,Barnet,993,MLR,0.8148,368.858,174.255
+ai23_osm_fastbaselines,42,1,Barnet,993,RF,0.8264,370.502,176.739
+ai23_osm_fastbaselines,42,1,Barnet,993,XGBoost,0.8248,372.896,176.405
+ai23_osm_fastbaselines,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+ai23_osm_fastbaselines,42,1,Bexley,672,MLR,0.8274,365.857,125.186
+ai23_osm_fastbaselines,42,1,Bexley,672,RF,0.8103,358.629,122.604
+ai23_osm_fastbaselines,42,1,Bexley,672,XGBoost,0.8109,357.813,122.697
+ai23_osm_fastbaselines,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+ai23_osm_fastbaselines,42,1,Brent,575,MLR,0.7939,576.639,301.843
+ai23_osm_fastbaselines,42,1,Brent,575,RF,0.803,578.406,305.32
+ai23_osm_fastbaselines,42,1,Brent,575,XGBoost,0.8066,582.29,306.696
+ai23_osm_fastbaselines,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+ai23_osm_fastbaselines,42,1,Bromley,1179,MLR,0.844,221.885,85.831
+ai23_osm_fastbaselines,42,1,Bromley,1179,RF,0.8385,220.63,85.274
+ai23_osm_fastbaselines,42,1,Bromley,1179,XGBoost,0.8559,224.48,87.037
+ai23_osm_fastbaselines,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+ai23_osm_fastbaselines,42,1,Camden,424,MLR,0.7657,572.658,309.209
+ai23_osm_fastbaselines,42,1,Camden,424,RF,0.7547,562.927,304.759
+ai23_osm_fastbaselines,42,1,Camden,424,XGBoost,0.7955,582.209,321.266
+ai23_osm_fastbaselines,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+ai23_osm_fastbaselines,42,1,City of London,101,MLR,0.793,899.072,516.777
+ai23_osm_fastbaselines,42,1,City of London,101,RF,0.8252,956.476,537.782
+ai23_osm_fastbaselines,42,1,City of London,101,XGBoost,0.901,994.5,587.153
+ai23_osm_fastbaselines,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+ai23_osm_fastbaselines,42,1,Croydon,1019,MLR,0.7824,316.946,128.821
+ai23_osm_fastbaselines,42,1,Croydon,1019,RF,0.7925,318.621,130.499
+ai23_osm_fastbaselines,42,1,Croydon,1019,XGBoost,0.7967,316.676,131.189
+ai23_osm_fastbaselines,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+ai23_osm_fastbaselines,42,1,Ealing,683,MLR,0.8104,576.904,267.567
+ai23_osm_fastbaselines,42,1,Ealing,683,RF,0.8163,585.509,269.493
+ai23_osm_fastbaselines,42,1,Ealing,683,XGBoost,0.8194,587.02,270.546
+ai23_osm_fastbaselines,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+ai23_osm_fastbaselines,42,1,Enfield,707,MLR,0.8269,435.012,199.575
+ai23_osm_fastbaselines,42,1,Enfield,707,RF,0.8437,446.026,203.623
+ai23_osm_fastbaselines,42,1,Enfield,707,XGBoost,0.8581,452.775,207.094
+ai23_osm_fastbaselines,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+ai23_osm_fastbaselines,42,1,Greenwich,659,MLR,0.8349,619.395,238.278
+ai23_osm_fastbaselines,42,1,Greenwich,659,RF,0.8198,610.777,233.973
+ai23_osm_fastbaselines,42,1,Greenwich,659,XGBoost,0.8179,610.658,233.432
+ai23_osm_fastbaselines,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+ai23_osm_fastbaselines,42,1,Hackney,442,MLR,0.7599,501.63,299.382
+ai23_osm_fastbaselines,42,1,Hackney,442,RF,0.7663,515.376,301.923
+ai23_osm_fastbaselines,42,1,Hackney,442,XGBoost,0.7733,516.473,304.684
+ai23_osm_fastbaselines,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+ai23_osm_fastbaselines,42,1,Hammersmith and Fulham,276,MLR,0.779,754.855,369.332
+ai23_osm_fastbaselines,42,1,Hammersmith and Fulham,276,RF,0.7826,758.829,371.062
+ai23_osm_fastbaselines,42,1,Hammersmith and Fulham,276,XGBoost,0.7881,763.178,373.676
+ai23_osm_fastbaselines,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+ai23_osm_fastbaselines,42,1,Haringey,461,MLR,0.7721,747.552,349.975
+ai23_osm_fastbaselines,42,1,Haringey,461,RF,0.7868,770.388,356.617
+ai23_osm_fastbaselines,42,1,Haringey,461,XGBoost,0.7912,771.278,358.64
+ai23_osm_fastbaselines,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+ai23_osm_fastbaselines,42,1,Harrow,432,MLR,0.7768,375.828,182.79
+ai23_osm_fastbaselines,42,1,Harrow,432,RF,0.7773,372.84,182.915
+ai23_osm_fastbaselines,42,1,Harrow,432,XGBoost,0.7657,364.372,180.184
+ai23_osm_fastbaselines,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+ai23_osm_fastbaselines,42,1,Havering,691,MLR,0.8377,441.526,140.354
+ai23_osm_fastbaselines,42,1,Havering,691,RF,0.8194,409.025,137.28
+ai23_osm_fastbaselines,42,1,Havering,691,XGBoost,0.8438,342.307,141.368
+ai23_osm_fastbaselines,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+ai23_osm_fastbaselines,42,1,Hillingdon,706,MLR,0.8762,609.322,208.744
+ai23_osm_fastbaselines,42,1,Hillingdon,706,RF,0.8587,600.066,204.572
+ai23_osm_fastbaselines,42,1,Hillingdon,706,XGBoost,0.8837,579.813,210.525
+ai23_osm_fastbaselines,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+ai23_osm_fastbaselines,42,1,Hounslow,651,MLR,0.8089,437.843,201.985
+ai23_osm_fastbaselines,42,1,Hounslow,651,RF,0.8065,435.91,201.364
+ai23_osm_fastbaselines,42,1,Hounslow,651,XGBoost,0.7953,432.193,198.578
+ai23_osm_fastbaselines,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+ai23_osm_fastbaselines,42,1,Islington,349,MLR,0.7725,730.469,401.336
+ai23_osm_fastbaselines,42,1,Islington,349,RF,0.7635,727.957,396.642
+ai23_osm_fastbaselines,42,1,Islington,349,XGBoost,0.7726,730.431,401.379
+ai23_osm_fastbaselines,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+ai23_osm_fastbaselines,42,1,Kensington and Chelsea,260,MLR,0.7452,525.424,323.081
+ai23_osm_fastbaselines,42,1,Kensington and Chelsea,260,RF,0.7528,527.899,326.336
+ai23_osm_fastbaselines,42,1,Kensington and Chelsea,260,XGBoost,0.7705,526.156,334.026
+ai23_osm_fastbaselines,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+ai23_osm_fastbaselines,42,1,Kingston upon Thames,391,MLR,0.8241,569.555,192.019
+ai23_osm_fastbaselines,42,1,Kingston upon Thames,391,RF,0.8202,566.578,191.099
+ai23_osm_fastbaselines,42,1,Kingston upon Thames,391,XGBoost,0.8277,567.791,192.846
+ai23_osm_fastbaselines,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+ai23_osm_fastbaselines,42,1,Lambeth,577,MLR,0.8209,951.022,408.306
+ai23_osm_fastbaselines,42,1,Lambeth,577,RF,0.8254,941.824,410.549
+ai23_osm_fastbaselines,42,1,Lambeth,577,XGBoost,0.8327,938.338,414.148
+ai23_osm_fastbaselines,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+ai23_osm_fastbaselines,42,1,Lewisham,609,MLR,0.7919,525.843,233.194
+ai23_osm_fastbaselines,42,1,Lewisham,609,RF,0.7911,520.985,232.945
+ai23_osm_fastbaselines,42,1,Lewisham,609,XGBoost,0.7944,520.179,233.916
+ai23_osm_fastbaselines,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+ai23_osm_fastbaselines,42,1,Merton,457,MLR,0.7846,490.164,203.309
+ai23_osm_fastbaselines,42,1,Merton,457,RF,0.7769,488.305,201.327
+ai23_osm_fastbaselines,42,1,Merton,457,XGBoost,0.7889,495.293,204.437
+ai23_osm_fastbaselines,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+ai23_osm_fastbaselines,42,1,Newham,465,MLR,0.7575,514.901,290.435
+ai23_osm_fastbaselines,42,1,Newham,465,RF,0.7627,518.505,292.428
+ai23_osm_fastbaselines,42,1,Newham,465,XGBoost,0.778,534.588,298.272
+ai23_osm_fastbaselines,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+ai23_osm_fastbaselines,42,1,Redbridge,539,MLR,0.8065,470.112,198.437
+ai23_osm_fastbaselines,42,1,Redbridge,539,RF,0.7777,439.75,191.347
+ai23_osm_fastbaselines,42,1,Redbridge,539,XGBoost,0.7863,443.66,193.456
+ai23_osm_fastbaselines,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+ai23_osm_fastbaselines,42,1,Richmond upon Thames,484,MLR,0.7716,327.117,143.229
+ai23_osm_fastbaselines,42,1,Richmond upon Thames,484,RF,0.7604,316.16,141.159
+ai23_osm_fastbaselines,42,1,Richmond upon Thames,484,XGBoost,0.7613,316.103,141.331
+ai23_osm_fastbaselines,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+ai23_osm_fastbaselines,42,1,Southwark,583,MLR,0.8131,864.491,391.552
+ai23_osm_fastbaselines,42,1,Southwark,583,RF,0.8051,869.592,387.677
+ai23_osm_fastbaselines,42,1,Southwark,583,XGBoost,0.8092,872.7,389.663
+ai23_osm_fastbaselines,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+ai23_osm_fastbaselines,42,1,Sutton,421,MLR,0.8345,286.948,135.806
+ai23_osm_fastbaselines,42,1,Sutton,421,RF,0.8406,287.328,136.804
+ai23_osm_fastbaselines,42,1,Sutton,421,XGBoost,0.8422,283.378,137.057
+ai23_osm_fastbaselines,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+ai23_osm_fastbaselines,42,1,Tower Hamlets,381,MLR,0.8275,386.913,235.255
+ai23_osm_fastbaselines,42,1,Tower Hamlets,381,RF,0.8032,395.042,228.329
+ai23_osm_fastbaselines,42,1,Tower Hamlets,381,XGBoost,0.8323,401.876,236.606
+ai23_osm_fastbaselines,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+ai23_osm_fastbaselines,42,1,Waltham Forest,492,MLR,0.7521,505.919,237.887
+ai23_osm_fastbaselines,42,1,Waltham Forest,492,RF,0.7571,510.786,239.458
+ai23_osm_fastbaselines,42,1,Waltham Forest,492,XGBoost,0.7878,527.118,249.186
+ai23_osm_fastbaselines,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+ai23_osm_fastbaselines,42,1,Wandsworth,481,MLR,0.7769,688.205,330.185
+ai23_osm_fastbaselines,42,1,Wandsworth,481,RF,0.775,693.47,329.343
+ai23_osm_fastbaselines,42,1,Wandsworth,481,XGBoost,0.7866,697.908,334.282
+ai23_osm_fastbaselines,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+ai23_osm_fastbaselines,42,1,Westminster,419,MLR,0.7627,909.995,497.369
+ai23_osm_fastbaselines,42,1,Westminster,419,RF,0.8004,945.212,522.003
+ai23_osm_fastbaselines,42,1,Westminster,419,XGBoost,0.8075,946.724,526.635
+ai23_osm_sc,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+ai23_osm_sc,42,1,Barking and Dagenham,364,MLR,0.7043,534.701,207.417
+ai23_osm_sc,42,1,Barking and Dagenham,364,RF,0.6935,518.838,204.243
+ai23_osm_sc,42,1,Barking and Dagenham,364,XGBoost,0.6706,504.096,197.476
+ai23_osm_sc,42,1,Barking and Dagenham,364,MLP,0.6811,524.479,200.563
+ai23_osm_sc,42,1,Barking and Dagenham,364,GATv2,0.7229,560.407,212.881
+ai23_osm_sc,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+ai23_osm_sc,42,1,Barnet,993,MLR,0.6935,348.166,148.322
+ai23_osm_sc,42,1,Barnet,993,RF,0.6598,309.932,141.12
+ai23_osm_sc,42,1,Barnet,993,XGBoost,0.6577,301.16,140.667
+ai23_osm_sc,42,1,Barnet,993,MLP,0.6734,309.83,144.021
+ai23_osm_sc,42,1,Barnet,993,GATv2,0.7159,322.361,153.1
+ai23_osm_sc,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+ai23_osm_sc,42,1,Bexley,672,MLR,0.6933,305.878,104.9
+ai23_osm_sc,42,1,Bexley,672,RF,0.6847,324.38,103.606
+ai23_osm_sc,42,1,Bexley,672,XGBoost,0.6921,301.404,104.715
+ai23_osm_sc,42,1,Bexley,672,MLP,0.6839,304.498,103.475
+ai23_osm_sc,42,1,Bexley,672,GATv2,0.7606,343.481,115.089
+ai23_osm_sc,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+ai23_osm_sc,42,1,Brent,575,MLR,0.6306,475.734,239.761
+ai23_osm_sc,42,1,Brent,575,RF,0.652,492.364,247.922
+ai23_osm_sc,42,1,Brent,575,XGBoost,0.642,479.007,244.099
+ai23_osm_sc,42,1,Brent,575,MLP,0.6221,466.001,236.535
+ai23_osm_sc,42,1,Brent,575,GATv2,0.6898,513.731,262.258
+ai23_osm_sc,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+ai23_osm_sc,42,1,Bromley,1179,MLR,0.6641,169.238,67.537
+ai23_osm_sc,42,1,Bromley,1179,RF,0.6545,185.347,66.561
+ai23_osm_sc,42,1,Bromley,1179,XGBoost,0.6504,173.117,66.142
+ai23_osm_sc,42,1,Bromley,1179,MLP,0.6595,163.302,67.068
+ai23_osm_sc,42,1,Bromley,1179,GATv2,0.7112,181.807,72.324
+ai23_osm_sc,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+ai23_osm_sc,42,1,Camden,424,MLR,0.5214,446.19,210.558
+ai23_osm_sc,42,1,Camden,424,RF,0.523,449.668,211.207
+ai23_osm_sc,42,1,Camden,424,XGBoost,0.539,460.715,217.675
+ai23_osm_sc,42,1,Camden,424,MLP,0.5026,419.062,202.953
+ai23_osm_sc,42,1,Camden,424,GATv2,0.658,510.298,265.717
+ai23_osm_sc,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+ai23_osm_sc,42,1,City of London,101,MLR,0.5655,708.56,368.551
+ai23_osm_sc,42,1,City of London,101,RF,0.5729,731.442,373.354
+ai23_osm_sc,42,1,City of London,101,XGBoost,0.5667,703.402,369.289
+ai23_osm_sc,42,1,City of London,101,MLP,0.5702,658.32,371.594
+ai23_osm_sc,42,1,City of London,101,GATv2,0.7855,946.188,511.913
+ai23_osm_sc,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+ai23_osm_sc,42,1,Croydon,1019,MLR,0.6755,274.015,111.225
+ai23_osm_sc,42,1,Croydon,1019,RF,0.6783,278.265,111.688
+ai23_osm_sc,42,1,Croydon,1019,XGBoost,0.6603,264.784,108.717
+ai23_osm_sc,42,1,Croydon,1019,MLP,0.6678,271.155,109.957
+ai23_osm_sc,42,1,Croydon,1019,GATv2,0.7071,284.764,116.437
+ai23_osm_sc,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+ai23_osm_sc,42,1,Ealing,683,MLR,0.6504,470.834,214.746
+ai23_osm_sc,42,1,Ealing,683,RF,0.6688,502.064,220.826
+ai23_osm_sc,42,1,Ealing,683,XGBoost,0.6339,466.953,209.298
+ai23_osm_sc,42,1,Ealing,683,MLP,0.6386,463.697,210.841
+ai23_osm_sc,42,1,Ealing,683,GATv2,0.7648,569.512,252.515
+ai23_osm_sc,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+ai23_osm_sc,42,1,Enfield,707,MLR,0.6777,363.783,163.561
+ai23_osm_sc,42,1,Enfield,707,RF,0.7019,394.193,169.399
+ai23_osm_sc,42,1,Enfield,707,XGBoost,0.7009,394.895,169.168
+ai23_osm_sc,42,1,Enfield,707,MLP,0.6669,359.644,160.957
+ai23_osm_sc,42,1,Enfield,707,GATv2,0.7814,428.456,188.593
+ai23_osm_sc,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+ai23_osm_sc,42,1,Greenwich,659,MLR,0.6641,515.151,189.529
+ai23_osm_sc,42,1,Greenwich,659,RF,0.656,538.087,187.228
+ai23_osm_sc,42,1,Greenwich,659,XGBoost,0.6363,526.515,181.603
+ai23_osm_sc,42,1,Greenwich,659,MLP,0.6558,510.533,187.158
+ai23_osm_sc,42,1,Greenwich,659,GATv2,0.7265,547.373,207.331
+ai23_osm_sc,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+ai23_osm_sc,42,1,Hackney,442,MLR,0.4995,366.237,196.81
+ai23_osm_sc,42,1,Hackney,442,RF,0.5326,391.617,209.832
+ai23_osm_sc,42,1,Hackney,442,XGBoost,0.5063,361.219,199.469
+ai23_osm_sc,42,1,Hackney,442,MLP,0.4931,357.909,194.254
+ai23_osm_sc,42,1,Hackney,442,GATv2,0.6877,479.758,270.956
+ai23_osm_sc,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+ai23_osm_sc,42,1,Hammersmith and Fulham,276,MLR,0.6967,659.552,330.33
+ai23_osm_sc,42,1,Hammersmith and Fulham,276,RF,0.673,677.794,319.098
+ai23_osm_sc,42,1,Hammersmith and Fulham,276,XGBoost,0.6941,673.634,329.077
+ai23_osm_sc,42,1,Hammersmith and Fulham,276,MLP,0.6872,646.16,325.807
+ai23_osm_sc,42,1,Hammersmith and Fulham,276,GATv2,0.6958,690.919,329.884
+ai23_osm_sc,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+ai23_osm_sc,42,1,Haringey,461,MLR,0.6572,625.971,297.864
+ai23_osm_sc,42,1,Haringey,461,RF,0.6623,678.695,300.208
+ai23_osm_sc,42,1,Haringey,461,XGBoost,0.6837,689.043,309.917
+ai23_osm_sc,42,1,Haringey,461,MLP,0.6346,619.24,287.619
+ai23_osm_sc,42,1,Haringey,461,GATv2,0.6904,679.712,312.911
+ai23_osm_sc,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+ai23_osm_sc,42,1,Harrow,432,MLR,0.634,296.505,149.177
+ai23_osm_sc,42,1,Harrow,432,RF,0.6324,300.483,148.808
+ai23_osm_sc,42,1,Harrow,432,XGBoost,0.6014,280.506,141.514
+ai23_osm_sc,42,1,Harrow,432,MLP,0.6201,283.054,145.909
+ai23_osm_sc,42,1,Harrow,432,GATv2,0.7511,359.967,176.747
+ai23_osm_sc,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+ai23_osm_sc,42,1,Havering,691,MLR,0.712,354.724,119.289
+ai23_osm_sc,42,1,Havering,691,RF,0.7215,366.109,120.889
+ai23_osm_sc,42,1,Havering,691,XGBoost,0.879,372.771,147.268
+ai23_osm_sc,42,1,Havering,691,MLP,0.7073,348.011,118.504
+ai23_osm_sc,42,1,Havering,691,GATv2,0.7754,365.952,129.914
+ai23_osm_sc,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+ai23_osm_sc,42,1,Hillingdon,706,MLR,0.7117,485.526,169.552
+ai23_osm_sc,42,1,Hillingdon,706,RF,0.7647,559.197,182.194
+ai23_osm_sc,42,1,Hillingdon,706,XGBoost,0.7618,527.187,181.497
+ai23_osm_sc,42,1,Hillingdon,706,MLP,0.7296,499.557,173.832
+ai23_osm_sc,42,1,Hillingdon,706,GATv2,0.8025,574.675,191.182
+ai23_osm_sc,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+ai23_osm_sc,42,1,Hounslow,651,MLR,0.6382,361.817,159.345
+ai23_osm_sc,42,1,Hounslow,651,RF,0.6539,370.987,163.263
+ai23_osm_sc,42,1,Hounslow,651,XGBoost,0.6377,350.568,159.231
+ai23_osm_sc,42,1,Hounslow,651,MLP,0.6162,337.407,153.85
+ai23_osm_sc,42,1,Hounslow,651,GATv2,0.7326,399.646,182.925
+ai23_osm_sc,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+ai23_osm_sc,42,1,Islington,349,MLR,0.5887,621.572,305.82
+ai23_osm_sc,42,1,Islington,349,RF,0.5871,626.78,305.001
+ai23_osm_sc,42,1,Islington,349,XGBoost,0.5884,595.045,305.683
+ai23_osm_sc,42,1,Islington,349,MLP,0.5869,607.002,304.891
+ai23_osm_sc,42,1,Islington,349,GATv2,0.661,650.191,343.394
+ai23_osm_sc,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+ai23_osm_sc,42,1,Kensington and Chelsea,260,MLR,0.5986,425.149,259.509
+ai23_osm_sc,42,1,Kensington and Chelsea,260,RF,0.5484,406.399,237.759
+ai23_osm_sc,42,1,Kensington and Chelsea,260,XGBoost,0.5507,401.197,238.747
+ai23_osm_sc,42,1,Kensington and Chelsea,260,MLP,0.5803,401.402,251.594
+ai23_osm_sc,42,1,Kensington and Chelsea,260,GATv2,0.6059,435.332,262.677
+ai23_osm_sc,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+ai23_osm_sc,42,1,Kingston upon Thames,391,MLR,0.7114,495.003,165.752
+ai23_osm_sc,42,1,Kingston upon Thames,391,RF,0.7084,518.368,165.062
+ai23_osm_sc,42,1,Kingston upon Thames,391,XGBoost,0.6785,490.933,158.096
+ai23_osm_sc,42,1,Kingston upon Thames,391,MLP,0.6924,480.688,161.329
+ai23_osm_sc,42,1,Kingston upon Thames,391,GATv2,0.7507,513.918,174.916
+ai23_osm_sc,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+ai23_osm_sc,42,1,Lambeth,577,MLR,0.6441,835.301,320.379
+ai23_osm_sc,42,1,Lambeth,577,RF,0.6296,828.417,313.152
+ai23_osm_sc,42,1,Lambeth,577,XGBoost,0.6209,805.317,308.834
+ai23_osm_sc,42,1,Lambeth,577,MLP,0.6087,801.273,302.77
+ai23_osm_sc,42,1,Lambeth,577,GATv2,0.7645,942.394,380.242
+ai23_osm_sc,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+ai23_osm_sc,42,1,Lewisham,609,MLR,0.5984,400.521,176.196
+ai23_osm_sc,42,1,Lewisham,609,RF,0.6069,426.002,178.72
+ai23_osm_sc,42,1,Lewisham,609,XGBoost,0.6227,437.131,183.374
+ai23_osm_sc,42,1,Lewisham,609,MLP,0.6006,399.495,176.85
+ai23_osm_sc,42,1,Lewisham,609,GATv2,0.7202,499.063,212.07
+ai23_osm_sc,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+ai23_osm_sc,42,1,Merton,457,MLR,0.6653,422.94,172.39
+ai23_osm_sc,42,1,Merton,457,RF,0.6571,438.249,170.263
+ai23_osm_sc,42,1,Merton,457,XGBoost,0.6766,441.689,175.322
+ai23_osm_sc,42,1,Merton,457,MLP,0.6558,419.699,169.943
+ai23_osm_sc,42,1,Merton,457,GATv2,0.7333,486.158,190.01
+ai23_osm_sc,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+ai23_osm_sc,42,1,Newham,465,MLR,0.5694,375.153,218.299
+ai23_osm_sc,42,1,Newham,465,RF,0.6077,415.179,232.974
+ai23_osm_sc,42,1,Newham,465,XGBoost,0.615,414.898,235.786
+ai23_osm_sc,42,1,Newham,465,MLP,0.5755,384.329,220.637
+ai23_osm_sc,42,1,Newham,465,GATv2,0.6411,444.952,245.788
+ai23_osm_sc,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+ai23_osm_sc,42,1,Redbridge,539,MLR,0.682,361.306,167.795
+ai23_osm_sc,42,1,Redbridge,539,RF,0.6852,369.409,168.573
+ai23_osm_sc,42,1,Redbridge,539,XGBoost,0.6522,334.046,160.465
+ai23_osm_sc,42,1,Redbridge,539,MLP,0.6657,344.272,163.785
+ai23_osm_sc,42,1,Redbridge,539,GATv2,0.6956,354.888,171.144
+ai23_osm_sc,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+ai23_osm_sc,42,1,Richmond upon Thames,484,MLR,0.6485,268.456,120.392
+ai23_osm_sc,42,1,Richmond upon Thames,484,RF,0.6594,266.909,122.405
+ai23_osm_sc,42,1,Richmond upon Thames,484,XGBoost,0.6782,271.139,125.892
+ai23_osm_sc,42,1,Richmond upon Thames,484,MLP,0.6868,257.891,127.504
+ai23_osm_sc,42,1,Richmond upon Thames,484,GATv2,0.7338,290.939,136.224
+ai23_osm_sc,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+ai23_osm_sc,42,1,Southwark,583,MLR,0.581,644.255,279.801
+ai23_osm_sc,42,1,Southwark,583,RF,0.6161,722.073,296.708
+ai23_osm_sc,42,1,Southwark,583,XGBoost,0.5916,696.828,284.892
+ai23_osm_sc,42,1,Southwark,583,MLP,0.5819,671.016,280.205
+ai23_osm_sc,42,1,Southwark,583,GATv2,0.6874,759.526,331.001
+ai23_osm_sc,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+ai23_osm_sc,42,1,Sutton,421,MLR,0.6465,226.834,105.205
+ai23_osm_sc,42,1,Sutton,421,RF,0.675,243.169,109.846
+ai23_osm_sc,42,1,Sutton,421,XGBoost,0.6911,248.006,112.475
+ai23_osm_sc,42,1,Sutton,421,MLP,0.6417,220.471,104.435
+ai23_osm_sc,42,1,Sutton,421,GATv2,0.7624,268.388,124.069
+ai23_osm_sc,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+ai23_osm_sc,42,1,Tower Hamlets,381,MLR,0.5742,302.307,163.227
+ai23_osm_sc,42,1,Tower Hamlets,381,RF,0.6036,310.006,171.589
+ai23_osm_sc,42,1,Tower Hamlets,381,XGBoost,0.585,305.412,166.295
+ai23_osm_sc,42,1,Tower Hamlets,381,MLP,0.5862,297.25,166.658
+ai23_osm_sc,42,1,Tower Hamlets,381,GATv2,0.7043,370.877,200.226
+ai23_osm_sc,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+ai23_osm_sc,42,1,Waltham Forest,492,MLR,0.7183,501.817,227.193
+ai23_osm_sc,42,1,Waltham Forest,492,RF,0.6405,461.445,202.569
+ai23_osm_sc,42,1,Waltham Forest,492,XGBoost,0.6609,477.32,209.031
+ai23_osm_sc,42,1,Waltham Forest,492,MLP,0.6797,470.824,214.988
+ai23_osm_sc,42,1,Waltham Forest,492,GATv2,0.7107,496.542,224.801
+ai23_osm_sc,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+ai23_osm_sc,42,1,Wandsworth,481,MLR,0.634,569.571,269.459
+ai23_osm_sc,42,1,Wandsworth,481,RF,0.6413,586.685,272.53
+ai23_osm_sc,42,1,Wandsworth,481,XGBoost,0.6379,584.862,271.112
+ai23_osm_sc,42,1,Wandsworth,481,MLP,0.6304,563.556,267.89
+ai23_osm_sc,42,1,Wandsworth,481,GATv2,0.6822,615.546,289.945
+ai23_osm_sc,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+ai23_osm_sc,42,1,Westminster,419,MLR,0.5828,706.27,380.071
+ai23_osm_sc,42,1,Westminster,419,RF,0.5606,718.197,365.594
+ai23_osm_sc,42,1,Westminster,419,XGBoost,0.5787,701.358,377.379
+ai23_osm_sc,42,1,Westminster,419,MLP,0.5453,670.494,355.606
+ai23_osm_sc,42,1,Westminster,419,GATv2,0.7046,870.962,459.485
+ai23_sc,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+ai23_sc,42,1,Barking and Dagenham,364,IDW,0.8035,593.422,236.631
+ai23_sc,42,1,Barking and Dagenham,364,MLR,0.7041,530.668,207.364
+ai23_sc,42,1,Barking and Dagenham,364,RF,0.6875,524.867,202.454
+ai23_sc,42,1,Barking and Dagenham,364,XGBoost,0.6665,514.577,196.267
+ai23_sc,42,1,Barking and Dagenham,364,MLP,0.6765,526.674,199.233
+ai23_sc,42,1,Barking and Dagenham,364,GATv2,0.7317,560.571,215.465
+ai23_sc,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+ai23_sc,42,1,Barnet,993,IDW,0.8581,374.974,183.529
+ai23_sc,42,1,Barnet,993,MLR,0.689,343.416,147.363
+ai23_sc,42,1,Barnet,993,RF,0.6554,300.257,140.167
+ai23_sc,42,1,Barnet,993,XGBoost,0.677,306.378,144.798
+ai23_sc,42,1,Barnet,993,MLP,0.6849,308.953,146.479
+ai23_sc,42,1,Barnet,993,GATv2,0.7575,350.169,162.014
+ai23_sc,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+ai23_sc,42,1,Bexley,672,IDW,0.8559,366.586,129.506
+ai23_sc,42,1,Bexley,672,MLR,0.6937,305.612,104.962
+ai23_sc,42,1,Bexley,672,RF,0.6966,324.982,105.395
+ai23_sc,42,1,Bexley,672,XGBoost,0.6834,302.524,103.408
+ai23_sc,42,1,Bexley,672,MLP,0.6921,313.912,104.717
+ai23_sc,42,1,Bexley,672,GATv2,0.7834,353.198,118.532
+ai23_sc,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+ai23_sc,42,1,Brent,575,IDW,0.8563,569.887,325.602
+ai23_sc,42,1,Brent,575,MLR,0.6239,472.803,237.226
+ai23_sc,42,1,Brent,575,RF,0.6357,482.824,241.711
+ai23_sc,42,1,Brent,575,XGBoost,0.6455,488.577,245.418
+ai23_sc,42,1,Brent,575,MLP,0.6119,464.506,232.653
+ai23_sc,42,1,Brent,575,GATv2,0.7316,549.309,278.169
+ai23_sc,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+ai23_sc,42,1,Bromley,1179,IDW,0.9483,231.824,96.441
+ai23_sc,42,1,Bromley,1179,MLR,0.6874,175.929,69.901
+ai23_sc,42,1,Bromley,1179,RF,0.6583,185.197,66.944
+ai23_sc,42,1,Bromley,1179,XGBoost,0.6571,176.31,66.825
+ai23_sc,42,1,Bromley,1179,MLP,0.6692,171.566,68.054
+ai23_sc,42,1,Bromley,1179,GATv2,0.7482,192.921,76.085
+ai23_sc,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+ai23_sc,42,1,Camden,424,IDW,0.8385,572.753,338.626
+ai23_sc,42,1,Camden,424,MLR,0.5189,441.136,209.559
+ai23_sc,42,1,Camden,424,RF,0.5289,448.375,213.601
+ai23_sc,42,1,Camden,424,XGBoost,0.5291,442.136,213.682
+ai23_sc,42,1,Camden,424,MLP,0.5149,439.644,207.914
+ai23_sc,42,1,Camden,424,GATv2,0.6371,499.973,257.3
+ai23_sc,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+ai23_sc,42,1,City of London,101,IDW,0.8708,984.356,567.474
+ai23_sc,42,1,City of London,101,MLR,0.5793,655.377,377.494
+ai23_sc,42,1,City of London,101,RF,0.5557,695.641,362.158
+ai23_sc,42,1,City of London,101,XGBoost,0.5635,608.628,367.214
+ai23_sc,42,1,City of London,101,MLP,0.5756,637.991,375.082
+ai23_sc,42,1,City of London,101,GATv2,0.6539,731.726,426.136
+ai23_sc,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+ai23_sc,42,1,Croydon,1019,IDW,0.857,332.145,141.119
+ai23_sc,42,1,Croydon,1019,MLR,0.6765,274.572,111.389
+ai23_sc,42,1,Croydon,1019,RF,0.6806,278.081,112.065
+ai23_sc,42,1,Croydon,1019,XGBoost,0.6861,272.161,112.966
+ai23_sc,42,1,Croydon,1019,MLP,0.67,271.762,110.323
+ai23_sc,42,1,Croydon,1019,GATv2,0.7267,288.751,119.649
+ai23_sc,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+ai23_sc,42,1,Ealing,683,IDW,0.8734,604.408,288.357
+ai23_sc,42,1,Ealing,683,MLR,0.6528,473.016,215.526
+ai23_sc,42,1,Ealing,683,RF,0.668,492.202,220.539
+ai23_sc,42,1,Ealing,683,XGBoost,0.6593,462.186,217.67
+ai23_sc,42,1,Ealing,683,MLP,0.6547,472.32,216.16
+ai23_sc,42,1,Ealing,683,GATv2,0.7544,545.679,249.074
+ai23_sc,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+ai23_sc,42,1,Enfield,707,IDW,0.876,457.316,211.434
+ai23_sc,42,1,Enfield,707,MLR,0.6864,362.162,165.658
+ai23_sc,42,1,Enfield,707,RF,0.7081,394.963,170.892
+ai23_sc,42,1,Enfield,707,XGBoost,0.7015,388.883,169.302
+ai23_sc,42,1,Enfield,707,MLP,0.6784,363.413,163.737
+ai23_sc,42,1,Enfield,707,GATv2,0.736,397.587,177.637
+ai23_sc,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+ai23_sc,42,1,Greenwich,659,IDW,0.8542,632.494,243.79
+ai23_sc,42,1,Greenwich,659,MLR,0.6582,506.316,187.84
+ai23_sc,42,1,Greenwich,659,RF,0.6527,525.981,186.267
+ai23_sc,42,1,Greenwich,659,XGBoost,0.6548,513.307,186.882
+ai23_sc,42,1,Greenwich,659,MLP,0.6494,511.586,185.34
+ai23_sc,42,1,Greenwich,659,GATv2,0.72,536.647,205.471
+ai23_sc,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+ai23_sc,42,1,Hackney,442,IDW,0.8065,550.359,317.765
+ai23_sc,42,1,Hackney,442,MLR,0.4973,365.457,195.923
+ai23_sc,42,1,Hackney,442,RF,0.5129,377.181,202.07
+ai23_sc,42,1,Hackney,442,XGBoost,0.4922,359.821,193.917
+ai23_sc,42,1,Hackney,442,MLP,0.4934,361.021,194.392
+ai23_sc,42,1,Hackney,442,GATv2,0.607,439.725,239.149
+ai23_sc,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+ai23_sc,42,1,Hammersmith and Fulham,276,IDW,0.8082,782.836,383.198
+ai23_sc,42,1,Hammersmith and Fulham,276,MLR,0.6882,666.055,326.28
+ai23_sc,42,1,Hammersmith and Fulham,276,RF,0.6803,674.582,322.556
+ai23_sc,42,1,Hammersmith and Fulham,276,XGBoost,0.692,671.817,328.079
+ai23_sc,42,1,Hammersmith and Fulham,276,MLP,0.6857,657.112,325.111
+ai23_sc,42,1,Hammersmith and Fulham,276,GATv2,0.7518,758.391,356.46
+ai23_sc,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+ai23_sc,42,1,Haringey,461,IDW,0.8186,775.506,371.019
+ai23_sc,42,1,Haringey,461,MLR,0.6648,623.614,301.348
+ai23_sc,42,1,Haringey,461,RF,0.6696,667.658,303.51
+ai23_sc,42,1,Haringey,461,XGBoost,0.6935,690.804,314.321
+ai23_sc,42,1,Haringey,461,MLP,0.6487,627.828,294.053
+ai23_sc,42,1,Haringey,461,GATv2,0.7857,764.701,356.14
+ai23_sc,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+ai23_sc,42,1,Harrow,432,IDW,0.8283,391.934,194.903
+ai23_sc,42,1,Harrow,432,MLR,0.6298,295.11,148.194
+ai23_sc,42,1,Harrow,432,RF,0.6361,303.766,149.672
+ai23_sc,42,1,Harrow,432,XGBoost,0.6182,290.204,145.462
+ai23_sc,42,1,Harrow,432,MLP,0.6316,293.926,148.628
+ai23_sc,42,1,Harrow,432,GATv2,0.7565,363.173,178.007
+ai23_sc,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+ai23_sc,42,1,Havering,691,IDW,0.875,440.627,146.608
+ai23_sc,42,1,Havering,691,MLR,0.7077,341.306,118.566
+ai23_sc,42,1,Havering,691,RF,0.7599,392.538,127.322
+ai23_sc,42,1,Havering,691,XGBoost,0.9913,419.813,166.08
+ai23_sc,42,1,Havering,691,MLP,0.7268,362.848,121.769
+ai23_sc,42,1,Havering,691,GATv2,0.775,377.356,129.841
+ai23_sc,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+ai23_sc,42,1,Hillingdon,706,IDW,0.9244,581.901,220.226
+ai23_sc,42,1,Hillingdon,706,MLR,0.7061,475.583,168.228
+ai23_sc,42,1,Hillingdon,706,RF,0.751,545.467,178.924
+ai23_sc,42,1,Hillingdon,706,XGBoost,0.8191,549.022,195.144
+ai23_sc,42,1,Hillingdon,706,MLP,0.721,507.274,171.777
+ai23_sc,42,1,Hillingdon,706,GATv2,0.833,597.227,198.449
+ai23_sc,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+ai23_sc,42,1,Hounslow,651,IDW,0.9094,460.46,227.07
+ai23_sc,42,1,Hounslow,651,MLR,0.6403,359.079,159.873
+ai23_sc,42,1,Hounslow,651,RF,0.6408,357.139,159.994
+ai23_sc,42,1,Hounslow,651,XGBoost,0.6412,356.177,160.09
+ai23_sc,42,1,Hounslow,651,MLP,0.6282,343.586,156.845
+ai23_sc,42,1,Hounslow,651,GATv2,0.6939,374.554,173.247
+ai23_sc,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+ai23_sc,42,1,Islington,349,IDW,0.808,759.193,419.753
+ai23_sc,42,1,Islington,349,MLR,0.5923,619.261,307.694
+ai23_sc,42,1,Islington,349,RF,0.5934,624.229,308.302
+ai23_sc,42,1,Islington,349,XGBoost,0.601,618.82,312.238
+ai23_sc,42,1,Islington,349,MLP,0.5881,611.804,305.55
+ai23_sc,42,1,Islington,349,GATv2,0.764,748.771,396.936
+ai23_sc,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+ai23_sc,42,1,Kensington and Chelsea,260,IDW,0.8407,572.156,364.475
+ai23_sc,42,1,Kensington and Chelsea,260,MLR,0.5752,422.872,249.349
+ai23_sc,42,1,Kensington and Chelsea,260,RF,0.5638,410.832,244.4
+ai23_sc,42,1,Kensington and Chelsea,260,XGBoost,0.5473,402.534,237.257
+ai23_sc,42,1,Kensington and Chelsea,260,MLP,0.5712,411.574,247.645
+ai23_sc,42,1,Kensington and Chelsea,260,GATv2,0.7108,530.777,308.149
+ai23_sc,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+ai23_sc,42,1,Kingston upon Thames,391,IDW,0.8929,595.692,208.046
+ai23_sc,42,1,Kingston upon Thames,391,MLR,0.7079,500.49,164.942
+ai23_sc,42,1,Kingston upon Thames,391,RF,0.7062,520.835,164.554
+ai23_sc,42,1,Kingston upon Thames,391,XGBoost,0.6986,510.218,162.771
+ai23_sc,42,1,Kingston upon Thames,391,MLP,0.6972,495.81,162.451
+ai23_sc,42,1,Kingston upon Thames,391,GATv2,0.8177,564.026,190.532
+ai23_sc,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+ai23_sc,42,1,Lambeth,577,IDW,0.8788,983.57,437.065
+ai23_sc,42,1,Lambeth,577,MLR,0.6393,819.537,317.974
+ai23_sc,42,1,Lambeth,577,RF,0.629,820.818,312.854
+ai23_sc,42,1,Lambeth,577,XGBoost,0.6297,810.36,313.183
+ai23_sc,42,1,Lambeth,577,MLP,0.6075,807.135,302.156
+ai23_sc,42,1,Lambeth,577,GATv2,0.6773,884.851,336.857
+ai23_sc,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+ai23_sc,42,1,Lewisham,609,IDW,0.8632,557.644,254.179
+ai23_sc,42,1,Lewisham,609,MLR,0.6057,411.862,178.357
+ai23_sc,42,1,Lewisham,609,RF,0.6079,433.803,179.001
+ai23_sc,42,1,Lewisham,609,XGBoost,0.6183,434.126,182.08
+ai23_sc,42,1,Lewisham,609,MLP,0.6052,415.429,178.22
+ai23_sc,42,1,Lewisham,609,GATv2,0.7012,486.194,206.478
+ai23_sc,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+ai23_sc,42,1,Merton,457,IDW,0.848,513.306,219.742
+ai23_sc,42,1,Merton,457,MLR,0.671,426.025,173.884
+ai23_sc,42,1,Merton,457,RF,0.6722,453.641,174.199
+ai23_sc,42,1,Merton,457,XGBoost,0.706,449.055,182.952
+ai23_sc,42,1,Merton,457,MLP,0.666,426.644,172.579
+ai23_sc,42,1,Merton,457,GATv2,0.7635,497.977,197.844
+ai23_sc,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+ai23_sc,42,1,Newham,465,IDW,0.8321,558.618,319.027
+ai23_sc,42,1,Newham,465,MLR,0.5979,397.151,229.217
+ai23_sc,42,1,Newham,465,RF,0.6243,417.866,239.339
+ai23_sc,42,1,Newham,465,XGBoost,0.6421,424.346,246.16
+ai23_sc,42,1,Newham,465,MLP,0.594,395.323,227.731
+ai23_sc,42,1,Newham,465,GATv2,0.6568,451.582,251.822
+ai23_sc,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+ai23_sc,42,1,Redbridge,539,IDW,0.7995,445.101,196.706
+ai23_sc,42,1,Redbridge,539,MLR,0.6951,362.749,171.018
+ai23_sc,42,1,Redbridge,539,RF,0.71,392.571,174.684
+ai23_sc,42,1,Redbridge,539,XGBoost,0.7082,375.712,174.247
+ai23_sc,42,1,Redbridge,539,MLP,0.699,360.139,171.981
+ai23_sc,42,1,Redbridge,539,GATv2,0.7461,420.804,183.576
+ai23_sc,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+ai23_sc,42,1,Richmond upon Thames,484,IDW,0.8875,355.727,164.751
+ai23_sc,42,1,Richmond upon Thames,484,MLR,0.6388,267.54,118.591
+ai23_sc,42,1,Richmond upon Thames,484,RF,0.659,273.242,122.33
+ai23_sc,42,1,Richmond upon Thames,484,XGBoost,0.6785,266.669,125.95
+ai23_sc,42,1,Richmond upon Thames,484,MLP,0.6888,263.136,127.864
+ai23_sc,42,1,Richmond upon Thames,484,GATv2,0.7422,325.091,137.782
+ai23_sc,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+ai23_sc,42,1,Southwark,583,IDW,0.8104,854.973,390.233
+ai23_sc,42,1,Southwark,583,MLR,0.5783,637.258,278.472
+ai23_sc,42,1,Southwark,583,RF,0.6045,699.836,291.094
+ai23_sc,42,1,Southwark,583,XGBoost,0.5844,671.267,281.412
+ai23_sc,42,1,Southwark,583,MLP,0.5872,662.167,282.747
+ai23_sc,42,1,Southwark,583,GATv2,0.6782,734.797,326.605
+ai23_sc,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+ai23_sc,42,1,Sutton,421,IDW,0.8299,289.401,135.054
+ai23_sc,42,1,Sutton,421,MLR,0.6427,223.063,104.593
+ai23_sc,42,1,Sutton,421,RF,0.6711,239.305,109.21
+ai23_sc,42,1,Sutton,421,XGBoost,0.6938,244.716,112.914
+ai23_sc,42,1,Sutton,421,MLP,0.6356,224.104,103.446
+ai23_sc,42,1,Sutton,421,GATv2,0.7556,266.155,122.966
+ai23_sc,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+ai23_sc,42,1,Tower Hamlets,381,IDW,0.8218,407.615,233.622
+ai23_sc,42,1,Tower Hamlets,381,MLR,0.5879,308.821,167.129
+ai23_sc,42,1,Tower Hamlets,381,RF,0.6087,321.8,173.054
+ai23_sc,42,1,Tower Hamlets,381,XGBoost,0.6083,319.739,172.926
+ai23_sc,42,1,Tower Hamlets,381,MLP,0.5996,300.24,170.446
+ai23_sc,42,1,Tower Hamlets,381,GATv2,0.7285,396.719,207.099
+ai23_sc,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+ai23_sc,42,1,Waltham Forest,492,IDW,0.8669,572.979,274.199
+ai23_sc,42,1,Waltham Forest,492,MLR,0.7202,502.857,227.779
+ai23_sc,42,1,Waltham Forest,492,RF,0.6622,471.022,209.453
+ai23_sc,42,1,Waltham Forest,492,XGBoost,0.7028,498.315,222.298
+ai23_sc,42,1,Waltham Forest,492,MLP,0.6635,466.601,209.861
+ai23_sc,42,1,Waltham Forest,492,GATv2,0.7163,484.175,226.554
+ai23_sc,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+ai23_sc,42,1,Wandsworth,481,IDW,0.7963,705.712,338.423
+ai23_sc,42,1,Wandsworth,481,MLR,0.6336,567.081,269.255
+ai23_sc,42,1,Wandsworth,481,RF,0.6483,597.924,275.524
+ai23_sc,42,1,Wandsworth,481,XGBoost,0.6342,581.248,269.546
+ai23_sc,42,1,Wandsworth,481,MLP,0.6241,568.312,265.226
+ai23_sc,42,1,Wandsworth,481,GATv2,0.6965,619.011,295.99
+ai23_sc,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+ai23_sc,42,1,Westminster,419,IDW,0.7677,896.337,500.659
+ai23_sc,42,1,Westminster,419,MLR,0.5957,710.165,388.511
+ai23_sc,42,1,Westminster,419,RF,0.5542,703.112,361.403
+ai23_sc,42,1,Westminster,419,XGBoost,0.6037,771.993,393.71
+ai23_sc,42,1,Westminster,419,MLP,0.5634,692.846,367.451
+ai23_sc,42,1,Westminster,419,GATv2,0.6269,746.566,408.826
+func_sim,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+func_sim,42,1,Barking and Dagenham,364,IDW,0.8035,593.422,236.631
+func_sim,42,1,Barking and Dagenham,364,MLR,0.7043,534.701,207.417
+func_sim,42,1,Barking and Dagenham,364,RF,0.6935,518.838,204.243
+func_sim,42,1,Barking and Dagenham,364,XGBoost,0.6706,504.096,197.476
+func_sim,42,1,Barking and Dagenham,364,MLP,0.6811,524.479,200.563
+func_sim,42,1,Barking and Dagenham,364,GATv2,0.7128,546.797,209.924
+func_sim,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+func_sim,42,1,Barnet,993,IDW,0.8581,374.974,183.529
+func_sim,42,1,Barnet,993,MLR,0.6935,348.166,148.322
+func_sim,42,1,Barnet,993,RF,0.6598,309.932,141.12
+func_sim,42,1,Barnet,993,XGBoost,0.6577,301.16,140.667
+func_sim,42,1,Barnet,993,MLP,0.6731,305.969,143.963
+func_sim,42,1,Barnet,993,GATv2,0.7673,349.225,164.096
+func_sim,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+func_sim,42,1,Bexley,672,IDW,0.8559,366.586,129.506
+func_sim,42,1,Bexley,672,MLR,0.6933,305.878,104.9
+func_sim,42,1,Bexley,672,RF,0.6847,324.38,103.606
+func_sim,42,1,Bexley,672,XGBoost,0.6921,301.404,104.715
+func_sim,42,1,Bexley,672,MLP,0.6826,303.661,103.289
+func_sim,42,1,Bexley,672,GATv2,0.7822,354.846,118.357
+func_sim,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+func_sim,42,1,Brent,575,IDW,0.8563,569.887,325.602
+func_sim,42,1,Brent,575,MLR,0.6306,475.734,239.761
+func_sim,42,1,Brent,575,RF,0.652,492.364,247.922
+func_sim,42,1,Brent,575,XGBoost,0.642,479.007,244.099
+func_sim,42,1,Brent,575,MLP,0.6215,466.326,236.318
+func_sim,42,1,Brent,575,GATv2,0.7705,571.321,292.975
+func_sim,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+func_sim,42,1,Bromley,1179,IDW,0.9483,231.824,96.441
+func_sim,42,1,Bromley,1179,MLR,0.6641,169.238,67.537
+func_sim,42,1,Bromley,1179,RF,0.6545,185.347,66.561
+func_sim,42,1,Bromley,1179,XGBoost,0.6504,173.117,66.142
+func_sim,42,1,Bromley,1179,MLP,0.6582,163.469,66.941
+func_sim,42,1,Bromley,1179,GATv2,0.7316,182.477,74.405
+func_sim,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+func_sim,42,1,Camden,424,IDW,0.8385,572.753,338.626
+func_sim,42,1,Camden,424,MLR,0.5214,446.19,210.558
+func_sim,42,1,Camden,424,RF,0.523,449.668,211.207
+func_sim,42,1,Camden,424,XGBoost,0.539,460.715,217.675
+func_sim,42,1,Camden,424,MLP,0.5019,412.17,202.679
+func_sim,42,1,Camden,424,GATv2,0.6677,516.588,269.628
+func_sim,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+func_sim,42,1,City of London,101,IDW,0.8708,984.356,567.474
+func_sim,42,1,City of London,101,MLR,0.5655,708.56,368.551
+func_sim,42,1,City of London,101,RF,0.5729,731.442,373.354
+func_sim,42,1,City of London,101,XGBoost,0.5667,703.402,369.289
+func_sim,42,1,City of London,101,MLP,0.565,653.743,368.192
+func_sim,42,1,City of London,101,GATv2,0.799,925.161,520.715
+func_sim,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+func_sim,42,1,Croydon,1019,IDW,0.857,332.145,141.119
+func_sim,42,1,Croydon,1019,MLR,0.6755,274.015,111.225
+func_sim,42,1,Croydon,1019,RF,0.6783,278.265,111.688
+func_sim,42,1,Croydon,1019,XGBoost,0.6603,264.784,108.717
+func_sim,42,1,Croydon,1019,MLP,0.6668,270.622,109.789
+func_sim,42,1,Croydon,1019,GATv2,0.7743,312.669,127.494
+func_sim,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+func_sim,42,1,Ealing,683,IDW,0.8734,604.408,288.357
+func_sim,42,1,Ealing,683,MLR,0.6504,470.834,214.746
+func_sim,42,1,Ealing,683,RF,0.6688,502.064,220.826
+func_sim,42,1,Ealing,683,XGBoost,0.6339,466.953,209.298
+func_sim,42,1,Ealing,683,MLP,0.6395,465.855,211.15
+func_sim,42,1,Ealing,683,GATv2,0.7138,509.71,235.657
+func_sim,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+func_sim,42,1,Enfield,707,IDW,0.876,457.316,211.434
+func_sim,42,1,Enfield,707,MLR,0.6777,363.783,163.561
+func_sim,42,1,Enfield,707,RF,0.7019,394.193,169.399
+func_sim,42,1,Enfield,707,XGBoost,0.7009,394.895,169.168
+func_sim,42,1,Enfield,707,MLP,0.6655,358.626,160.619
+func_sim,42,1,Enfield,707,GATv2,0.7215,394.599,174.136
+func_sim,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+func_sim,42,1,Greenwich,659,IDW,0.8542,632.494,243.79
+func_sim,42,1,Greenwich,659,MLR,0.6641,515.151,189.529
+func_sim,42,1,Greenwich,659,RF,0.656,538.087,187.228
+func_sim,42,1,Greenwich,659,XGBoost,0.6363,526.515,181.603
+func_sim,42,1,Greenwich,659,MLP,0.6571,512.333,187.527
+func_sim,42,1,Greenwich,659,GATv2,0.7214,526.036,205.886
+func_sim,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+func_sim,42,1,Hackney,442,IDW,0.8065,550.359,317.765
+func_sim,42,1,Hackney,442,MLR,0.4995,366.237,196.81
+func_sim,42,1,Hackney,442,RF,0.5326,391.617,209.832
+func_sim,42,1,Hackney,442,XGBoost,0.5063,361.219,199.469
+func_sim,42,1,Hackney,442,MLP,0.4912,354.417,193.53
+func_sim,42,1,Hackney,442,GATv2,0.6188,439.071,243.792
+func_sim,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+func_sim,42,1,Hammersmith and Fulham,276,IDW,0.8082,782.836,383.198
+func_sim,42,1,Hammersmith and Fulham,276,MLR,0.6967,659.552,330.33
+func_sim,42,1,Hammersmith and Fulham,276,RF,0.673,677.794,319.098
+func_sim,42,1,Hammersmith and Fulham,276,XGBoost,0.6941,673.634,329.077
+func_sim,42,1,Hammersmith and Fulham,276,MLP,0.6878,646.98,326.126
+func_sim,42,1,Hammersmith and Fulham,276,GATv2,0.7045,658.357,334.04
+func_sim,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+func_sim,42,1,Haringey,461,IDW,0.8186,775.506,371.019
+func_sim,42,1,Haringey,461,MLR,0.6572,625.971,297.864
+func_sim,42,1,Haringey,461,RF,0.6623,678.695,300.208
+func_sim,42,1,Haringey,461,XGBoost,0.6837,689.043,309.917
+func_sim,42,1,Haringey,461,MLP,0.6334,619.598,287.094
+func_sim,42,1,Haringey,461,GATv2,0.8065,789.141,365.575
+func_sim,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+func_sim,42,1,Harrow,432,IDW,0.8283,391.934,194.903
+func_sim,42,1,Harrow,432,MLR,0.634,296.505,149.177
+func_sim,42,1,Harrow,432,RF,0.6324,300.483,148.808
+func_sim,42,1,Harrow,432,XGBoost,0.6014,280.506,141.514
+func_sim,42,1,Harrow,432,MLP,0.6142,280.693,144.517
+func_sim,42,1,Harrow,432,GATv2,0.7441,355.182,175.087
+func_sim,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+func_sim,42,1,Havering,691,IDW,0.875,440.627,146.608
+func_sim,42,1,Havering,691,MLR,0.712,354.724,119.289
+func_sim,42,1,Havering,691,RF,0.7215,366.109,120.889
+func_sim,42,1,Havering,691,XGBoost,0.879,372.771,147.268
+func_sim,42,1,Havering,691,MLP,0.715,348.964,119.798
+func_sim,42,1,Havering,691,GATv2,0.7984,433.092,133.773
+func_sim,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+func_sim,42,1,Hillingdon,706,IDW,0.9244,581.901,220.226
+func_sim,42,1,Hillingdon,706,MLR,0.7117,485.526,169.552
+func_sim,42,1,Hillingdon,706,RF,0.7647,559.197,182.194
+func_sim,42,1,Hillingdon,706,XGBoost,0.7618,527.187,181.497
+func_sim,42,1,Hillingdon,706,MLP,0.7329,501.184,174.611
+func_sim,42,1,Hillingdon,706,GATv2,0.801,556.198,190.83
+func_sim,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+func_sim,42,1,Hounslow,651,IDW,0.9094,460.46,227.07
+func_sim,42,1,Hounslow,651,MLR,0.6382,361.817,159.345
+func_sim,42,1,Hounslow,651,RF,0.6539,370.987,163.263
+func_sim,42,1,Hounslow,651,XGBoost,0.6377,350.568,159.231
+func_sim,42,1,Hounslow,651,MLP,0.6163,338.044,153.881
+func_sim,42,1,Hounslow,651,GATv2,0.6911,378.479,172.569
+func_sim,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+func_sim,42,1,Islington,349,IDW,0.808,759.193,419.753
+func_sim,42,1,Islington,349,MLR,0.5887,621.572,305.82
+func_sim,42,1,Islington,349,RF,0.5871,626.78,305.001
+func_sim,42,1,Islington,349,XGBoost,0.5884,595.045,305.683
+func_sim,42,1,Islington,349,MLP,0.5872,608.28,305.076
+func_sim,42,1,Islington,349,GATv2,0.7022,667.962,364.81
+func_sim,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+func_sim,42,1,Kensington and Chelsea,260,IDW,0.8407,572.156,364.475
+func_sim,42,1,Kensington and Chelsea,260,MLR,0.5986,425.149,259.509
+func_sim,42,1,Kensington and Chelsea,260,RF,0.5484,406.399,237.759
+func_sim,42,1,Kensington and Chelsea,260,XGBoost,0.5507,401.197,238.747
+func_sim,42,1,Kensington and Chelsea,260,MLP,0.5767,399.29,249.998
+func_sim,42,1,Kensington and Chelsea,260,GATv2,0.6974,471.523,302.352
+func_sim,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+func_sim,42,1,Kingston upon Thames,391,IDW,0.8929,595.692,208.046
+func_sim,42,1,Kingston upon Thames,391,MLR,0.7114,495.003,165.752
+func_sim,42,1,Kingston upon Thames,391,RF,0.7084,518.368,165.062
+func_sim,42,1,Kingston upon Thames,391,XGBoost,0.6785,490.933,158.096
+func_sim,42,1,Kingston upon Thames,391,MLP,0.6924,484.78,161.323
+func_sim,42,1,Kingston upon Thames,391,GATv2,0.7943,559.6,185.076
+func_sim,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+func_sim,42,1,Lambeth,577,IDW,0.8788,983.57,437.065
+func_sim,42,1,Lambeth,577,MLR,0.6441,835.301,320.379
+func_sim,42,1,Lambeth,577,RF,0.6296,828.417,313.152
+func_sim,42,1,Lambeth,577,XGBoost,0.6209,805.317,308.834
+func_sim,42,1,Lambeth,577,MLP,0.6077,801.636,302.226
+func_sim,42,1,Lambeth,577,GATv2,0.7334,902.708,364.792
+func_sim,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+func_sim,42,1,Lewisham,609,IDW,0.8632,557.644,254.179
+func_sim,42,1,Lewisham,609,MLR,0.5984,400.521,176.196
+func_sim,42,1,Lewisham,609,RF,0.6069,426.002,178.72
+func_sim,42,1,Lewisham,609,XGBoost,0.6227,437.131,183.374
+func_sim,42,1,Lewisham,609,MLP,0.5999,397.243,176.64
+func_sim,42,1,Lewisham,609,GATv2,0.6624,426.429,195.052
+func_sim,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+func_sim,42,1,Merton,457,IDW,0.848,513.306,219.742
+func_sim,42,1,Merton,457,MLR,0.6653,422.94,172.39
+func_sim,42,1,Merton,457,RF,0.6571,438.249,170.263
+func_sim,42,1,Merton,457,XGBoost,0.6766,441.689,175.322
+func_sim,42,1,Merton,457,MLP,0.6558,422.989,169.95
+func_sim,42,1,Merton,457,GATv2,0.7927,501.711,205.424
+func_sim,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+func_sim,42,1,Newham,465,IDW,0.8321,558.618,319.027
+func_sim,42,1,Newham,465,MLR,0.5694,375.153,218.299
+func_sim,42,1,Newham,465,RF,0.6077,415.179,232.974
+func_sim,42,1,Newham,465,XGBoost,0.615,414.898,235.786
+func_sim,42,1,Newham,465,MLP,0.5741,380.073,220.104
+func_sim,42,1,Newham,465,GATv2,0.657,446.857,251.888
+func_sim,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+func_sim,42,1,Redbridge,539,IDW,0.7995,445.101,196.706
+func_sim,42,1,Redbridge,539,MLR,0.682,361.306,167.795
+func_sim,42,1,Redbridge,539,RF,0.6852,369.409,168.573
+func_sim,42,1,Redbridge,539,XGBoost,0.6522,334.046,160.465
+func_sim,42,1,Redbridge,539,MLP,0.6683,345.483,164.427
+func_sim,42,1,Redbridge,539,GATv2,0.7975,466.42,196.217
+func_sim,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+func_sim,42,1,Richmond upon Thames,484,IDW,0.8875,355.727,164.751
+func_sim,42,1,Richmond upon Thames,484,MLR,0.6485,268.456,120.392
+func_sim,42,1,Richmond upon Thames,484,RF,0.6594,266.909,122.405
+func_sim,42,1,Richmond upon Thames,484,XGBoost,0.6782,271.139,125.892
+func_sim,42,1,Richmond upon Thames,484,MLP,0.6804,256.752,126.307
+func_sim,42,1,Richmond upon Thames,484,GATv2,0.7511,288.497,139.428
+func_sim,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+func_sim,42,1,Southwark,583,IDW,0.8104,854.973,390.233
+func_sim,42,1,Southwark,583,MLR,0.581,644.255,279.801
+func_sim,42,1,Southwark,583,RF,0.6161,722.073,296.708
+func_sim,42,1,Southwark,583,XGBoost,0.5916,696.828,284.892
+func_sim,42,1,Southwark,583,MLP,0.5767,659.275,277.696
+func_sim,42,1,Southwark,583,GATv2,0.7831,851.681,377.082
+func_sim,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+func_sim,42,1,Sutton,421,IDW,0.8299,289.401,135.054
+func_sim,42,1,Sutton,421,MLR,0.6465,226.834,105.205
+func_sim,42,1,Sutton,421,RF,0.675,243.169,109.846
+func_sim,42,1,Sutton,421,XGBoost,0.6911,248.006,112.475
+func_sim,42,1,Sutton,421,MLP,0.6382,221.461,103.865
+func_sim,42,1,Sutton,421,GATv2,0.7901,264.725,128.589
+func_sim,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+func_sim,42,1,Tower Hamlets,381,IDW,0.8218,407.615,233.622
+func_sim,42,1,Tower Hamlets,381,MLR,0.5742,302.307,163.227
+func_sim,42,1,Tower Hamlets,381,RF,0.6036,310.006,171.589
+func_sim,42,1,Tower Hamlets,381,XGBoost,0.585,305.412,166.295
+func_sim,42,1,Tower Hamlets,381,MLP,0.586,296.136,166.597
+func_sim,42,1,Tower Hamlets,381,GATv2,0.7454,390.974,211.909
+func_sim,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+func_sim,42,1,Waltham Forest,492,IDW,0.8669,572.979,274.199
+func_sim,42,1,Waltham Forest,492,MLR,0.7183,501.817,227.193
+func_sim,42,1,Waltham Forest,492,RF,0.6405,461.445,202.569
+func_sim,42,1,Waltham Forest,492,XGBoost,0.6609,477.32,209.031
+func_sim,42,1,Waltham Forest,492,MLP,0.6738,468.797,213.109
+func_sim,42,1,Waltham Forest,492,GATv2,0.7164,494.821,226.579
+func_sim,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+func_sim,42,1,Wandsworth,481,IDW,0.7963,705.712,338.423
+func_sim,42,1,Wandsworth,481,MLR,0.634,569.571,269.459
+func_sim,42,1,Wandsworth,481,RF,0.6413,586.685,272.53
+func_sim,42,1,Wandsworth,481,XGBoost,0.6379,584.862,271.112
+func_sim,42,1,Wandsworth,481,MLP,0.6284,559.113,267.06
+func_sim,42,1,Wandsworth,481,GATv2,0.6873,627.741,292.081
+func_sim,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+func_sim,42,1,Westminster,419,IDW,0.7677,896.337,500.659
+func_sim,42,1,Westminster,419,MLR,0.5828,706.27,380.071
+func_sim,42,1,Westminster,419,RF,0.5606,718.197,365.594
+func_sim,42,1,Westminster,419,XGBoost,0.5787,701.358,377.379
+func_sim,42,1,Westminster,419,MLP,0.5515,674.376,359.658
+func_sim,42,1,Westminster,419,GATv2,0.625,763.394,407.563
+gcn,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+gcn,42,1,Barking and Dagenham,364,MLR,0.7043,534.701,207.417
+gcn,42,1,Barking and Dagenham,364,RF,0.6935,518.838,204.243
+gcn,42,1,Barking and Dagenham,364,XGBoost,0.6706,504.096,197.476
+gcn,42,1,Barking and Dagenham,364,MLP,0.6811,524.479,200.563
+gcn,42,1,Barking and Dagenham,364,GATv2,0.7229,560.407,212.881
+gcn,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+gcn,42,1,Barnet,993,MLR,0.6935,348.166,148.322
+gcn,42,1,Barnet,993,RF,0.6598,309.932,141.12
+gcn,42,1,Barnet,993,XGBoost,0.6577,301.16,140.667
+gcn,42,1,Barnet,993,MLP,0.6734,309.83,144.021
+gcn,42,1,Barnet,993,GATv2,0.7159,322.361,153.1
+gcn,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+gcn,42,1,Bexley,672,MLR,0.6933,305.878,104.9
+gcn,42,1,Bexley,672,RF,0.6847,324.38,103.606
+gcn,42,1,Bexley,672,XGBoost,0.6921,301.404,104.715
+gcn,42,1,Bexley,672,MLP,0.6839,304.498,103.475
+gcn,42,1,Bexley,672,GATv2,0.7606,343.481,115.089
+gcn,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+gcn,42,1,Brent,575,MLR,0.6306,475.734,239.761
+gcn,42,1,Brent,575,RF,0.652,492.364,247.922
+gcn,42,1,Brent,575,XGBoost,0.642,479.007,244.099
+gcn,42,1,Brent,575,MLP,0.6221,466.001,236.535
+gcn,42,1,Brent,575,GATv2,0.6898,513.731,262.258
+gcn,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+gcn,42,1,Bromley,1179,MLR,0.6641,169.238,67.537
+gcn,42,1,Bromley,1179,RF,0.6545,185.347,66.561
+gcn,42,1,Bromley,1179,XGBoost,0.6504,173.117,66.142
+gcn,42,1,Bromley,1179,MLP,0.6595,163.302,67.068
+gcn,42,1,Bromley,1179,GATv2,0.7112,181.807,72.324
+gcn,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+gcn,42,1,Camden,424,MLR,0.5214,446.19,210.558
+gcn,42,1,Camden,424,RF,0.523,449.668,211.207
+gcn,42,1,Camden,424,XGBoost,0.539,460.715,217.675
+gcn,42,1,Camden,424,MLP,0.5026,419.062,202.953
+gcn,42,1,Camden,424,GATv2,0.658,510.298,265.717
+gcn,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+gcn,42,1,City of London,101,MLR,0.5655,708.56,368.551
+gcn,42,1,City of London,101,RF,0.5729,731.442,373.354
+gcn,42,1,City of London,101,XGBoost,0.5667,703.402,369.289
+gcn,42,1,City of London,101,MLP,0.5702,658.32,371.594
+gcn,42,1,City of London,101,GATv2,0.7855,946.188,511.913
+gcn,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+gcn,42,1,Croydon,1019,MLR,0.6755,274.015,111.225
+gcn,42,1,Croydon,1019,RF,0.6783,278.265,111.688
+gcn,42,1,Croydon,1019,XGBoost,0.6603,264.784,108.717
+gcn,42,1,Croydon,1019,MLP,0.6678,271.155,109.957
+gcn,42,1,Croydon,1019,GATv2,0.7071,284.764,116.437
+gcn,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+gcn,42,1,Ealing,683,MLR,0.6504,470.834,214.746
+gcn,42,1,Ealing,683,RF,0.6688,502.064,220.826
+gcn,42,1,Ealing,683,XGBoost,0.6339,466.953,209.298
+gcn,42,1,Ealing,683,MLP,0.6386,463.697,210.841
+gcn,42,1,Ealing,683,GATv2,0.7648,569.512,252.515
+gcn,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+gcn,42,1,Enfield,707,MLR,0.6777,363.783,163.561
+gcn,42,1,Enfield,707,RF,0.7019,394.193,169.399
+gcn,42,1,Enfield,707,XGBoost,0.7009,394.895,169.168
+gcn,42,1,Enfield,707,MLP,0.6669,359.644,160.957
+gcn,42,1,Enfield,707,GATv2,0.7814,428.456,188.593
+gcn,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+gcn,42,1,Greenwich,659,MLR,0.6641,515.151,189.529
+gcn,42,1,Greenwich,659,RF,0.656,538.087,187.228
+gcn,42,1,Greenwich,659,XGBoost,0.6363,526.515,181.603
+gcn,42,1,Greenwich,659,MLP,0.6558,510.533,187.158
+gcn,42,1,Greenwich,659,GATv2,0.7265,547.373,207.331
+gcn,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+gcn,42,1,Hackney,442,MLR,0.4995,366.237,196.81
+gcn,42,1,Hackney,442,RF,0.5326,391.617,209.832
+gcn,42,1,Hackney,442,XGBoost,0.5063,361.219,199.469
+gcn,42,1,Hackney,442,MLP,0.4931,357.909,194.254
+gcn,42,1,Hackney,442,GATv2,0.6877,479.758,270.956
+gcn,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+gcn,42,1,Hammersmith and Fulham,276,MLR,0.6967,659.552,330.33
+gcn,42,1,Hammersmith and Fulham,276,RF,0.673,677.794,319.098
+gcn,42,1,Hammersmith and Fulham,276,XGBoost,0.6941,673.634,329.077
+gcn,42,1,Hammersmith and Fulham,276,MLP,0.6872,646.16,325.807
+gcn,42,1,Hammersmith and Fulham,276,GATv2,0.6958,690.919,329.884
+gcn,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+gcn,42,1,Haringey,461,MLR,0.6572,625.971,297.864
+gcn,42,1,Haringey,461,RF,0.6623,678.695,300.208
+gcn,42,1,Haringey,461,XGBoost,0.6837,689.043,309.917
+gcn,42,1,Haringey,461,MLP,0.6346,619.24,287.619
+gcn,42,1,Haringey,461,GATv2,0.6904,679.712,312.911
+gcn,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+gcn,42,1,Harrow,432,MLR,0.634,296.505,149.177
+gcn,42,1,Harrow,432,RF,0.6324,300.483,148.808
+gcn,42,1,Harrow,432,XGBoost,0.6014,280.506,141.514
+gcn,42,1,Harrow,432,MLP,0.6201,283.054,145.909
+gcn,42,1,Harrow,432,GATv2,0.7511,359.967,176.747
+gcn,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+gcn,42,1,Havering,691,MLR,0.712,354.724,119.289
+gcn,42,1,Havering,691,RF,0.7215,366.109,120.889
+gcn,42,1,Havering,691,XGBoost,0.879,372.771,147.268
+gcn,42,1,Havering,691,MLP,0.7073,348.011,118.504
+gcn,42,1,Havering,691,GATv2,0.7754,365.952,129.914
+gcn,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+gcn,42,1,Hillingdon,706,MLR,0.7117,485.526,169.552
+gcn,42,1,Hillingdon,706,RF,0.7647,559.197,182.194
+gcn,42,1,Hillingdon,706,XGBoost,0.7618,527.187,181.497
+gcn,42,1,Hillingdon,706,MLP,0.7296,499.557,173.832
+gcn,42,1,Hillingdon,706,GATv2,0.8025,574.675,191.182
+gcn,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+gcn,42,1,Hounslow,651,MLR,0.6382,361.817,159.345
+gcn,42,1,Hounslow,651,RF,0.6539,370.987,163.263
+gcn,42,1,Hounslow,651,XGBoost,0.6377,350.568,159.231
+gcn,42,1,Hounslow,651,MLP,0.6162,337.407,153.85
+gcn,42,1,Hounslow,651,GATv2,0.7326,399.646,182.925
+gcn,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+gcn,42,1,Islington,349,MLR,0.5887,621.572,305.82
+gcn,42,1,Islington,349,RF,0.5871,626.78,305.001
+gcn,42,1,Islington,349,XGBoost,0.5884,595.045,305.683
+gcn,42,1,Islington,349,MLP,0.5869,607.002,304.891
+gcn,42,1,Islington,349,GATv2,0.661,650.191,343.394
+gcn,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+gcn,42,1,Kensington and Chelsea,260,MLR,0.5986,425.149,259.509
+gcn,42,1,Kensington and Chelsea,260,RF,0.5484,406.399,237.759
+gcn,42,1,Kensington and Chelsea,260,XGBoost,0.5507,401.197,238.747
+gcn,42,1,Kensington and Chelsea,260,MLP,0.5803,401.402,251.594
+gcn,42,1,Kensington and Chelsea,260,GATv2,0.6059,435.332,262.677
+gcn,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+gcn,42,1,Kingston upon Thames,391,MLR,0.7114,495.003,165.752
+gcn,42,1,Kingston upon Thames,391,RF,0.7084,518.368,165.062
+gcn,42,1,Kingston upon Thames,391,XGBoost,0.6785,490.933,158.096
+gcn,42,1,Kingston upon Thames,391,MLP,0.6924,480.688,161.329
+gcn,42,1,Kingston upon Thames,391,GATv2,0.7507,513.918,174.916
+gcn,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+gcn,42,1,Lambeth,577,MLR,0.6441,835.301,320.379
+gcn,42,1,Lambeth,577,RF,0.6296,828.417,313.152
+gcn,42,1,Lambeth,577,XGBoost,0.6209,805.317,308.834
+gcn,42,1,Lambeth,577,MLP,0.6087,801.273,302.77
+gcn,42,1,Lambeth,577,GATv2,0.7645,942.394,380.242
+gcn,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+gcn,42,1,Lewisham,609,MLR,0.5984,400.521,176.196
+gcn,42,1,Lewisham,609,RF,0.6069,426.002,178.72
+gcn,42,1,Lewisham,609,XGBoost,0.6227,437.131,183.374
+gcn,42,1,Lewisham,609,MLP,0.6006,399.495,176.85
+gcn,42,1,Lewisham,609,GATv2,0.7202,499.063,212.07
+gcn,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+gcn,42,1,Merton,457,MLR,0.6653,422.94,172.39
+gcn,42,1,Merton,457,RF,0.6571,438.249,170.263
+gcn,42,1,Merton,457,XGBoost,0.6766,441.689,175.322
+gcn,42,1,Merton,457,MLP,0.6558,419.699,169.943
+gcn,42,1,Merton,457,GATv2,0.7333,486.158,190.01
+gcn,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+gcn,42,1,Newham,465,MLR,0.5694,375.153,218.299
+gcn,42,1,Newham,465,RF,0.6077,415.179,232.974
+gcn,42,1,Newham,465,XGBoost,0.615,414.898,235.786
+gcn,42,1,Newham,465,MLP,0.5755,384.329,220.637
+gcn,42,1,Newham,465,GATv2,0.6411,444.952,245.788
+gcn,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+gcn,42,1,Redbridge,539,MLR,0.682,361.306,167.795
+gcn,42,1,Redbridge,539,RF,0.6852,369.409,168.573
+gcn,42,1,Redbridge,539,XGBoost,0.6522,334.046,160.465
+gcn,42,1,Redbridge,539,MLP,0.6657,344.272,163.785
+gcn,42,1,Redbridge,539,GATv2,0.6956,354.888,171.144
+gcn,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+gcn,42,1,Richmond upon Thames,484,MLR,0.6485,268.456,120.392
+gcn,42,1,Richmond upon Thames,484,RF,0.6594,266.909,122.405
+gcn,42,1,Richmond upon Thames,484,XGBoost,0.6782,271.139,125.892
+gcn,42,1,Richmond upon Thames,484,MLP,0.6868,257.891,127.504
+gcn,42,1,Richmond upon Thames,484,GATv2,0.7338,290.939,136.224
+gcn,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+gcn,42,1,Southwark,583,MLR,0.581,644.255,279.801
+gcn,42,1,Southwark,583,RF,0.6161,722.073,296.708
+gcn,42,1,Southwark,583,XGBoost,0.5916,696.828,284.892
+gcn,42,1,Southwark,583,MLP,0.5819,671.016,280.205
+gcn,42,1,Southwark,583,GATv2,0.6874,759.526,331.001
+gcn,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+gcn,42,1,Sutton,421,MLR,0.6465,226.834,105.205
+gcn,42,1,Sutton,421,RF,0.675,243.169,109.846
+gcn,42,1,Sutton,421,XGBoost,0.6911,248.006,112.475
+gcn,42,1,Sutton,421,MLP,0.6417,220.471,104.435
+gcn,42,1,Sutton,421,GATv2,0.7624,268.388,124.069
+gcn,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+gcn,42,1,Tower Hamlets,381,MLR,0.5742,302.307,163.227
+gcn,42,1,Tower Hamlets,381,RF,0.6036,310.006,171.589
+gcn,42,1,Tower Hamlets,381,XGBoost,0.585,305.412,166.295
+gcn,42,1,Tower Hamlets,381,MLP,0.5862,297.25,166.658
+gcn,42,1,Tower Hamlets,381,GATv2,0.7043,370.877,200.226
+gcn,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+gcn,42,1,Waltham Forest,492,MLR,0.7183,501.817,227.193
+gcn,42,1,Waltham Forest,492,RF,0.6405,461.445,202.569
+gcn,42,1,Waltham Forest,492,XGBoost,0.6609,477.32,209.031
+gcn,42,1,Waltham Forest,492,MLP,0.6797,470.824,214.988
+gcn,42,1,Waltham Forest,492,GATv2,0.7107,496.542,224.801
+gcn,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+gcn,42,1,Wandsworth,481,MLR,0.634,569.571,269.459
+gcn,42,1,Wandsworth,481,RF,0.6413,586.685,272.53
+gcn,42,1,Wandsworth,481,XGBoost,0.6379,584.862,271.112
+gcn,42,1,Wandsworth,481,MLP,0.6304,563.556,267.89
+gcn,42,1,Wandsworth,481,GATv2,0.6822,615.546,289.945
+gcn,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+gcn,42,1,Westminster,419,MLR,0.5828,706.27,380.071
+gcn,42,1,Westminster,419,RF,0.5606,718.197,365.594
+gcn,42,1,Westminster,419,XGBoost,0.5787,701.358,377.379
+gcn,42,1,Westminster,419,MLP,0.5453,670.494,355.606
+gcn,42,1,Westminster,419,GATv2,0.7046,870.962,459.485
+gcn,42,1,Barking and Dagenham,364,GCN,0.7057,532.972,207.809
+gcn,42,1,Barnet,993,GCN,0.7206,311.805,154.113
+gcn,42,1,Bexley,672,GCN,0.762,316.73,115.289
+gcn,42,1,Brent,575,GCN,0.6693,482.566,254.485
+gcn,42,1,Bromley,1179,GCN,0.7522,195.048,76.496
+gcn,42,1,Camden,424,GCN,0.6371,459.73,257.283
+gcn,42,1,City of London,101,GCN,0.6559,768.353,427.426
+gcn,42,1,Croydon,1019,GCN,0.6851,264.49,112.805
+gcn,42,1,Ealing,683,GCN,0.6952,481.755,229.517
+gcn,42,1,Enfield,707,GCN,0.7273,381.591,175.527
+gcn,42,1,Greenwich,659,GCN,0.7139,535.973,203.729
+gcn,42,1,Hackney,442,GCN,0.6339,420.438,249.755
+gcn,42,1,Hammersmith and Fulham,276,GCN,0.7395,691.377,350.603
+gcn,42,1,Haringey,461,GCN,0.7037,625.867,318.942
+gcn,42,1,Harrow,432,GCN,0.6887,318.907,162.05
+gcn,42,1,Havering,691,GCN,0.8398,362.073,140.708
+gcn,42,1,Hillingdon,706,GCN,0.753,489.742,179.396
+gcn,42,1,Hounslow,651,GCN,0.6833,367.815,170.619
+gcn,42,1,Islington,349,GCN,0.6675,636.943,346.77
+gcn,42,1,Kensington and Chelsea,260,GCN,0.7445,509.685,322.779
+gcn,42,1,Kingston upon Thames,391,GCN,0.7615,489.054,177.44
+gcn,42,1,Lambeth,577,GCN,0.7121,871.279,354.165
+gcn,42,1,Lewisham,609,GCN,0.6453,422.136,190.011
+gcn,42,1,Merton,457,GCN,0.7058,464.013,182.898
+gcn,42,1,Newham,465,GCN,0.6455,425.974,247.495
+gcn,42,1,Redbridge,539,GCN,0.6714,322.386,165.191
+gcn,42,1,Richmond upon Thames,484,GCN,0.781,272.081,144.98
+gcn,42,1,Southwark,583,GCN,0.6558,686.637,315.806
+gcn,42,1,Sutton,421,GCN,0.6936,228.39,112.878
+gcn,42,1,Tower Hamlets,381,GCN,0.6934,326.609,197.115
+gcn,42,1,Waltham Forest,492,GCN,0.6645,422.888,210.166
+gcn,42,1,Wandsworth,481,GCN,0.6627,544.244,281.621
+gcn,42,1,Westminster,419,GCN,0.6483,750.512,422.802
+gnn_fairness,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+gnn_fairness,42,1,Barking and Dagenham,364,MLR,0.7043,534.701,207.417
+gnn_fairness,42,1,Barking and Dagenham,364,RF,0.6935,518.838,204.243
+gnn_fairness,42,1,Barking and Dagenham,364,XGBoost,0.6706,504.096,197.476
+gnn_fairness,42,1,Barking and Dagenham,364,MLP,0.6811,524.479,200.563
+gnn_fairness,42,1,Barking and Dagenham,364,GATv2,0.7123,542.955,209.777
+gnn_fairness,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+gnn_fairness,42,1,Barnet,993,MLR,0.6935,348.166,148.322
+gnn_fairness,42,1,Barnet,993,RF,0.6598,309.932,141.12
+gnn_fairness,42,1,Barnet,993,XGBoost,0.6577,301.16,140.667
+gnn_fairness,42,1,Barnet,993,MLP,0.6739,310.024,144.122
+gnn_fairness,42,1,Barnet,993,GATv2,0.7096,315.391,151.77
+gnn_fairness,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+gnn_fairness,42,1,Bexley,672,MLR,0.6933,305.878,104.9
+gnn_fairness,42,1,Bexley,672,RF,0.6847,324.38,103.606
+gnn_fairness,42,1,Bexley,672,XGBoost,0.6921,301.404,104.715
+gnn_fairness,42,1,Bexley,672,MLP,0.6827,306.575,103.3
+gnn_fairness,42,1,Bexley,672,GATv2,0.7654,348.208,115.816
+gnn_fairness,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+gnn_fairness,42,1,Brent,575,MLR,0.6306,475.734,239.761
+gnn_fairness,42,1,Brent,575,RF,0.652,492.364,247.922
+gnn_fairness,42,1,Brent,575,XGBoost,0.642,479.007,244.099
+gnn_fairness,42,1,Brent,575,MLP,0.6233,467.684,236.974
+gnn_fairness,42,1,Brent,575,GATv2,0.6849,507.6,260.422
+gnn_fairness,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+gnn_fairness,42,1,Bromley,1179,MLR,0.6641,169.238,67.537
+gnn_fairness,42,1,Bromley,1179,RF,0.6545,185.347,66.561
+gnn_fairness,42,1,Bromley,1179,XGBoost,0.6504,173.117,66.142
+gnn_fairness,42,1,Bromley,1179,MLP,0.6558,164.658,66.692
+gnn_fairness,42,1,Bromley,1179,GATv2,0.8016,214.276,81.52
+gnn_fairness,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+gnn_fairness,42,1,Camden,424,MLR,0.5214,446.19,210.558
+gnn_fairness,42,1,Camden,424,RF,0.523,449.668,211.207
+gnn_fairness,42,1,Camden,424,XGBoost,0.539,460.715,217.675
+gnn_fairness,42,1,Camden,424,MLP,0.5004,420.309,202.057
+gnn_fairness,42,1,Camden,424,GATv2,0.7386,577.437,298.26
+gnn_fairness,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+gnn_fairness,42,1,City of London,101,MLR,0.5655,708.56,368.551
+gnn_fairness,42,1,City of London,101,RF,0.5729,731.442,373.354
+gnn_fairness,42,1,City of London,101,XGBoost,0.5667,703.402,369.289
+gnn_fairness,42,1,City of London,101,MLP,0.5762,650.054,375.467
+gnn_fairness,42,1,City of London,101,GATv2,0.7684,917.125,500.742
+gnn_fairness,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+gnn_fairness,42,1,Croydon,1019,MLR,0.6755,274.015,111.225
+gnn_fairness,42,1,Croydon,1019,RF,0.6783,278.265,111.688
+gnn_fairness,42,1,Croydon,1019,XGBoost,0.6603,264.784,108.717
+gnn_fairness,42,1,Croydon,1019,MLP,0.6659,270.232,109.642
+gnn_fairness,42,1,Croydon,1019,GATv2,0.7785,314.306,128.194
+gnn_fairness,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+gnn_fairness,42,1,Ealing,683,MLR,0.6504,470.834,214.746
+gnn_fairness,42,1,Ealing,683,RF,0.6688,502.064,220.826
+gnn_fairness,42,1,Ealing,683,XGBoost,0.6339,466.953,209.298
+gnn_fairness,42,1,Ealing,683,MLP,0.6401,466.09,211.327
+gnn_fairness,42,1,Ealing,683,GATv2,0.7703,562.312,254.336
+gnn_fairness,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+gnn_fairness,42,1,Enfield,707,MLR,0.6777,363.783,163.561
+gnn_fairness,42,1,Enfield,707,RF,0.7019,394.193,169.399
+gnn_fairness,42,1,Enfield,707,XGBoost,0.7009,394.895,169.168
+gnn_fairness,42,1,Enfield,707,MLP,0.6638,357.276,160.213
+gnn_fairness,42,1,Enfield,707,GATv2,0.7732,416.015,186.622
+gnn_fairness,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+gnn_fairness,42,1,Greenwich,659,MLR,0.6641,515.151,189.529
+gnn_fairness,42,1,Greenwich,659,RF,0.656,538.087,187.228
+gnn_fairness,42,1,Greenwich,659,XGBoost,0.6363,526.515,181.603
+gnn_fairness,42,1,Greenwich,659,MLP,0.6566,508.849,187.386
+gnn_fairness,42,1,Greenwich,659,GATv2,0.7694,569.242,219.583
+gnn_fairness,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+gnn_fairness,42,1,Hackney,442,MLR,0.4995,366.237,196.81
+gnn_fairness,42,1,Hackney,442,RF,0.5326,391.617,209.832
+gnn_fairness,42,1,Hackney,442,XGBoost,0.5063,361.219,199.469
+gnn_fairness,42,1,Hackney,442,MLP,0.4908,354.96,193.37
+gnn_fairness,42,1,Hackney,442,GATv2,0.7307,508.936,287.864
+gnn_fairness,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+gnn_fairness,42,1,Hammersmith and Fulham,276,MLR,0.6967,659.552,330.33
+gnn_fairness,42,1,Hammersmith and Fulham,276,RF,0.673,677.794,319.098
+gnn_fairness,42,1,Hammersmith and Fulham,276,XGBoost,0.6941,673.634,329.077
+gnn_fairness,42,1,Hammersmith and Fulham,276,MLP,0.6925,647.394,328.324
+gnn_fairness,42,1,Hammersmith and Fulham,276,GATv2,0.7278,698.894,345.084
+gnn_fairness,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+gnn_fairness,42,1,Haringey,461,MLR,0.6572,625.971,297.864
+gnn_fairness,42,1,Haringey,461,RF,0.6623,678.695,300.208
+gnn_fairness,42,1,Haringey,461,XGBoost,0.6837,689.043,309.917
+gnn_fairness,42,1,Haringey,461,MLP,0.6313,619.059,286.165
+gnn_fairness,42,1,Haringey,461,GATv2,0.664,662.816,300.965
+gnn_fairness,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+gnn_fairness,42,1,Harrow,432,MLR,0.634,296.505,149.177
+gnn_fairness,42,1,Harrow,432,RF,0.6324,300.483,148.808
+gnn_fairness,42,1,Harrow,432,XGBoost,0.6014,280.506,141.514
+gnn_fairness,42,1,Harrow,432,MLP,0.618,282.036,145.414
+gnn_fairness,42,1,Harrow,432,GATv2,0.7522,358.672,177.007
+gnn_fairness,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+gnn_fairness,42,1,Havering,691,MLR,0.712,354.724,119.289
+gnn_fairness,42,1,Havering,691,RF,0.7215,366.109,120.889
+gnn_fairness,42,1,Havering,691,XGBoost,0.879,372.771,147.268
+gnn_fairness,42,1,Havering,691,MLP,0.7109,349.975,119.108
+gnn_fairness,42,1,Havering,691,GATv2,0.8245,401.453,138.134
+gnn_fairness,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+gnn_fairness,42,1,Hillingdon,706,MLR,0.7117,485.526,169.552
+gnn_fairness,42,1,Hillingdon,706,RF,0.7647,559.197,182.194
+gnn_fairness,42,1,Hillingdon,706,XGBoost,0.7618,527.187,181.497
+gnn_fairness,42,1,Hillingdon,706,MLP,0.7306,498.272,174.051
+gnn_fairness,42,1,Hillingdon,706,GATv2,0.8261,591.874,196.816
+gnn_fairness,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+gnn_fairness,42,1,Hounslow,651,MLR,0.6382,361.817,159.345
+gnn_fairness,42,1,Hounslow,651,RF,0.6539,370.987,163.263
+gnn_fairness,42,1,Hounslow,651,XGBoost,0.6377,350.568,159.231
+gnn_fairness,42,1,Hounslow,651,MLP,0.6131,336.284,153.082
+gnn_fairness,42,1,Hounslow,651,GATv2,0.6697,367.912,167.204
+gnn_fairness,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+gnn_fairness,42,1,Islington,349,MLR,0.5887,621.572,305.82
+gnn_fairness,42,1,Islington,349,RF,0.5871,626.78,305.001
+gnn_fairness,42,1,Islington,349,XGBoost,0.5884,595.045,305.683
+gnn_fairness,42,1,Islington,349,MLP,0.5868,605.788,304.859
+gnn_fairness,42,1,Islington,349,GATv2,0.677,652.178,351.725
+gnn_fairness,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+gnn_fairness,42,1,Kensington and Chelsea,260,MLR,0.5986,425.149,259.509
+gnn_fairness,42,1,Kensington and Chelsea,260,RF,0.5484,406.399,237.759
+gnn_fairness,42,1,Kensington and Chelsea,260,XGBoost,0.5507,401.197,238.747
+gnn_fairness,42,1,Kensington and Chelsea,260,MLP,0.5809,402.377,251.845
+gnn_fairness,42,1,Kensington and Chelsea,260,GATv2,0.5949,428.61,257.888
+gnn_fairness,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+gnn_fairness,42,1,Kingston upon Thames,391,MLR,0.7114,495.003,165.752
+gnn_fairness,42,1,Kingston upon Thames,391,RF,0.7084,518.368,165.062
+gnn_fairness,42,1,Kingston upon Thames,391,XGBoost,0.6785,490.933,158.096
+gnn_fairness,42,1,Kingston upon Thames,391,MLP,0.6904,483.804,160.86
+gnn_fairness,42,1,Kingston upon Thames,391,GATv2,0.8366,574.633,194.94
+gnn_fairness,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+gnn_fairness,42,1,Lambeth,577,MLR,0.6441,835.301,320.379
+gnn_fairness,42,1,Lambeth,577,RF,0.6296,828.417,313.152
+gnn_fairness,42,1,Lambeth,577,XGBoost,0.6209,805.317,308.834
+gnn_fairness,42,1,Lambeth,577,MLP,0.6064,803.314,301.604
+gnn_fairness,42,1,Lambeth,577,GATv2,0.7656,925.762,380.77
+gnn_fairness,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+gnn_fairness,42,1,Lewisham,609,MLR,0.5984,400.521,176.196
+gnn_fairness,42,1,Lewisham,609,RF,0.6069,426.002,178.72
+gnn_fairness,42,1,Lewisham,609,XGBoost,0.6227,437.131,183.374
+gnn_fairness,42,1,Lewisham,609,MLP,0.6019,396.658,177.229
+gnn_fairness,42,1,Lewisham,609,GATv2,0.7248,486.212,213.428
+gnn_fairness,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+gnn_fairness,42,1,Merton,457,MLR,0.6653,422.94,172.39
+gnn_fairness,42,1,Merton,457,RF,0.6571,438.249,170.263
+gnn_fairness,42,1,Merton,457,XGBoost,0.6766,441.689,175.322
+gnn_fairness,42,1,Merton,457,MLP,0.6546,419.728,169.62
+gnn_fairness,42,1,Merton,457,GATv2,0.7853,503.711,203.503
+gnn_fairness,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+gnn_fairness,42,1,Newham,465,MLR,0.5694,375.153,218.299
+gnn_fairness,42,1,Newham,465,RF,0.6077,415.179,232.974
+gnn_fairness,42,1,Newham,465,XGBoost,0.615,414.898,235.786
+gnn_fairness,42,1,Newham,465,MLP,0.576,380.006,220.829
+gnn_fairness,42,1,Newham,465,GATv2,0.7011,485.654,268.793
+gnn_fairness,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+gnn_fairness,42,1,Redbridge,539,MLR,0.682,361.306,167.795
+gnn_fairness,42,1,Redbridge,539,RF,0.6852,369.409,168.573
+gnn_fairness,42,1,Redbridge,539,XGBoost,0.6522,334.046,160.465
+gnn_fairness,42,1,Redbridge,539,MLP,0.664,343.837,163.373
+gnn_fairness,42,1,Redbridge,539,GATv2,0.7821,443.739,192.418
+gnn_fairness,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+gnn_fairness,42,1,Richmond upon Thames,484,MLR,0.6485,268.456,120.392
+gnn_fairness,42,1,Richmond upon Thames,484,RF,0.6594,266.909,122.405
+gnn_fairness,42,1,Richmond upon Thames,484,XGBoost,0.6782,271.139,125.892
+gnn_fairness,42,1,Richmond upon Thames,484,MLP,0.6762,256.093,125.521
+gnn_fairness,42,1,Richmond upon Thames,484,GATv2,0.7406,298.522,137.475
+gnn_fairness,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+gnn_fairness,42,1,Southwark,583,MLR,0.581,644.255,279.801
+gnn_fairness,42,1,Southwark,583,RF,0.6161,722.073,296.708
+gnn_fairness,42,1,Southwark,583,XGBoost,0.5916,696.828,284.892
+gnn_fairness,42,1,Southwark,583,MLP,0.5763,660.949,277.504
+gnn_fairness,42,1,Southwark,583,GATv2,0.676,719.661,325.541
+gnn_fairness,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+gnn_fairness,42,1,Sutton,421,MLR,0.6465,226.834,105.205
+gnn_fairness,42,1,Sutton,421,RF,0.675,243.169,109.846
+gnn_fairness,42,1,Sutton,421,XGBoost,0.6911,248.006,112.475
+gnn_fairness,42,1,Sutton,421,MLP,0.6392,219.688,104.022
+gnn_fairness,42,1,Sutton,421,GATv2,0.7607,268.284,123.796
+gnn_fairness,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+gnn_fairness,42,1,Tower Hamlets,381,MLR,0.5742,302.307,163.227
+gnn_fairness,42,1,Tower Hamlets,381,RF,0.6036,310.006,171.589
+gnn_fairness,42,1,Tower Hamlets,381,XGBoost,0.585,305.412,166.295
+gnn_fairness,42,1,Tower Hamlets,381,MLP,0.588,298.992,167.147
+gnn_fairness,42,1,Tower Hamlets,381,GATv2,0.7537,366.405,214.255
+gnn_fairness,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+gnn_fairness,42,1,Waltham Forest,492,MLR,0.7183,501.817,227.193
+gnn_fairness,42,1,Waltham Forest,492,RF,0.6405,461.445,202.569
+gnn_fairness,42,1,Waltham Forest,492,XGBoost,0.6609,477.32,209.031
+gnn_fairness,42,1,Waltham Forest,492,MLP,0.6802,470.624,215.145
+gnn_fairness,42,1,Waltham Forest,492,GATv2,0.6753,449.997,213.596
+gnn_fairness,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+gnn_fairness,42,1,Wandsworth,481,MLR,0.634,569.571,269.459
+gnn_fairness,42,1,Wandsworth,481,RF,0.6413,586.685,272.53
+gnn_fairness,42,1,Wandsworth,481,XGBoost,0.6379,584.862,271.112
+gnn_fairness,42,1,Wandsworth,481,MLP,0.6267,561.552,266.332
+gnn_fairness,42,1,Wandsworth,481,GATv2,0.7528,681.222,319.943
+gnn_fairness,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+gnn_fairness,42,1,Westminster,419,MLR,0.5828,706.27,380.071
+gnn_fairness,42,1,Westminster,419,RF,0.5606,718.197,365.594
+gnn_fairness,42,1,Westminster,419,XGBoost,0.5787,701.358,377.379
+gnn_fairness,42,1,Westminster,419,MLP,0.5521,675.189,360.082
+gnn_fairness,42,1,Westminster,419,GATv2,0.6344,803.737,413.754
+idw,deterministic,1,Barking and Dagenham,364,IDW,0.8035,593.422,236.631
+idw,deterministic,1,Barnet,993,IDW,0.8581,374.974,183.529
+idw,deterministic,1,Bexley,672,IDW,0.8559,366.586,129.506
+idw,deterministic,1,Brent,575,IDW,0.8563,569.887,325.602
+idw,deterministic,1,Bromley,1179,IDW,0.9483,231.824,96.441
+idw,deterministic,1,Camden,424,IDW,0.8385,572.753,338.626
+idw,deterministic,1,City of London,101,IDW,0.8708,984.356,567.474
+idw,deterministic,1,Croydon,1019,IDW,0.857,332.145,141.119
+idw,deterministic,1,Ealing,683,IDW,0.8734,604.408,288.357
+idw,deterministic,1,Enfield,707,IDW,0.876,457.316,211.434
+idw,deterministic,1,Greenwich,659,IDW,0.8542,632.494,243.79
+idw,deterministic,1,Hackney,442,IDW,0.8065,550.359,317.765
+idw,deterministic,1,Hammersmith and Fulham,276,IDW,0.8082,782.836,383.198
+idw,deterministic,1,Haringey,461,IDW,0.8186,775.506,371.019
+idw,deterministic,1,Harrow,432,IDW,0.8283,391.934,194.903
+idw,deterministic,1,Havering,691,IDW,0.875,440.627,146.608
+idw,deterministic,1,Hillingdon,706,IDW,0.9244,581.901,220.226
+idw,deterministic,1,Hounslow,651,IDW,0.9094,460.46,227.07
+idw,deterministic,1,Islington,349,IDW,0.808,759.193,419.753
+idw,deterministic,1,Kensington and Chelsea,260,IDW,0.8407,572.156,364.475
+idw,deterministic,1,Kingston upon Thames,391,IDW,0.8929,595.692,208.046
+idw,deterministic,1,Lambeth,577,IDW,0.8788,983.57,437.065
+idw,deterministic,1,Lewisham,609,IDW,0.8632,557.644,254.179
+idw,deterministic,1,Merton,457,IDW,0.848,513.306,219.742
+idw,deterministic,1,Newham,465,IDW,0.8321,558.618,319.027
+idw,deterministic,1,Redbridge,539,IDW,0.7995,445.101,196.706
+idw,deterministic,1,Richmond upon Thames,484,IDW,0.8875,355.727,164.751
+idw,deterministic,1,Southwark,583,IDW,0.8104,854.973,390.233
+idw,deterministic,1,Sutton,421,IDW,0.8299,289.401,135.054
+idw,deterministic,1,Tower Hamlets,381,IDW,0.8218,407.615,233.622
+idw,deterministic,1,Waltham Forest,492,IDW,0.8669,572.979,274.199
+idw,deterministic,1,Wandsworth,481,IDW,0.7963,705.712,338.423
+idw,deterministic,1,Westminster,419,IDW,0.7677,896.337,500.659
+osm_only,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+osm_only,42,1,Barking and Dagenham,364,RF,0.7778,533.944,229.047
+osm_only,42,1,Barking and Dagenham,364,MLP,0.7938,589.941,233.774
+osm_only,42,1,Barking and Dagenham,364,GATv2,0.8344,602.468,245.709
+osm_only,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+osm_only,42,1,Barnet,993,RF,0.8246,372.466,176.355
+osm_only,42,1,Barnet,993,MLP,0.8249,375.555,176.409
+osm_only,42,1,Barnet,993,GATv2,0.823,376.75,176.008
+osm_only,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+osm_only,42,1,Bexley,672,RF,0.8185,356.546,123.843
+osm_only,42,1,Bexley,672,MLP,0.8239,361.253,124.663
+osm_only,42,1,Bexley,672,GATv2,0.8239,362.895,124.669
+osm_only,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+osm_only,42,1,Brent,575,RF,0.8045,580.696,305.882
+osm_only,42,1,Brent,575,MLP,0.8024,581.67,305.103
+osm_only,42,1,Brent,575,GATv2,0.8172,588.365,310.719
+osm_only,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+osm_only,42,1,Bromley,1179,RF,0.8759,213.88,89.071
+osm_only,42,1,Bromley,1179,MLP,0.8445,219.682,85.88
+osm_only,42,1,Bromley,1179,GATv2,0.8303,224.406,84.437
+osm_only,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+osm_only,42,1,Camden,424,RF,0.765,583.831,308.923
+osm_only,42,1,Camden,424,MLP,0.7882,600.398,318.28
+osm_only,42,1,Camden,424,GATv2,0.7968,625.622,321.771
+osm_only,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+osm_only,42,1,City of London,101,RF,0.8486,964.99,553.025
+osm_only,42,1,City of London,101,MLP,0.8029,922.32,523.239
+osm_only,42,1,City of London,101,GATv2,0.8549,965.818,557.112
+osm_only,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+osm_only,42,1,Croydon,1019,RF,0.8124,322.528,133.771
+osm_only,42,1,Croydon,1019,MLP,0.8182,326.481,134.73
+osm_only,42,1,Croydon,1019,GATv2,0.8397,329.163,138.262
+osm_only,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+osm_only,42,1,Ealing,683,RF,0.8306,591.951,274.24
+osm_only,42,1,Ealing,683,MLP,0.8202,589.971,270.783
+osm_only,42,1,Ealing,683,GATv2,0.8281,600.422,273.418
+osm_only,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+osm_only,42,1,Enfield,707,RF,0.8563,452.343,206.667
+osm_only,42,1,Enfield,707,MLP,0.8571,453.399,206.869
+osm_only,42,1,Enfield,707,GATv2,0.8549,454.591,206.324
+osm_only,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+osm_only,42,1,Greenwich,659,RF,0.8222,613.941,234.66
+osm_only,42,1,Greenwich,659,MLP,0.8241,614.816,235.193
+osm_only,42,1,Greenwich,659,GATv2,0.8318,620.349,237.4
+osm_only,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+osm_only,42,1,Hackney,442,RF,0.7772,529.26,306.201
+osm_only,42,1,Hackney,442,MLP,0.7781,526.097,306.556
+osm_only,42,1,Hackney,442,GATv2,0.8016,560.211,315.803
+osm_only,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+osm_only,42,1,Hammersmith and Fulham,276,RF,0.7784,757.623,369.073
+osm_only,42,1,Hammersmith and Fulham,276,MLP,0.7774,756.856,368.61
+osm_only,42,1,Hammersmith and Fulham,276,GATv2,0.7835,762.481,371.471
+osm_only,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+osm_only,42,1,Haringey,461,RF,0.8059,782.798,365.298
+osm_only,42,1,Haringey,461,MLP,0.8058,786.064,365.232
+osm_only,42,1,Haringey,461,GATv2,0.8162,797.968,369.95
+osm_only,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+osm_only,42,1,Harrow,432,RF,0.7739,373.382,182.117
+osm_only,42,1,Harrow,432,MLP,0.7887,382.667,185.598
+osm_only,42,1,Harrow,432,GATv2,0.8568,407.039,201.619
+osm_only,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+osm_only,42,1,Havering,691,RF,0.8142,402.022,136.416
+osm_only,42,1,Havering,691,MLP,0.8373,431.135,140.276
+osm_only,42,1,Havering,691,GATv2,0.8391,437.88,140.581
+osm_only,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+osm_only,42,1,Hillingdon,706,RF,0.8806,599.276,209.804
+osm_only,42,1,Hillingdon,706,MLP,0.8776,601.839,209.092
+osm_only,42,1,Hillingdon,706,GATv2,0.9033,621.175,215.209
+osm_only,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+osm_only,42,1,Hounslow,651,RF,0.8104,440.832,202.356
+osm_only,42,1,Hounslow,651,MLP,0.7994,433.294,199.608
+osm_only,42,1,Hounslow,651,GATv2,0.865,464.559,215.991
+osm_only,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+osm_only,42,1,Islington,349,RF,0.7692,736.308,399.624
+osm_only,42,1,Islington,349,MLP,0.7806,745.158,405.516
+osm_only,42,1,Islington,349,GATv2,0.792,761.323,411.445
+osm_only,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+osm_only,42,1,Kensington and Chelsea,260,RF,0.7649,530.093,331.602
+osm_only,42,1,Kensington and Chelsea,260,MLP,0.736,517.629,319.063
+osm_only,42,1,Kensington and Chelsea,260,GATv2,0.8177,589.721,354.513
+osm_only,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+osm_only,42,1,Kingston upon Thames,391,RF,0.8255,571.69,192.349
+osm_only,42,1,Kingston upon Thames,391,MLP,0.8152,566.882,189.938
+osm_only,42,1,Kingston upon Thames,391,GATv2,0.8491,580.498,197.834
+osm_only,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+osm_only,42,1,Lambeth,577,RF,0.838,952.31,416.81
+osm_only,42,1,Lambeth,577,MLP,0.8353,963.491,415.435
+osm_only,42,1,Lambeth,577,GATv2,0.8343,967.793,414.97
+osm_only,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+osm_only,42,1,Lewisham,609,RF,0.8059,527.435,237.319
+osm_only,42,1,Lewisham,609,MLP,0.7934,524.203,233.63
+osm_only,42,1,Lewisham,609,GATv2,0.8115,533.945,238.956
+osm_only,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+osm_only,42,1,Merton,457,RF,0.7941,499.674,205.785
+osm_only,42,1,Merton,457,MLP,0.803,507.108,208.07
+osm_only,42,1,Merton,457,GATv2,0.8084,509.899,209.489
+osm_only,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+osm_only,42,1,Newham,465,RF,0.7762,532.867,297.583
+osm_only,42,1,Newham,465,MLP,0.7641,520.949,292.938
+osm_only,42,1,Newham,465,GATv2,0.794,549.001,304.415
+osm_only,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+osm_only,42,1,Redbridge,539,RF,0.7813,426.366,192.235
+osm_only,42,1,Redbridge,539,MLP,0.8109,464.026,199.506
+osm_only,42,1,Redbridge,539,GATv2,0.8158,469.163,200.704
+osm_only,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+osm_only,42,1,Richmond upon Thames,484,RF,0.7525,300.767,139.687
+osm_only,42,1,Richmond upon Thames,484,MLP,0.7955,320.102,147.667
+osm_only,42,1,Richmond upon Thames,484,GATv2,0.7696,321.215,142.872
+osm_only,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+osm_only,42,1,Southwark,583,RF,0.8135,877.972,391.741
+osm_only,42,1,Southwark,583,MLP,0.8136,876.057,391.794
+osm_only,42,1,Southwark,583,GATv2,0.8851,919.946,426.214
+osm_only,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+osm_only,42,1,Sutton,421,RF,0.8535,288.395,138.899
+osm_only,42,1,Sutton,421,MLP,0.8424,290.412,137.099
+osm_only,42,1,Sutton,421,GATv2,0.8462,297.913,137.712
+osm_only,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+osm_only,42,1,Tower Hamlets,381,RF,0.8204,397.818,233.221
+osm_only,42,1,Tower Hamlets,381,MLP,0.8287,389.267,235.586
+osm_only,42,1,Tower Hamlets,381,GATv2,0.8054,413.373,228.971
+osm_only,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+osm_only,42,1,Waltham Forest,492,RF,0.7556,513.918,238.99
+osm_only,42,1,Waltham Forest,492,MLP,0.7504,512.852,237.346
+osm_only,42,1,Waltham Forest,492,GATv2,0.8247,554.257,260.858
+osm_only,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+osm_only,42,1,Wandsworth,481,RF,0.7803,700.244,331.624
+osm_only,42,1,Wandsworth,481,MLP,0.7815,702.227,332.133
+osm_only,42,1,Wandsworth,481,GATv2,0.7964,715.638,338.474
+osm_only,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+osm_only,42,1,Westminster,419,RF,0.7978,935.287,520.278
+osm_only,42,1,Westminster,419,MLP,0.7758,923.407,505.917
+osm_only,42,1,Westminster,419,GATv2,0.8052,950.6,525.122
+osm_only_fastbaselines,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+osm_only_fastbaselines,42,1,Barking and Dagenham,364,MLR,0.8208,597.805,241.702
+osm_only_fastbaselines,42,1,Barking and Dagenham,364,RF,0.7765,530.96,228.681
+osm_only_fastbaselines,42,1,Barking and Dagenham,364,XGBoost,0.7251,477.006,213.544
+osm_only_fastbaselines,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+osm_only_fastbaselines,42,1,Barnet,993,MLR,0.8344,371.385,178.447
+osm_only_fastbaselines,42,1,Barnet,993,RF,0.8248,372.392,176.406
+osm_only_fastbaselines,42,1,Barnet,993,XGBoost,0.8263,370.618,176.713
+osm_only_fastbaselines,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+osm_only_fastbaselines,42,1,Bexley,672,MLR,0.8341,364.364,126.209
+osm_only_fastbaselines,42,1,Bexley,672,RF,0.8181,355.898,123.792
+osm_only_fastbaselines,42,1,Bexley,672,XGBoost,0.8137,355.104,123.126
+osm_only_fastbaselines,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+osm_only_fastbaselines,42,1,Brent,575,MLR,0.8068,583.284,306.752
+osm_only_fastbaselines,42,1,Brent,575,RF,0.8036,579.835,305.548
+osm_only_fastbaselines,42,1,Brent,575,XGBoost,0.8049,578.825,306.025
+osm_only_fastbaselines,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+osm_only_fastbaselines,42,1,Bromley,1179,MLR,0.862,218.619,87.665
+osm_only_fastbaselines,42,1,Bromley,1179,RF,0.8783,214.908,89.315
+osm_only_fastbaselines,42,1,Bromley,1179,XGBoost,0.892,213.648,90.709
+osm_only_fastbaselines,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+osm_only_fastbaselines,42,1,Camden,424,MLR,0.7689,572.815,310.511
+osm_only_fastbaselines,42,1,Camden,424,RF,0.7667,585.092,309.636
+osm_only_fastbaselines,42,1,Camden,424,XGBoost,0.7803,560.116,315.095
+osm_only_fastbaselines,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+osm_only_fastbaselines,42,1,City of London,101,MLR,0.8142,926.267,530.619
+osm_only_fastbaselines,42,1,City of London,101,RF,0.8552,964.114,557.323
+osm_only_fastbaselines,42,1,City of London,101,XGBoost,0.8721,978.048,568.315
+osm_only_fastbaselines,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+osm_only_fastbaselines,42,1,Croydon,1019,MLR,0.813,319.045,133.866
+osm_only_fastbaselines,42,1,Croydon,1019,RF,0.8132,322.256,133.896
+osm_only_fastbaselines,42,1,Croydon,1019,XGBoost,0.8158,320.977,134.327
+osm_only_fastbaselines,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+osm_only_fastbaselines,42,1,Ealing,683,MLR,0.8242,587.52,272.132
+osm_only_fastbaselines,42,1,Ealing,683,RF,0.8289,590.781,273.671
+osm_only_fastbaselines,42,1,Ealing,683,XGBoost,0.8279,594.556,273.341
+osm_only_fastbaselines,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+osm_only_fastbaselines,42,1,Enfield,707,MLR,0.8334,438.578,201.142
+osm_only_fastbaselines,42,1,Enfield,707,RF,0.8567,451.849,206.759
+osm_only_fastbaselines,42,1,Enfield,707,XGBoost,0.8784,459.488,212.015
+osm_only_fastbaselines,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+osm_only_fastbaselines,42,1,Greenwich,659,MLR,0.8392,621.149,239.509
+osm_only_fastbaselines,42,1,Greenwich,659,RF,0.8216,613.564,234.468
+osm_only_fastbaselines,42,1,Greenwich,659,XGBoost,0.8225,617.712,234.739
+osm_only_fastbaselines,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+osm_only_fastbaselines,42,1,Hackney,442,MLR,0.7748,522.731,305.269
+osm_only_fastbaselines,42,1,Hackney,442,RF,0.7819,531.751,308.06
+osm_only_fastbaselines,42,1,Hackney,442,XGBoost,0.7766,520.149,305.96
+osm_only_fastbaselines,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+osm_only_fastbaselines,42,1,Hammersmith and Fulham,276,MLR,0.7812,754.605,370.41
+osm_only_fastbaselines,42,1,Hammersmith and Fulham,276,RF,0.7788,758.48,369.251
+osm_only_fastbaselines,42,1,Hammersmith and Fulham,276,XGBoost,0.7957,767.795,377.285
+osm_only_fastbaselines,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+osm_only_fastbaselines,42,1,Haringey,461,MLR,0.8002,783.236,362.694
+osm_only_fastbaselines,42,1,Haringey,461,RF,0.8079,784.225,366.177
+osm_only_fastbaselines,42,1,Haringey,461,XGBoost,0.7916,759.759,358.798
+osm_only_fastbaselines,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+osm_only_fastbaselines,42,1,Harrow,432,MLR,0.7726,372.277,181.806
+osm_only_fastbaselines,42,1,Harrow,432,RF,0.774,373.407,182.121
+osm_only_fastbaselines,42,1,Harrow,432,XGBoost,0.7521,364.668,176.98
+osm_only_fastbaselines,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+osm_only_fastbaselines,42,1,Havering,691,MLR,0.8335,436.192,139.653
+osm_only_fastbaselines,42,1,Havering,691,RF,0.8125,399.429,136.126
+osm_only_fastbaselines,42,1,Havering,691,XGBoost,0.8451,393.784,141.589
+osm_only_fastbaselines,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+osm_only_fastbaselines,42,1,Hillingdon,706,MLR,0.8899,606.284,212.004
+osm_only_fastbaselines,42,1,Hillingdon,706,RF,0.8785,598.734,209.294
+osm_only_fastbaselines,42,1,Hillingdon,706,XGBoost,0.905,579.501,215.618
+osm_only_fastbaselines,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+osm_only_fastbaselines,42,1,Hounslow,651,MLR,0.8059,437.452,201.217
+osm_only_fastbaselines,42,1,Hounslow,651,RF,0.8109,440.438,202.473
+osm_only_fastbaselines,42,1,Hounslow,651,XGBoost,0.8026,432.352,200.408
+osm_only_fastbaselines,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+osm_only_fastbaselines,42,1,Islington,349,MLR,0.7826,745.051,406.575
+osm_only_fastbaselines,42,1,Islington,349,RF,0.7663,733.109,398.094
+osm_only_fastbaselines,42,1,Islington,349,XGBoost,0.7841,746.281,407.381
+osm_only_fastbaselines,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+osm_only_fastbaselines,42,1,Kensington and Chelsea,260,MLR,0.7474,496.892,324.021
+osm_only_fastbaselines,42,1,Kensington and Chelsea,260,RF,0.7651,528.658,331.677
+osm_only_fastbaselines,42,1,Kensington and Chelsea,260,XGBoost,0.7596,517.509,329.305
+osm_only_fastbaselines,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+osm_only_fastbaselines,42,1,Kingston upon Thames,391,MLR,0.8139,563.235,189.641
+osm_only_fastbaselines,42,1,Kingston upon Thames,391,RF,0.8245,571.425,192.107
+osm_only_fastbaselines,42,1,Kingston upon Thames,391,XGBoost,0.8444,584.575,196.744
+osm_only_fastbaselines,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+osm_only_fastbaselines,42,1,Lambeth,577,MLR,0.8363,970.878,415.94
+osm_only_fastbaselines,42,1,Lambeth,577,RF,0.839,954.859,417.293
+osm_only_fastbaselines,42,1,Lambeth,577,XGBoost,0.8332,938.693,414.395
+osm_only_fastbaselines,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+osm_only_fastbaselines,42,1,Lewisham,609,MLR,0.8053,530.594,237.117
+osm_only_fastbaselines,42,1,Lewisham,609,RF,0.8065,526.069,237.476
+osm_only_fastbaselines,42,1,Lewisham,609,XGBoost,0.8184,536.236,240.975
+osm_only_fastbaselines,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+osm_only_fastbaselines,42,1,Merton,457,MLR,0.8027,505.073,208.0
+osm_only_fastbaselines,42,1,Merton,457,RF,0.7944,500.028,205.863
+osm_only_fastbaselines,42,1,Merton,457,XGBoost,0.7926,491.134,205.392
+osm_only_fastbaselines,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+osm_only_fastbaselines,42,1,Newham,465,MLR,0.7602,519.397,291.474
+osm_only_fastbaselines,42,1,Newham,465,RF,0.78,534.515,299.06
+osm_only_fastbaselines,42,1,Newham,465,XGBoost,0.7741,529.743,296.778
+osm_only_fastbaselines,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+osm_only_fastbaselines,42,1,Redbridge,539,MLR,0.8152,468.432,200.578
+osm_only_fastbaselines,42,1,Redbridge,539,RF,0.776,420.219,190.92
+osm_only_fastbaselines,42,1,Redbridge,539,XGBoost,0.7776,447.652,191.311
+osm_only_fastbaselines,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+osm_only_fastbaselines,42,1,Richmond upon Thames,484,MLR,0.7791,318.774,144.634
+osm_only_fastbaselines,42,1,Richmond upon Thames,484,RF,0.752,296.606,139.608
+osm_only_fastbaselines,42,1,Richmond upon Thames,484,XGBoost,0.7531,309.831,139.801
+osm_only_fastbaselines,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+osm_only_fastbaselines,42,1,Southwark,583,MLR,0.8167,874.766,393.283
+osm_only_fastbaselines,42,1,Southwark,583,RF,0.8153,878.844,392.62
+osm_only_fastbaselines,42,1,Southwark,583,XGBoost,0.8099,876.932,390.033
+osm_only_fastbaselines,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+osm_only_fastbaselines,42,1,Sutton,421,MLR,0.8557,290.489,139.255
+osm_only_fastbaselines,42,1,Sutton,421,RF,0.853,288.003,138.815
+osm_only_fastbaselines,42,1,Sutton,421,XGBoost,0.8567,287.622,139.415
+osm_only_fastbaselines,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+osm_only_fastbaselines,42,1,Tower Hamlets,381,MLR,0.8258,386.708,234.756
+osm_only_fastbaselines,42,1,Tower Hamlets,381,RF,0.819,397.67,232.835
+osm_only_fastbaselines,42,1,Tower Hamlets,381,XGBoost,0.8021,392.039,228.021
+osm_only_fastbaselines,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+osm_only_fastbaselines,42,1,Waltham Forest,492,MLR,0.7578,515.681,239.693
+osm_only_fastbaselines,42,1,Waltham Forest,492,RF,0.7527,510.229,238.066
+osm_only_fastbaselines,42,1,Waltham Forest,492,XGBoost,0.7752,522.489,245.203
+osm_only_fastbaselines,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+osm_only_fastbaselines,42,1,Wandsworth,481,MLR,0.7866,704.909,334.281
+osm_only_fastbaselines,42,1,Wandsworth,481,RF,0.7816,701.697,332.152
+osm_only_fastbaselines,42,1,Wandsworth,481,XGBoost,0.786,699.761,334.052
+osm_only_fastbaselines,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+osm_only_fastbaselines,42,1,Westminster,419,MLR,0.7618,908.181,496.784
+osm_only_fastbaselines,42,1,Westminster,419,RF,0.7964,933.955,519.347
+osm_only_fastbaselines,42,1,Westminster,419,XGBoost,0.784,914.918,511.27
+osm_sc,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+osm_sc,42,1,Barking and Dagenham,364,MLR,0.7168,539.377,211.082
+osm_sc,42,1,Barking and Dagenham,364,RF,0.6925,505.747,203.943
+osm_sc,42,1,Barking and Dagenham,364,XGBoost,0.6693,511.632,197.105
+osm_sc,42,1,Barking and Dagenham,364,MLP,0.6913,527.288,203.579
+osm_sc,42,1,Barking and Dagenham,364,GATv2,0.7459,563.966,219.671
+osm_sc,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+osm_sc,42,1,Barnet,993,MLR,0.7126,360.28,152.393
+osm_sc,42,1,Barnet,993,RF,0.6529,308.077,139.628
+osm_sc,42,1,Barnet,993,XGBoost,0.6491,301.156,138.819
+osm_sc,42,1,Barnet,993,MLP,0.6786,308.954,145.138
+osm_sc,42,1,Barnet,993,GATv2,0.6977,316.571,149.209
+osm_sc,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+osm_sc,42,1,Bexley,672,MLR,0.6963,299.589,105.357
+osm_sc,42,1,Bexley,672,RF,0.6881,313.556,104.112
+osm_sc,42,1,Bexley,672,XGBoost,0.7286,305.796,110.242
+osm_sc,42,1,Bexley,672,MLP,0.6805,300.895,102.961
+osm_sc,42,1,Bexley,672,GATv2,0.7942,359.216,120.174
+osm_sc,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+osm_sc,42,1,Brent,575,MLR,0.6371,476.447,242.245
+osm_sc,42,1,Brent,575,RF,0.6401,478.199,243.375
+osm_sc,42,1,Brent,575,XGBoost,0.6423,480.919,244.207
+osm_sc,42,1,Brent,575,MLP,0.6207,463.448,236.017
+osm_sc,42,1,Brent,575,GATv2,0.7734,569.934,294.057
+osm_sc,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+osm_sc,42,1,Bromley,1179,MLR,0.6855,179.279,69.712
+osm_sc,42,1,Bromley,1179,RF,0.6412,168.048,65.207
+osm_sc,42,1,Bromley,1179,XGBoost,0.6525,169.475,66.361
+osm_sc,42,1,Bromley,1179,MLP,0.6582,162.541,66.931
+osm_sc,42,1,Bromley,1179,GATv2,0.7586,211.083,77.144
+osm_sc,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+osm_sc,42,1,Camden,424,MLR,0.5176,444.391,209.036
+osm_sc,42,1,Camden,424,RF,0.5283,457.683,213.337
+osm_sc,42,1,Camden,424,XGBoost,0.5155,433.292,208.168
+osm_sc,42,1,Camden,424,MLP,0.5073,432.551,204.849
+osm_sc,42,1,Camden,424,GATv2,0.705,566.021,284.686
+osm_sc,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+osm_sc,42,1,City of London,101,MLR,0.5847,729.957,381.032
+osm_sc,42,1,City of London,101,RF,0.5634,708.713,367.124
+osm_sc,42,1,City of London,101,XGBoost,0.5526,670.312,360.118
+osm_sc,42,1,City of London,101,MLP,0.5892,663.598,383.989
+osm_sc,42,1,City of London,101,GATv2,0.8205,970.219,534.68
+osm_sc,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+osm_sc,42,1,Croydon,1019,MLR,0.6809,272.69,112.118
+osm_sc,42,1,Croydon,1019,RF,0.6665,273.37,109.738
+osm_sc,42,1,Croydon,1019,XGBoost,0.6589,267.732,108.497
+osm_sc,42,1,Croydon,1019,MLP,0.6745,275.692,111.068
+osm_sc,42,1,Croydon,1019,GATv2,0.7424,293.641,122.243
+osm_sc,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+osm_sc,42,1,Ealing,683,MLR,0.6578,478.529,217.162
+osm_sc,42,1,Ealing,683,RF,0.6645,495.165,219.398
+osm_sc,42,1,Ealing,683,XGBoost,0.638,465.245,210.628
+osm_sc,42,1,Ealing,683,MLP,0.6509,475.243,214.884
+osm_sc,42,1,Ealing,683,GATv2,0.7275,533.023,240.191
+osm_sc,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+osm_sc,42,1,Enfield,707,MLR,0.6684,360.65,161.332
+osm_sc,42,1,Enfield,707,RF,0.6983,390.581,168.547
+osm_sc,42,1,Enfield,707,XGBoost,0.7084,387.737,170.978
+osm_sc,42,1,Enfield,707,MLP,0.6651,366.68,160.515
+osm_sc,42,1,Enfield,707,GATv2,0.7364,400.865,177.737
+osm_sc,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+osm_sc,42,1,Greenwich,659,MLR,0.6709,509.89,191.46
+osm_sc,42,1,Greenwich,659,RF,0.6536,530.716,186.537
+osm_sc,42,1,Greenwich,659,XGBoost,0.6435,536.147,183.645
+osm_sc,42,1,Greenwich,659,MLP,0.6667,515.596,190.258
+osm_sc,42,1,Greenwich,659,GATv2,0.725,545.198,206.909
+osm_sc,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+osm_sc,42,1,Hackney,442,MLR,0.5216,379.594,205.514
+osm_sc,42,1,Hackney,442,RF,0.5222,380.542,205.734
+osm_sc,42,1,Hackney,442,XGBoost,0.5106,363.47,201.176
+osm_sc,42,1,Hackney,442,MLP,0.498,361.144,196.217
+osm_sc,42,1,Hackney,442,GATv2,0.7359,523.427,289.946
+osm_sc,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+osm_sc,42,1,Hammersmith and Fulham,276,MLR,0.6997,659.442,331.756
+osm_sc,42,1,Hammersmith and Fulham,276,RF,0.6745,665.092,319.807
+osm_sc,42,1,Hammersmith and Fulham,276,XGBoost,0.6996,681.203,331.715
+osm_sc,42,1,Hammersmith and Fulham,276,MLP,0.6873,650.198,325.852
+osm_sc,42,1,Hammersmith and Fulham,276,GATv2,0.7557,759.734,358.318
+osm_sc,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+osm_sc,42,1,Haringey,461,MLR,0.6617,646.336,299.924
+osm_sc,42,1,Haringey,461,RF,0.6705,686.161,303.927
+osm_sc,42,1,Haringey,461,XGBoost,0.7074,712.336,320.639
+osm_sc,42,1,Haringey,461,MLP,0.6494,644.065,294.356
+osm_sc,42,1,Haringey,461,GATv2,0.7386,729.577,334.778
+osm_sc,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+osm_sc,42,1,Harrow,432,MLR,0.6325,289.662,148.842
+osm_sc,42,1,Harrow,432,RF,0.6258,293.801,147.262
+osm_sc,42,1,Harrow,432,XGBoost,0.6063,273.026,142.657
+osm_sc,42,1,Harrow,432,MLP,0.6184,281.663,145.527
+osm_sc,42,1,Harrow,432,GATv2,0.7636,367.128,179.687
+osm_sc,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+osm_sc,42,1,Havering,691,MLR,0.7225,348.341,121.044
+osm_sc,42,1,Havering,691,RF,0.7156,352.396,119.898
+osm_sc,42,1,Havering,691,XGBoost,0.9997,372.024,167.485
+osm_sc,42,1,Havering,691,MLP,0.7314,338.825,122.548
+osm_sc,42,1,Havering,691,GATv2,0.7625,393.849,127.752
+osm_sc,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+osm_sc,42,1,Hillingdon,706,MLR,0.7342,482.25,174.921
+osm_sc,42,1,Hillingdon,706,RF,0.7428,537.839,176.978
+osm_sc,42,1,Hillingdon,706,XGBoost,0.8054,559.054,191.873
+osm_sc,42,1,Hillingdon,706,MLP,0.7315,488.093,174.287
+osm_sc,42,1,Hillingdon,706,GATv2,0.78,546.537,185.824
+osm_sc,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+osm_sc,42,1,Hounslow,651,MLR,0.6372,361.809,159.107
+osm_sc,42,1,Hounslow,651,RF,0.6335,359.837,158.173
+osm_sc,42,1,Hounslow,651,XGBoost,0.6386,351.591,159.46
+osm_sc,42,1,Hounslow,651,MLP,0.6148,335.48,153.503
+osm_sc,42,1,Hounslow,651,GATv2,0.7378,405.706,184.22
+osm_sc,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+osm_sc,42,1,Islington,349,MLR,0.5882,623.622,305.601
+osm_sc,42,1,Islington,349,RF,0.5934,616.132,308.294
+osm_sc,42,1,Islington,349,XGBoost,0.6061,613.504,314.868
+osm_sc,42,1,Islington,349,MLP,0.583,606.061,302.866
+osm_sc,42,1,Islington,349,GATv2,0.7639,749.888,396.861
+osm_sc,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+osm_sc,42,1,Kensington and Chelsea,260,MLR,0.6107,428.209,264.754
+osm_sc,42,1,Kensington and Chelsea,260,RF,0.5344,403.451,231.681
+osm_sc,42,1,Kensington and Chelsea,260,XGBoost,0.5448,405.513,236.196
+osm_sc,42,1,Kensington and Chelsea,260,MLP,0.5821,401.098,252.347
+osm_sc,42,1,Kensington and Chelsea,260,GATv2,0.6723,495.453,291.451
+osm_sc,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+osm_sc,42,1,Kingston upon Thames,391,MLR,0.7187,478.778,167.452
+osm_sc,42,1,Kingston upon Thames,391,RF,0.7035,510.446,163.921
+osm_sc,42,1,Kingston upon Thames,391,XGBoost,0.699,517.072,162.862
+osm_sc,42,1,Kingston upon Thames,391,MLP,0.6948,476.187,161.898
+osm_sc,42,1,Kingston upon Thames,391,GATv2,0.7809,528.862,181.961
+osm_sc,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+osm_sc,42,1,Lambeth,577,MLR,0.6299,830.266,313.303
+osm_sc,42,1,Lambeth,577,RF,0.6181,819.526,307.412
+osm_sc,42,1,Lambeth,577,XGBoost,0.6026,790.413,299.692
+osm_sc,42,1,Lambeth,577,MLP,0.6058,805.245,301.305
+osm_sc,42,1,Lambeth,577,GATv2,0.7404,927.389,368.271
+osm_sc,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+osm_sc,42,1,Lewisham,609,MLR,0.5939,390.868,174.894
+osm_sc,42,1,Lewisham,609,RF,0.6107,425.915,179.819
+osm_sc,42,1,Lewisham,609,XGBoost,0.6359,448.557,187.261
+osm_sc,42,1,Lewisham,609,MLP,0.5992,400.188,176.431
+osm_sc,42,1,Lewisham,609,GATv2,0.6384,446.564,187.999
+osm_sc,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+osm_sc,42,1,Merton,457,MLR,0.6724,429.507,174.239
+osm_sc,42,1,Merton,457,RF,0.6621,444.077,171.575
+osm_sc,42,1,Merton,457,XGBoost,0.6796,438.978,176.115
+osm_sc,42,1,Merton,457,MLP,0.6591,434.915,170.789
+osm_sc,42,1,Merton,457,GATv2,0.7144,476.074,185.119
+osm_sc,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+osm_sc,42,1,Newham,465,MLR,0.5691,375.36,218.205
+osm_sc,42,1,Newham,465,RF,0.602,418.048,230.81
+osm_sc,42,1,Newham,465,XGBoost,0.6082,422.856,233.179
+osm_sc,42,1,Newham,465,MLP,0.5813,386.259,222.868
+osm_sc,42,1,Newham,465,GATv2,0.641,435.726,245.745
+osm_sc,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+osm_sc,42,1,Redbridge,539,MLR,0.6769,356.636,166.54
+osm_sc,42,1,Redbridge,539,RF,0.6484,335.357,159.523
+osm_sc,42,1,Redbridge,539,XGBoost,0.6375,323.222,156.835
+osm_sc,42,1,Redbridge,539,MLP,0.6652,343.095,163.656
+osm_sc,42,1,Redbridge,539,GATv2,0.7431,404.982,182.822
+osm_sc,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+osm_sc,42,1,Richmond upon Thames,484,MLR,0.6717,263.94,124.688
+osm_sc,42,1,Richmond upon Thames,484,RF,0.6503,253.02,120.711
+osm_sc,42,1,Richmond upon Thames,484,XGBoost,0.6556,259.774,121.707
+osm_sc,42,1,Richmond upon Thames,484,MLP,0.7277,262.514,135.086
+osm_sc,42,1,Richmond upon Thames,484,GATv2,0.736,315.713,136.633
+osm_sc,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+osm_sc,42,1,Southwark,583,MLR,0.5824,648.497,280.46
+osm_sc,42,1,Southwark,583,RF,0.5975,708.69,287.709
+osm_sc,42,1,Southwark,583,XGBoost,0.584,690.144,281.205
+osm_sc,42,1,Southwark,583,MLP,0.575,672.032,276.899
+osm_sc,42,1,Southwark,583,GATv2,0.7619,845.383,366.88
+osm_sc,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+osm_sc,42,1,Sutton,421,MLR,0.6521,226.658,106.118
+osm_sc,42,1,Sutton,421,RF,0.6644,240.364,108.127
+osm_sc,42,1,Sutton,421,XGBoost,0.7153,262.296,116.405
+osm_sc,42,1,Sutton,421,MLP,0.6444,222.603,104.877
+osm_sc,42,1,Sutton,421,GATv2,0.7621,270.721,124.03
+osm_sc,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+osm_sc,42,1,Tower Hamlets,381,MLR,0.5751,302.989,163.479
+osm_sc,42,1,Tower Hamlets,381,RF,0.5907,308.482,167.914
+osm_sc,42,1,Tower Hamlets,381,XGBoost,0.5945,314.014,169.0
+osm_sc,42,1,Tower Hamlets,381,MLP,0.5903,295.832,167.812
+osm_sc,42,1,Tower Hamlets,381,GATv2,0.7126,382.344,202.569
+osm_sc,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+osm_sc,42,1,Waltham Forest,492,MLR,0.7171,499.503,226.803
+osm_sc,42,1,Waltham Forest,492,RF,0.6435,462.411,203.52
+osm_sc,42,1,Waltham Forest,492,XGBoost,0.6642,477.345,210.066
+osm_sc,42,1,Waltham Forest,492,MLP,0.6835,469.687,216.199
+osm_sc,42,1,Waltham Forest,492,GATv2,0.6937,484.824,219.406
+osm_sc,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+osm_sc,42,1,Wandsworth,481,MLR,0.6346,578.995,269.687
+osm_sc,42,1,Wandsworth,481,RF,0.6249,582.94,265.562
+osm_sc,42,1,Wandsworth,481,XGBoost,0.6382,590.097,271.218
+osm_sc,42,1,Wandsworth,481,MLP,0.6222,569.303,264.415
+osm_sc,42,1,Wandsworth,481,GATv2,0.6901,626.832,293.288
+osm_sc,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+osm_sc,42,1,Westminster,419,MLR,0.5851,704.555,381.554
+osm_sc,42,1,Westminster,419,RF,0.5467,682.565,356.525
+osm_sc,42,1,Westminster,419,XGBoost,0.5845,708.046,381.176
+osm_sc,42,1,Westminster,419,MLP,0.5468,677.322,356.603
+osm_sc,42,1,Westminster,419,GATv2,0.6218,757.654,405.483
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,IDW,0.8035,593.422,236.631
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,MLR,0.7074,534.294,208.308
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,RF,0.691,508.373,203.479
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,XGBoost,0.68,507.053,200.241
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,MLP,0.6839,524.325,201.406
+pca_ai23_osm_sc,42,1,Barking and Dagenham,364,GATv2,0.7504,567.365,220.972
+pca_ai23_osm_sc,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+pca_ai23_osm_sc,42,1,Barnet,993,IDW,0.8581,374.974,183.529
+pca_ai23_osm_sc,42,1,Barnet,993,MLR,0.6946,349.682,148.557
+pca_ai23_osm_sc,42,1,Barnet,993,RF,0.6573,311.217,140.571
+pca_ai23_osm_sc,42,1,Barnet,993,XGBoost,0.6507,304.37,139.164
+pca_ai23_osm_sc,42,1,Barnet,993,MLP,0.6657,305.562,142.362
+pca_ai23_osm_sc,42,1,Barnet,993,GATv2,0.7109,321.028,152.042
+pca_ai23_osm_sc,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+pca_ai23_osm_sc,42,1,Bexley,672,IDW,0.8559,366.586,129.506
+pca_ai23_osm_sc,42,1,Bexley,672,MLR,0.6929,303.615,104.839
+pca_ai23_osm_sc,42,1,Bexley,672,RF,0.6774,317.882,102.502
+pca_ai23_osm_sc,42,1,Bexley,672,XGBoost,0.7033,311.709,106.412
+pca_ai23_osm_sc,42,1,Bexley,672,MLP,0.6836,302.266,103.437
+pca_ai23_osm_sc,42,1,Bexley,672,GATv2,0.7674,347.732,116.11
+pca_ai23_osm_sc,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+pca_ai23_osm_sc,42,1,Brent,575,IDW,0.8563,569.887,325.602
+pca_ai23_osm_sc,42,1,Brent,575,MLR,0.6315,475.876,240.126
+pca_ai23_osm_sc,42,1,Brent,575,RF,0.6479,490.219,246.355
+pca_ai23_osm_sc,42,1,Brent,575,XGBoost,0.631,475.491,239.921
+pca_ai23_osm_sc,42,1,Brent,575,MLP,0.6234,465.632,237.043
+pca_ai23_osm_sc,42,1,Brent,575,GATv2,0.6825,509.698,259.515
+pca_ai23_osm_sc,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+pca_ai23_osm_sc,42,1,Bromley,1179,IDW,0.9483,231.824,96.441
+pca_ai23_osm_sc,42,1,Bromley,1179,MLR,0.6662,170.395,67.747
+pca_ai23_osm_sc,42,1,Bromley,1179,RF,0.6499,176.253,66.096
+pca_ai23_osm_sc,42,1,Bromley,1179,XGBoost,0.6706,184.045,68.195
+pca_ai23_osm_sc,42,1,Bromley,1179,MLP,0.6528,166.236,66.391
+pca_ai23_osm_sc,42,1,Bromley,1179,GATv2,0.7542,208.174,76.698
+pca_ai23_osm_sc,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+pca_ai23_osm_sc,42,1,Camden,424,IDW,0.8385,572.753,338.626
+pca_ai23_osm_sc,42,1,Camden,424,MLR,0.5221,445.164,210.826
+pca_ai23_osm_sc,42,1,Camden,424,RF,0.528,458.421,213.206
+pca_ai23_osm_sc,42,1,Camden,424,XGBoost,0.5311,432.88,214.478
+pca_ai23_osm_sc,42,1,Camden,424,MLP,0.4993,420.925,201.632
+pca_ai23_osm_sc,42,1,Camden,424,GATv2,0.6197,486.191,250.266
+pca_ai23_osm_sc,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+pca_ai23_osm_sc,42,1,City of London,101,IDW,0.8708,984.356,567.474
+pca_ai23_osm_sc,42,1,City of London,101,MLR,0.5672,705.438,369.612
+pca_ai23_osm_sc,42,1,City of London,101,RF,0.5715,726.155,372.454
+pca_ai23_osm_sc,42,1,City of London,101,XGBoost,0.5463,635.827,356.034
+pca_ai23_osm_sc,42,1,City of London,101,MLP,0.5725,653.751,373.074
+pca_ai23_osm_sc,42,1,City of London,101,GATv2,0.7287,890.069,474.85
+pca_ai23_osm_sc,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+pca_ai23_osm_sc,42,1,Croydon,1019,IDW,0.857,332.145,141.119
+pca_ai23_osm_sc,42,1,Croydon,1019,MLR,0.6762,274.553,111.348
+pca_ai23_osm_sc,42,1,Croydon,1019,RF,0.6731,278.622,110.829
+pca_ai23_osm_sc,42,1,Croydon,1019,XGBoost,0.6714,268.213,110.555
+pca_ai23_osm_sc,42,1,Croydon,1019,MLP,0.6709,274.313,110.461
+pca_ai23_osm_sc,42,1,Croydon,1019,GATv2,0.7062,283.317,116.285
+pca_ai23_osm_sc,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+pca_ai23_osm_sc,42,1,Ealing,683,IDW,0.8734,604.408,288.357
+pca_ai23_osm_sc,42,1,Ealing,683,MLR,0.6523,474.763,215.374
+pca_ai23_osm_sc,42,1,Ealing,683,RF,0.6653,494.759,219.643
+pca_ai23_osm_sc,42,1,Ealing,683,XGBoost,0.638,464.112,210.636
+pca_ai23_osm_sc,42,1,Ealing,683,MLP,0.6388,461.753,210.918
+pca_ai23_osm_sc,42,1,Ealing,683,GATv2,0.71,519.754,234.402
+pca_ai23_osm_sc,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+pca_ai23_osm_sc,42,1,Enfield,707,IDW,0.876,457.316,211.434
+pca_ai23_osm_sc,42,1,Enfield,707,MLR,0.6751,363.42,162.946
+pca_ai23_osm_sc,42,1,Enfield,707,RF,0.6967,390.807,168.151
+pca_ai23_osm_sc,42,1,Enfield,707,XGBoost,0.6909,388.276,166.758
+pca_ai23_osm_sc,42,1,Enfield,707,MLP,0.6622,358.742,159.826
+pca_ai23_osm_sc,42,1,Enfield,707,GATv2,0.7119,383.304,171.815
+pca_ai23_osm_sc,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+pca_ai23_osm_sc,42,1,Greenwich,659,IDW,0.8542,632.494,243.79
+pca_ai23_osm_sc,42,1,Greenwich,659,MLR,0.6667,513.602,190.272
+pca_ai23_osm_sc,42,1,Greenwich,659,RF,0.6571,540.009,187.525
+pca_ai23_osm_sc,42,1,Greenwich,659,XGBoost,0.6454,530.68,184.202
+pca_ai23_osm_sc,42,1,Greenwich,659,MLP,0.6615,509.691,188.784
+pca_ai23_osm_sc,42,1,Greenwich,659,GATv2,0.7168,549.437,204.557
+pca_ai23_osm_sc,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+pca_ai23_osm_sc,42,1,Hackney,442,IDW,0.8065,550.359,317.765
+pca_ai23_osm_sc,42,1,Hackney,442,MLR,0.497,364.021,195.789
+pca_ai23_osm_sc,42,1,Hackney,442,RF,0.527,385.754,207.634
+pca_ai23_osm_sc,42,1,Hackney,442,XGBoost,0.5173,363.642,203.791
+pca_ai23_osm_sc,42,1,Hackney,442,MLP,0.4865,352.661,191.692
+pca_ai23_osm_sc,42,1,Hackney,442,GATv2,0.6271,435.617,247.075
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,IDW,0.8082,782.836,383.198
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,MLR,0.6917,660.789,327.962
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,RF,0.6748,666.378,319.954
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,XGBoost,0.6973,683.527,330.636
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,MLP,0.686,651.18,325.248
+pca_ai23_osm_sc,42,1,Hammersmith and Fulham,276,GATv2,0.6878,681.049,326.113
+pca_ai23_osm_sc,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+pca_ai23_osm_sc,42,1,Haringey,461,IDW,0.8186,775.506,371.019
+pca_ai23_osm_sc,42,1,Haringey,461,MLR,0.6588,627.066,298.627
+pca_ai23_osm_sc,42,1,Haringey,461,RF,0.6707,685.24,304.006
+pca_ai23_osm_sc,42,1,Haringey,461,XGBoost,0.6828,692.506,309.491
+pca_ai23_osm_sc,42,1,Haringey,461,MLP,0.6367,621.232,288.601
+pca_ai23_osm_sc,42,1,Haringey,461,GATv2,0.7743,760.384,350.961
+pca_ai23_osm_sc,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+pca_ai23_osm_sc,42,1,Harrow,432,IDW,0.8283,391.934,194.903
+pca_ai23_osm_sc,42,1,Harrow,432,MLR,0.6289,292.69,147.996
+pca_ai23_osm_sc,42,1,Harrow,432,RF,0.6375,303.071,150.02
+pca_ai23_osm_sc,42,1,Harrow,432,XGBoost,0.6144,287.472,144.57
+pca_ai23_osm_sc,42,1,Harrow,432,MLP,0.6153,278.0,144.79
+pca_ai23_osm_sc,42,1,Harrow,432,GATv2,0.7017,320.64,165.111
+pca_ai23_osm_sc,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+pca_ai23_osm_sc,42,1,Havering,691,IDW,0.875,440.627,146.608
+pca_ai23_osm_sc,42,1,Havering,691,MLR,0.7097,357.745,118.901
+pca_ai23_osm_sc,42,1,Havering,691,RF,0.72,366.339,120.624
+pca_ai23_osm_sc,42,1,Havering,691,XGBoost,0.8386,359.823,140.495
+pca_ai23_osm_sc,42,1,Havering,691,MLP,0.7092,353.931,118.82
+pca_ai23_osm_sc,42,1,Havering,691,GATv2,0.7498,367.811,125.619
+pca_ai23_osm_sc,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+pca_ai23_osm_sc,42,1,Hillingdon,706,IDW,0.9244,581.901,220.226
+pca_ai23_osm_sc,42,1,Hillingdon,706,MLR,0.7127,487.072,169.807
+pca_ai23_osm_sc,42,1,Hillingdon,706,RF,0.7608,557.122,181.265
+pca_ai23_osm_sc,42,1,Hillingdon,706,XGBoost,0.7933,559.476,189.002
+pca_ai23_osm_sc,42,1,Hillingdon,706,MLP,0.7227,496.377,172.189
+pca_ai23_osm_sc,42,1,Hillingdon,706,GATv2,0.831,597.266,197.972
+pca_ai23_osm_sc,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+pca_ai23_osm_sc,42,1,Hounslow,651,IDW,0.9094,460.46,227.07
+pca_ai23_osm_sc,42,1,Hounslow,651,MLR,0.638,362.207,159.311
+pca_ai23_osm_sc,42,1,Hounslow,651,RF,0.6309,361.576,157.525
+pca_ai23_osm_sc,42,1,Hounslow,651,XGBoost,0.6323,359.173,157.876
+pca_ai23_osm_sc,42,1,Hounslow,651,MLP,0.6145,336.457,153.432
+pca_ai23_osm_sc,42,1,Hounslow,651,GATv2,0.6824,370.55,170.383
+pca_ai23_osm_sc,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+pca_ai23_osm_sc,42,1,Islington,349,IDW,0.808,759.193,419.753
+pca_ai23_osm_sc,42,1,Islington,349,MLR,0.5875,619.443,305.22
+pca_ai23_osm_sc,42,1,Islington,349,RF,0.5849,623.522,303.864
+pca_ai23_osm_sc,42,1,Islington,349,XGBoost,0.5951,609.691,309.148
+pca_ai23_osm_sc,42,1,Islington,349,MLP,0.5859,606.705,304.366
+pca_ai23_osm_sc,42,1,Islington,349,GATv2,0.6577,663.772,341.699
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,IDW,0.8407,572.156,364.475
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,MLR,0.5919,422.374,256.589
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,RF,0.5513,410.266,238.999
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,XGBoost,0.5666,418.057,245.618
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,MLP,0.5696,400.368,246.945
+pca_ai23_osm_sc,42,1,Kensington and Chelsea,260,GATv2,0.6617,482.184,286.856
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,IDW,0.8929,595.692,208.046
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,MLR,0.7074,491.619,164.828
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,RF,0.7074,514.84,164.815
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,XGBoost,0.724,524.31,168.703
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,MLP,0.6871,483.085,160.105
+pca_ai23_osm_sc,42,1,Kingston upon Thames,391,GATv2,0.82,567.767,191.063
+pca_ai23_osm_sc,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+pca_ai23_osm_sc,42,1,Lambeth,577,IDW,0.8788,983.57,437.065
+pca_ai23_osm_sc,42,1,Lambeth,577,MLR,0.6467,833.822,321.642
+pca_ai23_osm_sc,42,1,Lambeth,577,RF,0.6287,831.502,312.719
+pca_ai23_osm_sc,42,1,Lambeth,577,XGBoost,0.6245,811.528,310.622
+pca_ai23_osm_sc,42,1,Lambeth,577,MLP,0.6102,805.826,303.503
+pca_ai23_osm_sc,42,1,Lambeth,577,GATv2,0.6862,893.457,341.301
+pca_ai23_osm_sc,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+pca_ai23_osm_sc,42,1,Lewisham,609,IDW,0.8632,557.644,254.179
+pca_ai23_osm_sc,42,1,Lewisham,609,MLR,0.594,392.69,174.914
+pca_ai23_osm_sc,42,1,Lewisham,609,RF,0.6118,429.934,180.141
+pca_ai23_osm_sc,42,1,Lewisham,609,XGBoost,0.6263,436.728,184.424
+pca_ai23_osm_sc,42,1,Lewisham,609,MLP,0.5982,391.952,176.142
+pca_ai23_osm_sc,42,1,Lewisham,609,GATv2,0.6914,470.766,203.586
+pca_ai23_osm_sc,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+pca_ai23_osm_sc,42,1,Merton,457,IDW,0.848,513.306,219.742
+pca_ai23_osm_sc,42,1,Merton,457,MLR,0.6643,424.5,172.141
+pca_ai23_osm_sc,42,1,Merton,457,RF,0.6521,438.019,168.99
+pca_ai23_osm_sc,42,1,Merton,457,XGBoost,0.6702,432.993,173.665
+pca_ai23_osm_sc,42,1,Merton,457,MLP,0.6555,426.749,169.86
+pca_ai23_osm_sc,42,1,Merton,457,GATv2,0.7787,505.207,201.796
+pca_ai23_osm_sc,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+pca_ai23_osm_sc,42,1,Newham,465,IDW,0.8321,558.618,319.027
+pca_ai23_osm_sc,42,1,Newham,465,MLR,0.5728,375.459,219.607
+pca_ai23_osm_sc,42,1,Newham,465,RF,0.6058,418.164,232.268
+pca_ai23_osm_sc,42,1,Newham,465,XGBoost,0.6191,419.878,237.373
+pca_ai23_osm_sc,42,1,Newham,465,MLP,0.5794,379.1,222.141
+pca_ai23_osm_sc,42,1,Newham,465,GATv2,0.701,492.371,268.766
+pca_ai23_osm_sc,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+pca_ai23_osm_sc,42,1,Redbridge,539,IDW,0.7995,445.101,196.706
+pca_ai23_osm_sc,42,1,Redbridge,539,MLR,0.6795,362.104,167.17
+pca_ai23_osm_sc,42,1,Redbridge,539,RF,0.6679,354.88,164.318
+pca_ai23_osm_sc,42,1,Redbridge,539,XGBoost,0.6901,371.184,169.786
+pca_ai23_osm_sc,42,1,Redbridge,539,MLP,0.6611,344.496,162.662
+pca_ai23_osm_sc,42,1,Redbridge,539,GATv2,0.7205,377.663,177.276
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,IDW,0.8875,355.727,164.751
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,MLR,0.6473,270.747,120.155
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,RF,0.6522,262.328,121.063
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,XGBoost,0.6666,267.361,123.741
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,MLP,0.6758,256.565,125.454
+pca_ai23_osm_sc,42,1,Richmond upon Thames,484,GATv2,0.7156,295.808,132.837
+pca_ai23_osm_sc,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+pca_ai23_osm_sc,42,1,Southwark,583,IDW,0.8104,854.973,390.233
+pca_ai23_osm_sc,42,1,Southwark,583,MLR,0.5795,637.084,279.05
+pca_ai23_osm_sc,42,1,Southwark,583,RF,0.6057,711.34,291.682
+pca_ai23_osm_sc,42,1,Southwark,583,XGBoost,0.5739,657.528,276.359
+pca_ai23_osm_sc,42,1,Southwark,583,MLP,0.5728,658.382,275.821
+pca_ai23_osm_sc,42,1,Southwark,583,GATv2,0.7574,842.193,364.738
+pca_ai23_osm_sc,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+pca_ai23_osm_sc,42,1,Sutton,421,IDW,0.8299,289.401,135.054
+pca_ai23_osm_sc,42,1,Sutton,421,MLR,0.6509,227.408,105.921
+pca_ai23_osm_sc,42,1,Sutton,421,RF,0.6693,245.175,108.917
+pca_ai23_osm_sc,42,1,Sutton,421,XGBoost,0.6887,255.045,112.075
+pca_ai23_osm_sc,42,1,Sutton,421,MLP,0.6372,218.901,103.701
+pca_ai23_osm_sc,42,1,Sutton,421,GATv2,0.7758,275.996,126.253
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,IDW,0.8218,407.615,233.622
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,MLR,0.5737,300.454,163.091
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,RF,0.5991,306.608,170.303
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,XGBoost,0.5883,309.804,167.257
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,MLP,0.5947,294.211,169.055
+pca_ai23_osm_sc,42,1,Tower Hamlets,381,GATv2,0.6706,356.32,190.649
+pca_ai23_osm_sc,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+pca_ai23_osm_sc,42,1,Waltham Forest,492,IDW,0.8669,572.979,274.199
+pca_ai23_osm_sc,42,1,Waltham Forest,492,MLR,0.7176,500.484,226.963
+pca_ai23_osm_sc,42,1,Waltham Forest,492,RF,0.6424,465.114,203.179
+pca_ai23_osm_sc,42,1,Waltham Forest,492,XGBoost,0.6936,484.911,219.39
+pca_ai23_osm_sc,42,1,Waltham Forest,492,MLP,0.6939,476.14,219.489
+pca_ai23_osm_sc,42,1,Waltham Forest,492,GATv2,0.7242,505.361,229.072
+pca_ai23_osm_sc,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+pca_ai23_osm_sc,42,1,Wandsworth,481,IDW,0.7963,705.712,338.423
+pca_ai23_osm_sc,42,1,Wandsworth,481,MLR,0.6368,571.629,270.644
+pca_ai23_osm_sc,42,1,Wandsworth,481,RF,0.6371,584.321,270.769
+pca_ai23_osm_sc,42,1,Wandsworth,481,XGBoost,0.6451,600.961,274.177
+pca_ai23_osm_sc,42,1,Wandsworth,481,MLP,0.628,563.177,266.91
+pca_ai23_osm_sc,42,1,Wandsworth,481,GATv2,0.7684,699.326,326.567
+pca_ai23_osm_sc,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+pca_ai23_osm_sc,42,1,Westminster,419,IDW,0.7677,896.337,500.659
+pca_ai23_osm_sc,42,1,Westminster,419,MLR,0.585,707.927,381.486
+pca_ai23_osm_sc,42,1,Westminster,419,RF,0.5672,728.702,369.873
+pca_ai23_osm_sc,42,1,Westminster,419,XGBoost,0.5565,701.702,362.892
+pca_ai23_osm_sc,42,1,Westminster,419,MLP,0.5514,686.297,359.562
+pca_ai23_osm_sc,42,1,Westminster,419,GATv2,0.6219,783.307,405.545
+tuned,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+tuned,42,1,Barking and Dagenham,364,MLP,0.6811,524.479,200.563
+tuned,42,1,Barking and Dagenham,364,GATv2,0.7229,560.407,212.881
+tuned,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+tuned,42,1,Barnet,993,MLP,0.6734,309.83,144.021
+tuned,42,1,Barnet,993,GATv2,0.7159,322.361,153.1
+tuned,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+tuned,42,1,Bexley,672,MLP,0.6839,304.498,103.475
+tuned,42,1,Bexley,672,GATv2,0.7606,343.481,115.089
+tuned,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+tuned,42,1,Brent,575,MLP,0.6221,466.001,236.535
+tuned,42,1,Brent,575,GATv2,0.6898,513.731,262.258
+tuned,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+tuned,42,1,Bromley,1179,MLP,0.6595,163.302,67.068
+tuned,42,1,Bromley,1179,GATv2,0.7112,181.807,72.324
+tuned,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+tuned,42,1,Camden,424,MLP,0.5026,419.062,202.953
+tuned,42,1,Camden,424,GATv2,0.658,510.298,265.717
+tuned,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+tuned,42,1,City of London,101,MLP,0.5702,658.32,371.594
+tuned,42,1,City of London,101,GATv2,0.7855,946.188,511.913
+tuned,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+tuned,42,1,Croydon,1019,MLP,0.6678,271.155,109.957
+tuned,42,1,Croydon,1019,GATv2,0.7071,284.764,116.437
+tuned,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+tuned,42,1,Ealing,683,MLP,0.6386,463.697,210.841
+tuned,42,1,Ealing,683,GATv2,0.7648,569.512,252.515
+tuned,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+tuned,42,1,Enfield,707,MLP,0.6669,359.644,160.957
+tuned,42,1,Enfield,707,GATv2,0.7814,428.456,188.593
+tuned,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+tuned,42,1,Greenwich,659,MLP,0.6558,510.533,187.158
+tuned,42,1,Greenwich,659,GATv2,0.7265,547.373,207.331
+tuned,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+tuned,42,1,Hackney,442,MLP,0.4931,357.909,194.254
+tuned,42,1,Hackney,442,GATv2,0.6877,479.758,270.956
+tuned,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+tuned,42,1,Hammersmith and Fulham,276,MLP,0.6872,646.16,325.807
+tuned,42,1,Hammersmith and Fulham,276,GATv2,0.6958,690.919,329.884
+tuned,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+tuned,42,1,Haringey,461,MLP,0.6346,619.24,287.619
+tuned,42,1,Haringey,461,GATv2,0.6904,679.712,312.911
+tuned,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+tuned,42,1,Harrow,432,MLP,0.6201,283.054,145.909
+tuned,42,1,Harrow,432,GATv2,0.7511,359.967,176.747
+tuned,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+tuned,42,1,Havering,691,MLP,0.7073,348.011,118.504
+tuned,42,1,Havering,691,GATv2,0.7754,365.952,129.914
+tuned,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+tuned,42,1,Hillingdon,706,MLP,0.7296,499.557,173.832
+tuned,42,1,Hillingdon,706,GATv2,0.8025,574.675,191.182
+tuned,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+tuned,42,1,Hounslow,651,MLP,0.6162,337.407,153.85
+tuned,42,1,Hounslow,651,GATv2,0.7326,399.646,182.925
+tuned,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+tuned,42,1,Islington,349,MLP,0.5869,607.002,304.891
+tuned,42,1,Islington,349,GATv2,0.661,650.191,343.394
+tuned,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+tuned,42,1,Kensington and Chelsea,260,MLP,0.5803,401.402,251.594
+tuned,42,1,Kensington and Chelsea,260,GATv2,0.6059,435.332,262.677
+tuned,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+tuned,42,1,Kingston upon Thames,391,MLP,0.6924,480.688,161.329
+tuned,42,1,Kingston upon Thames,391,GATv2,0.7507,513.918,174.916
+tuned,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+tuned,42,1,Lambeth,577,MLP,0.6087,801.273,302.77
+tuned,42,1,Lambeth,577,GATv2,0.7645,942.394,380.242
+tuned,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+tuned,42,1,Lewisham,609,MLP,0.6006,399.495,176.85
+tuned,42,1,Lewisham,609,GATv2,0.7202,499.063,212.07
+tuned,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+tuned,42,1,Merton,457,MLP,0.6558,419.699,169.943
+tuned,42,1,Merton,457,GATv2,0.7333,486.158,190.01
+tuned,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+tuned,42,1,Newham,465,MLP,0.5755,384.329,220.637
+tuned,42,1,Newham,465,GATv2,0.6411,444.952,245.788
+tuned,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+tuned,42,1,Redbridge,539,MLP,0.6657,344.272,163.785
+tuned,42,1,Redbridge,539,GATv2,0.6956,354.888,171.144
+tuned,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+tuned,42,1,Richmond upon Thames,484,MLP,0.6868,257.891,127.504
+tuned,42,1,Richmond upon Thames,484,GATv2,0.7338,290.939,136.224
+tuned,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+tuned,42,1,Southwark,583,MLP,0.5819,671.016,280.205
+tuned,42,1,Southwark,583,GATv2,0.6874,759.526,331.001
+tuned,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+tuned,42,1,Sutton,421,MLP,0.6417,220.471,104.435
+tuned,42,1,Sutton,421,GATv2,0.7624,268.388,124.069
+tuned,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+tuned,42,1,Tower Hamlets,381,MLP,0.5862,297.25,166.658
+tuned,42,1,Tower Hamlets,381,GATv2,0.7043,370.877,200.226
+tuned,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+tuned,42,1,Waltham Forest,492,MLP,0.6797,470.824,214.988
+tuned,42,1,Waltham Forest,492,GATv2,0.7107,496.542,224.801
+tuned,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+tuned,42,1,Wandsworth,481,MLP,0.6304,563.556,267.89
+tuned,42,1,Wandsworth,481,GATv2,0.6822,615.546,289.945
+tuned,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+tuned,42,1,Westminster,419,MLP,0.5453,670.494,355.606
+tuned,42,1,Westminster,419,GATv2,0.7046,870.962,459.485
+tuned,42,1,Barking and Dagenham,364,MLR-tuned,0.7054,535.267,207.721
+tuned,42,1,Barking and Dagenham,364,RF-tuned,0.6912,517.162,203.544
+tuned,42,1,Barking and Dagenham,364,XGBoost-tuned,0.6769,506.091,199.334
+tuned,42,1,Barnet,993,MLR-tuned,0.6926,347.257,148.126
+tuned,42,1,Barnet,993,RF-tuned,0.6503,302.263,139.086
+tuned,42,1,Barnet,993,XGBoost-tuned,0.6589,312.004,140.926
+tuned,42,1,Bexley,672,MLR-tuned,0.6925,306.233,104.778
+tuned,42,1,Bexley,672,RF-tuned,0.6864,317.621,103.852
+tuned,42,1,Bexley,672,XGBoost-tuned,0.6884,321.435,104.167
+tuned,42,1,Brent,575,MLR-tuned,0.631,476.287,239.918
+tuned,42,1,Brent,575,RF-tuned,0.6321,474.099,240.337
+tuned,42,1,Brent,575,XGBoost-tuned,0.6475,485.18,246.203
+tuned,42,1,Bromley,1179,MLR-tuned,0.6632,169.043,67.449
+tuned,42,1,Bromley,1179,RF-tuned,0.6509,177.691,66.195
+tuned,42,1,Bromley,1179,XGBoost-tuned,0.656,178.587,66.708
+tuned,42,1,Camden,424,MLR-tuned,0.5211,445.983,210.428
+tuned,42,1,Camden,424,RF-tuned,0.5159,432.619,208.326
+tuned,42,1,Camden,424,XGBoost-tuned,0.5331,438.407,215.284
+tuned,42,1,City of London,101,MLR-tuned,0.5652,708.095,368.305
+tuned,42,1,City of London,101,RF-tuned,0.5541,634.631,361.082
+tuned,42,1,City of London,101,XGBoost-tuned,0.6149,759.905,400.719
+tuned,42,1,Croydon,1019,MLR-tuned,0.6757,274.261,111.256
+tuned,42,1,Croydon,1019,RF-tuned,0.6666,271.063,109.755
+tuned,42,1,Croydon,1019,XGBoost-tuned,0.6705,276.72,110.403
+tuned,42,1,Ealing,683,MLR-tuned,0.651,472.092,214.928
+tuned,42,1,Ealing,683,RF-tuned,0.6541,486.808,215.966
+tuned,42,1,Ealing,683,XGBoost-tuned,0.6605,485.35,218.062
+tuned,42,1,Enfield,707,MLR-tuned,0.6777,364.222,163.555
+tuned,42,1,Enfield,707,RF-tuned,0.6931,383.855,167.292
+tuned,42,1,Enfield,707,XGBoost-tuned,0.7137,400.697,172.26
+tuned,42,1,Greenwich,659,MLR-tuned,0.6643,515.732,189.584
+tuned,42,1,Greenwich,659,RF-tuned,0.6363,516.975,181.607
+tuned,42,1,Greenwich,659,XGBoost-tuned,0.6674,543.041,190.465
+tuned,42,1,Hackney,442,MLR-tuned,0.4991,366.153,196.652
+tuned,42,1,Hackney,442,RF-tuned,0.5202,374.281,204.961
+tuned,42,1,Hackney,442,XGBoost-tuned,0.4971,358.592,195.833
+tuned,42,1,Hammersmith and Fulham,276,MLR-tuned,0.696,659.611,329.977
+tuned,42,1,Hammersmith and Fulham,276,RF-tuned,0.6791,666.59,321.973
+tuned,42,1,Hammersmith and Fulham,276,XGBoost-tuned,0.6928,691.632,328.502
+tuned,42,1,Haringey,461,MLR-tuned,0.6566,626.953,297.633
+tuned,42,1,Haringey,461,RF-tuned,0.6466,663.893,293.07
+tuned,42,1,Haringey,461,XGBoost-tuned,0.6825,700.173,309.364
+tuned,42,1,Harrow,432,MLR-tuned,0.6334,296.304,149.048
+tuned,42,1,Harrow,432,RF-tuned,0.6183,287.697,145.497
+tuned,42,1,Harrow,432,XGBoost-tuned,0.6261,302.808,147.335
+tuned,42,1,Havering,691,MLR-tuned,0.711,355.386,119.125
+tuned,42,1,Havering,691,RF-tuned,0.7253,360.628,121.51
+tuned,42,1,Havering,691,XGBoost-tuned,0.7934,352.218,132.935
+tuned,42,1,Hillingdon,706,MLR-tuned,0.7125,486.965,169.76
+tuned,42,1,Hillingdon,706,RF-tuned,0.7508,548.689,178.866
+tuned,42,1,Hillingdon,706,XGBoost-tuned,0.7491,526.83,178.466
+tuned,42,1,Hounslow,651,MLR-tuned,0.6383,361.648,159.384
+tuned,42,1,Hounslow,651,RF-tuned,0.6323,349.351,157.887
+tuned,42,1,Hounslow,651,XGBoost-tuned,0.6624,372.077,165.405
+tuned,42,1,Islington,349,MLR-tuned,0.5885,621.734,305.718
+tuned,42,1,Islington,349,RF-tuned,0.5803,603.165,301.47
+tuned,42,1,Islington,349,XGBoost-tuned,0.5753,600.387,298.872
+tuned,42,1,Kensington and Chelsea,260,MLR-tuned,0.5969,424.399,258.756
+tuned,42,1,Kensington and Chelsea,260,RF-tuned,0.5509,406.273,238.828
+tuned,42,1,Kensington and Chelsea,260,XGBoost-tuned,0.5685,414.399,246.474
+tuned,42,1,Kingston upon Thames,391,MLR-tuned,0.7109,495.321,165.637
+tuned,42,1,Kingston upon Thames,391,RF-tuned,0.6856,493.088,159.746
+tuned,42,1,Kingston upon Thames,391,XGBoost-tuned,0.6944,495.06,161.799
+tuned,42,1,Lambeth,577,MLR-tuned,0.6426,834.551,319.588
+tuned,42,1,Lambeth,577,RF-tuned,0.616,803.032,306.369
+tuned,42,1,Lambeth,577,XGBoost-tuned,0.6323,837.572,314.501
+tuned,42,1,Lewisham,609,MLR-tuned,0.5985,401.489,176.222
+tuned,42,1,Lewisham,609,RF-tuned,0.5939,410.029,174.892
+tuned,42,1,Lewisham,609,XGBoost-tuned,0.6221,442.595,183.2
+tuned,42,1,Merton,457,MLR-tuned,0.6652,423.155,172.378
+tuned,42,1,Merton,457,RF-tuned,0.6542,427.165,169.516
+tuned,42,1,Merton,457,XGBoost-tuned,0.6614,438.997,171.392
+tuned,42,1,Newham,465,MLR-tuned,0.5698,375.943,218.444
+tuned,42,1,Newham,465,RF-tuned,0.6057,409.99,232.207
+tuned,42,1,Newham,465,XGBoost-tuned,0.6297,442.348,241.417
+tuned,42,1,Redbridge,539,MLR-tuned,0.681,361.368,167.555
+tuned,42,1,Redbridge,539,RF-tuned,0.6744,350.547,165.923
+tuned,42,1,Redbridge,539,XGBoost-tuned,0.6902,380.28,169.818
+tuned,42,1,Richmond upon Thames,484,MLR-tuned,0.6476,268.716,120.213
+tuned,42,1,Richmond upon Thames,484,RF-tuned,0.6577,262.497,122.092
+tuned,42,1,Richmond upon Thames,484,XGBoost-tuned,0.677,281.955,125.667
+tuned,42,1,Southwark,583,MLR-tuned,0.5809,644.987,279.749
+tuned,42,1,Southwark,583,RF-tuned,0.5812,669.001,279.857
+tuned,42,1,Southwark,583,XGBoost-tuned,0.6019,707.301,289.848
+tuned,42,1,Sutton,421,MLR-tuned,0.6472,227.372,105.323
+tuned,42,1,Sutton,421,RF-tuned,0.6662,236.263,108.415
+tuned,42,1,Sutton,421,XGBoost-tuned,0.6832,245.315,111.189
+tuned,42,1,Tower Hamlets,381,MLR-tuned,0.5746,302.488,163.341
+tuned,42,1,Tower Hamlets,381,RF-tuned,0.5942,304.982,168.926
+tuned,42,1,Tower Hamlets,381,XGBoost-tuned,0.6127,324.275,174.19
+tuned,42,1,Waltham Forest,492,MLR-tuned,0.717,501.068,226.794
+tuned,42,1,Waltham Forest,492,RF-tuned,0.6621,464.088,209.418
+tuned,42,1,Waltham Forest,492,XGBoost-tuned,0.6749,475.786,213.474
+tuned,42,1,Wandsworth,481,MLR-tuned,0.6341,569.871,269.494
+tuned,42,1,Wandsworth,481,RF-tuned,0.6288,568.796,267.252
+tuned,42,1,Wandsworth,481,XGBoost-tuned,0.6503,604.043,276.388
+tuned,42,1,Westminster,419,MLR-tuned,0.5821,706.393,379.608
+tuned,42,1,Westminster,419,RF-tuned,0.5642,671.378,367.926
+tuned,42,1,Westminster,419,XGBoost-tuned,0.5748,719.796,374.881
+vc_ai23_osm,42,1,Barking and Dagenham,364,HistAvg,0.259,0.0951,0.0703
+vc_ai23_osm,42,1,Barking and Dagenham,364,RF,0.2511,0.0952,0.0682
+vc_ai23_osm,42,1,Barking and Dagenham,364,MLP,0.2535,0.0906,0.0688
+vc_ai23_osm,42,1,Barking and Dagenham,364,GATv2,0.283,0.0975,0.0769
+vc_ai23_osm,42,1,Barnet,993,HistAvg,0.3368,0.117,0.0888
+vc_ai23_osm,42,1,Barnet,993,RF,0.3521,0.1227,0.0928
+vc_ai23_osm,42,1,Barnet,993,MLP,0.3518,0.1201,0.0928
+vc_ai23_osm,42,1,Barnet,993,GATv2,0.3448,0.1172,0.0909
+vc_ai23_osm,42,1,Bexley,672,HistAvg,0.2333,0.0879,0.0654
+vc_ai23_osm,42,1,Bexley,672,RF,0.2443,0.0918,0.0685
+vc_ai23_osm,42,1,Bexley,672,MLP,0.2565,0.0943,0.0719
+vc_ai23_osm,42,1,Bexley,672,GATv2,0.2475,0.0912,0.0694
+vc_ai23_osm,42,1,Brent,575,HistAvg,0.2838,0.1236,0.0924
+vc_ai23_osm,42,1,Brent,575,RF,0.2845,0.1293,0.0927
+vc_ai23_osm,42,1,Brent,575,MLP,0.2799,0.1207,0.0912
+vc_ai23_osm,42,1,Brent,575,GATv2,0.2915,0.1246,0.0949
+vc_ai23_osm,42,1,Bromley,1179,HistAvg,0.3734,0.1133,0.0896
+vc_ai23_osm,42,1,Bromley,1179,RF,0.3035,0.0907,0.0728
+vc_ai23_osm,42,1,Bromley,1179,MLP,0.2979,0.0882,0.0715
+vc_ai23_osm,42,1,Bromley,1179,GATv2,0.4606,0.1312,0.1106
+vc_ai23_osm,42,1,Camden,424,HistAvg,0.2699,0.1074,0.0804
+vc_ai23_osm,42,1,Camden,424,RF,0.2621,0.1032,0.0781
+vc_ai23_osm,42,1,Camden,424,MLP,0.2714,0.107,0.0809
+vc_ai23_osm,42,1,Camden,424,GATv2,0.3595,0.1425,0.1071
+vc_ai23_osm,42,1,City of London,101,HistAvg,0.3704,0.1251,0.0966
+vc_ai23_osm,42,1,City of London,101,RF,0.4266,0.1332,0.1112
+vc_ai23_osm,42,1,City of London,101,MLP,0.3865,0.1258,0.1008
+vc_ai23_osm,42,1,City of London,101,GATv2,0.5295,0.1628,0.1381
+vc_ai23_osm,42,1,Croydon,1019,HistAvg,0.3332,0.1105,0.0891
+vc_ai23_osm,42,1,Croydon,1019,RF,0.2591,0.0899,0.0693
+vc_ai23_osm,42,1,Croydon,1019,MLP,0.2777,0.0928,0.0743
+vc_ai23_osm,42,1,Croydon,1019,GATv2,0.2806,0.0932,0.0751
+vc_ai23_osm,42,1,Ealing,683,HistAvg,0.3194,0.1334,0.1059
+vc_ai23_osm,42,1,Ealing,683,RF,0.2855,0.1181,0.0947
+vc_ai23_osm,42,1,Ealing,683,MLP,0.2999,0.1277,0.0994
+vc_ai23_osm,42,1,Ealing,683,GATv2,0.3144,0.1318,0.1042
+vc_ai23_osm,42,1,Enfield,707,HistAvg,0.3054,0.1086,0.0839
+vc_ai23_osm,42,1,Enfield,707,RF,0.2839,0.1001,0.078
+vc_ai23_osm,42,1,Enfield,707,MLP,0.281,0.1004,0.0772
+vc_ai23_osm,42,1,Enfield,707,GATv2,0.2833,0.1019,0.0779
+vc_ai23_osm,42,1,Greenwich,659,HistAvg,0.2824,0.108,0.0843
+vc_ai23_osm,42,1,Greenwich,659,RF,0.2867,0.1105,0.0856
+vc_ai23_osm,42,1,Greenwich,659,MLP,0.2815,0.1073,0.084
+vc_ai23_osm,42,1,Greenwich,659,GATv2,0.2993,0.1135,0.0893
+vc_ai23_osm,42,1,Hackney,442,HistAvg,0.2663,0.1007,0.0783
+vc_ai23_osm,42,1,Hackney,442,RF,0.2557,0.097,0.0752
+vc_ai23_osm,42,1,Hackney,442,MLP,0.2607,0.0978,0.0766
+vc_ai23_osm,42,1,Hackney,442,GATv2,0.3749,0.1433,0.1102
+vc_ai23_osm,42,1,Hammersmith and Fulham,276,HistAvg,0.3077,0.1033,0.0796
+vc_ai23_osm,42,1,Hammersmith and Fulham,276,RF,0.3021,0.1031,0.0781
+vc_ai23_osm,42,1,Hammersmith and Fulham,276,MLP,0.3374,0.1152,0.0873
+vc_ai23_osm,42,1,Hammersmith and Fulham,276,GATv2,0.3494,0.1197,0.0904
+vc_ai23_osm,42,1,Haringey,461,HistAvg,0.2468,0.0993,0.0752
+vc_ai23_osm,42,1,Haringey,461,RF,0.2344,0.0983,0.0714
+vc_ai23_osm,42,1,Haringey,461,MLP,0.2355,0.0966,0.0718
+vc_ai23_osm,42,1,Haringey,461,GATv2,0.3055,0.118,0.0931
+vc_ai23_osm,42,1,Harrow,432,HistAvg,0.2687,0.1107,0.0854
+vc_ai23_osm,42,1,Harrow,432,RF,0.2623,0.1069,0.0834
+vc_ai23_osm,42,1,Harrow,432,MLP,0.2722,0.1107,0.0865
+vc_ai23_osm,42,1,Harrow,432,GATv2,0.2692,0.1105,0.0856
+vc_ai23_osm,42,1,Havering,691,HistAvg,0.3985,0.1176,0.0914
+vc_ai23_osm,42,1,Havering,691,RF,0.3508,0.1001,0.0804
+vc_ai23_osm,42,1,Havering,691,MLP,0.3284,0.0986,0.0753
+vc_ai23_osm,42,1,Havering,691,GATv2,0.3554,0.106,0.0815
+vc_ai23_osm,42,1,Hillingdon,706,HistAvg,0.3386,0.1236,0.0987
+vc_ai23_osm,42,1,Hillingdon,706,RF,0.3247,0.1205,0.0946
+vc_ai23_osm,42,1,Hillingdon,706,MLP,0.3253,0.1181,0.0948
+vc_ai23_osm,42,1,Hillingdon,706,GATv2,0.3726,0.1374,0.1086
+vc_ai23_osm,42,1,Hounslow,651,HistAvg,0.3835,0.1454,0.1217
+vc_ai23_osm,42,1,Hounslow,651,RF,0.3731,0.1459,0.1184
+vc_ai23_osm,42,1,Hounslow,651,MLP,0.3632,0.1409,0.1153
+vc_ai23_osm,42,1,Hounslow,651,GATv2,0.3635,0.1397,0.1154
+vc_ai23_osm,42,1,Islington,349,HistAvg,0.2331,0.0923,0.0735
+vc_ai23_osm,42,1,Islington,349,RF,0.2122,0.0852,0.0669
+vc_ai23_osm,42,1,Islington,349,MLP,0.2204,0.0877,0.0695
+vc_ai23_osm,42,1,Islington,349,GATv2,0.2507,0.0986,0.079
+vc_ai23_osm,42,1,Kensington and Chelsea,260,HistAvg,0.2033,0.0858,0.0587
+vc_ai23_osm,42,1,Kensington and Chelsea,260,RF,0.2233,0.0925,0.0644
+vc_ai23_osm,42,1,Kensington and Chelsea,260,MLP,0.2208,0.0911,0.0637
+vc_ai23_osm,42,1,Kensington and Chelsea,260,GATv2,0.2182,0.0894,0.063
+vc_ai23_osm,42,1,Kingston upon Thames,391,HistAvg,0.302,0.1182,0.0951
+vc_ai23_osm,42,1,Kingston upon Thames,391,RF,0.2925,0.116,0.0921
+vc_ai23_osm,42,1,Kingston upon Thames,391,MLP,0.2874,0.1143,0.0905
+vc_ai23_osm,42,1,Kingston upon Thames,391,GATv2,0.2876,0.1147,0.0905
+vc_ai23_osm,42,1,Lambeth,577,HistAvg,0.2603,0.1061,0.0797
+vc_ai23_osm,42,1,Lambeth,577,RF,0.2605,0.106,0.0797
+vc_ai23_osm,42,1,Lambeth,577,MLP,0.2537,0.1035,0.0777
+vc_ai23_osm,42,1,Lambeth,577,GATv2,0.2793,0.1116,0.0855
+vc_ai23_osm,42,1,Lewisham,609,HistAvg,0.2323,0.0882,0.0675
+vc_ai23_osm,42,1,Lewisham,609,RF,0.2389,0.0922,0.0694
+vc_ai23_osm,42,1,Lewisham,609,MLP,0.235,0.0899,0.0683
+vc_ai23_osm,42,1,Lewisham,609,GATv2,0.2377,0.0911,0.0691
+vc_ai23_osm,42,1,Merton,457,HistAvg,0.2943,0.1133,0.0885
+vc_ai23_osm,42,1,Merton,457,RF,0.3009,0.1136,0.0904
+vc_ai23_osm,42,1,Merton,457,MLP,0.2896,0.1124,0.087
+vc_ai23_osm,42,1,Merton,457,GATv2,0.2866,0.1116,0.0861
+vc_ai23_osm,42,1,Newham,465,HistAvg,0.2989,0.1086,0.0853
+vc_ai23_osm,42,1,Newham,465,RF,0.3024,0.1092,0.0862
+vc_ai23_osm,42,1,Newham,465,MLP,0.3165,0.1137,0.0903
+vc_ai23_osm,42,1,Newham,465,GATv2,0.3122,0.1121,0.089
+vc_ai23_osm,42,1,Redbridge,539,HistAvg,0.3258,0.1121,0.0901
+vc_ai23_osm,42,1,Redbridge,539,RF,0.3084,0.1069,0.0853
+vc_ai23_osm,42,1,Redbridge,539,MLP,0.314,0.1066,0.0868
+vc_ai23_osm,42,1,Redbridge,539,GATv2,0.553,0.1833,0.1529
+vc_ai23_osm,42,1,Richmond upon Thames,484,HistAvg,0.3128,0.1172,0.0947
+vc_ai23_osm,42,1,Richmond upon Thames,484,RF,0.3051,0.1155,0.0923
+vc_ai23_osm,42,1,Richmond upon Thames,484,MLP,0.297,0.1138,0.0899
+vc_ai23_osm,42,1,Richmond upon Thames,484,GATv2,0.3048,0.1198,0.0922
+vc_ai23_osm,42,1,Southwark,583,HistAvg,0.2864,0.1213,0.0928
+vc_ai23_osm,42,1,Southwark,583,RF,0.2661,0.1106,0.0862
+vc_ai23_osm,42,1,Southwark,583,MLP,0.2746,0.1156,0.089
+vc_ai23_osm,42,1,Southwark,583,GATv2,0.2702,0.1137,0.0876
+vc_ai23_osm,42,1,Sutton,421,HistAvg,0.2154,0.0839,0.0617
+vc_ai23_osm,42,1,Sutton,421,RF,0.2163,0.0857,0.062
+vc_ai23_osm,42,1,Sutton,421,MLP,0.2162,0.0856,0.0619
+vc_ai23_osm,42,1,Sutton,421,GATv2,0.2233,0.0863,0.064
+vc_ai23_osm,42,1,Tower Hamlets,381,HistAvg,0.3695,0.1209,0.1004
+vc_ai23_osm,42,1,Tower Hamlets,381,RF,0.3489,0.1174,0.0948
+vc_ai23_osm,42,1,Tower Hamlets,381,MLP,0.3833,0.1265,0.1042
+vc_ai23_osm,42,1,Tower Hamlets,381,GATv2,0.3845,0.1271,0.1045
+vc_ai23_osm,42,1,Waltham Forest,492,HistAvg,0.3383,0.12,0.0958
+vc_ai23_osm,42,1,Waltham Forest,492,RF,0.3441,0.1233,0.0974
+vc_ai23_osm,42,1,Waltham Forest,492,MLP,0.3127,0.1155,0.0885
+vc_ai23_osm,42,1,Waltham Forest,492,GATv2,0.3191,0.1165,0.0904
+vc_ai23_osm,42,1,Wandsworth,481,HistAvg,0.2626,0.1063,0.0812
+vc_ai23_osm,42,1,Wandsworth,481,RF,0.2698,0.1081,0.0834
+vc_ai23_osm,42,1,Wandsworth,481,MLP,0.2647,0.1062,0.0819
+vc_ai23_osm,42,1,Wandsworth,481,GATv2,0.2657,0.1062,0.0822
+vc_ai23_osm,42,1,Westminster,419,HistAvg,0.3117,0.1193,0.0914
+vc_ai23_osm,42,1,Westminster,419,RF,0.3153,0.1177,0.0925
+vc_ai23_osm,42,1,Westminster,419,MLP,0.3028,0.1167,0.0888
+vc_ai23_osm,42,1,Westminster,419,GATv2,0.3301,0.1249,0.0968
+zheng_fusion,42,1,Barking and Dagenham,364,HistAvg,0.893,570.009,262.968
+zheng_fusion,42,1,Barking and Dagenham,364,MLR,0.7043,534.701,207.417
+zheng_fusion,42,1,Barking and Dagenham,364,RF,0.6935,518.838,204.243
+zheng_fusion,42,1,Barking and Dagenham,364,XGBoost,0.6706,504.096,197.476
+zheng_fusion,42,1,Barking and Dagenham,364,MLP,0.6811,524.479,200.563
+zheng_fusion,42,1,Barking and Dagenham,364,GATv2,0.7229,560.407,212.881
+zheng_fusion,42,1,Barnet,993,HistAvg,1.2395,379.816,265.098
+zheng_fusion,42,1,Barnet,993,MLR,0.6935,348.166,148.322
+zheng_fusion,42,1,Barnet,993,RF,0.6598,309.932,141.12
+zheng_fusion,42,1,Barnet,993,XGBoost,0.6577,301.16,140.667
+zheng_fusion,42,1,Barnet,993,MLP,0.6734,309.83,144.021
+zheng_fusion,42,1,Barnet,993,GATv2,0.7159,322.361,153.1
+zheng_fusion,42,1,Bexley,672,HistAvg,1.6969,388.739,256.754
+zheng_fusion,42,1,Bexley,672,MLR,0.6933,305.878,104.9
+zheng_fusion,42,1,Bexley,672,RF,0.6847,324.38,103.606
+zheng_fusion,42,1,Bexley,672,XGBoost,0.6921,301.404,104.715
+zheng_fusion,42,1,Bexley,672,MLP,0.6839,304.498,103.475
+zheng_fusion,42,1,Bexley,672,GATv2,0.7606,343.481,115.089
+zheng_fusion,42,1,Brent,575,HistAvg,0.8181,541.496,311.062
+zheng_fusion,42,1,Brent,575,MLR,0.6306,475.734,239.761
+zheng_fusion,42,1,Brent,575,RF,0.652,492.364,247.922
+zheng_fusion,42,1,Brent,575,XGBoost,0.642,479.007,244.099
+zheng_fusion,42,1,Brent,575,MLP,0.6221,466.001,236.535
+zheng_fusion,42,1,Brent,575,GATv2,0.6898,513.731,262.258
+zheng_fusion,42,1,Bromley,1179,HistAvg,2.6075,309.255,265.171
+zheng_fusion,42,1,Bromley,1179,MLR,0.6641,169.238,67.537
+zheng_fusion,42,1,Bromley,1179,RF,0.6545,185.347,66.561
+zheng_fusion,42,1,Bromley,1179,XGBoost,0.6504,173.117,66.142
+zheng_fusion,42,1,Bromley,1179,MLP,0.6595,163.302,67.068
+zheng_fusion,42,1,Bromley,1179,GATv2,0.7112,181.807,72.324
+zheng_fusion,42,1,Camden,424,HistAvg,0.8666,609.429,349.975
+zheng_fusion,42,1,Camden,424,MLR,0.5214,446.19,210.558
+zheng_fusion,42,1,Camden,424,RF,0.523,449.668,211.207
+zheng_fusion,42,1,Camden,424,XGBoost,0.539,460.715,217.675
+zheng_fusion,42,1,Camden,424,MLP,0.5026,419.062,202.953
+zheng_fusion,42,1,Camden,424,GATv2,0.658,510.298,265.717
+zheng_fusion,42,1,City of London,101,HistAvg,0.798,914.764,520.033
+zheng_fusion,42,1,City of London,101,MLR,0.5655,708.56,368.551
+zheng_fusion,42,1,City of London,101,RF,0.5729,731.442,373.354
+zheng_fusion,42,1,City of London,101,XGBoost,0.5667,703.402,369.289
+zheng_fusion,42,1,City of London,101,MLP,0.5702,658.32,371.594
+zheng_fusion,42,1,City of London,101,GATv2,0.7855,946.188,511.913
+zheng_fusion,42,1,Croydon,1019,HistAvg,1.5477,343.611,254.841
+zheng_fusion,42,1,Croydon,1019,MLR,0.6755,274.015,111.225
+zheng_fusion,42,1,Croydon,1019,RF,0.6783,278.265,111.688
+zheng_fusion,42,1,Croydon,1019,XGBoost,0.6603,264.784,108.717
+zheng_fusion,42,1,Croydon,1019,MLP,0.6678,271.155,109.957
+zheng_fusion,42,1,Croydon,1019,GATv2,0.7071,284.764,116.437
+zheng_fusion,42,1,Ealing,683,HistAvg,0.9636,570.286,318.126
+zheng_fusion,42,1,Ealing,683,MLR,0.6504,470.834,214.746
+zheng_fusion,42,1,Ealing,683,RF,0.6688,502.064,220.826
+zheng_fusion,42,1,Ealing,683,XGBoost,0.6339,466.953,209.298
+zheng_fusion,42,1,Ealing,683,MLP,0.6386,463.697,210.841
+zheng_fusion,42,1,Ealing,683,GATv2,0.7648,569.512,252.515
+zheng_fusion,42,1,Enfield,707,HistAvg,1.1452,433.336,276.391
+zheng_fusion,42,1,Enfield,707,MLR,0.6777,363.783,163.561
+zheng_fusion,42,1,Enfield,707,RF,0.7019,394.193,169.399
+zheng_fusion,42,1,Enfield,707,XGBoost,0.7009,394.895,169.168
+zheng_fusion,42,1,Enfield,707,MLP,0.6669,359.644,160.957
+zheng_fusion,42,1,Enfield,707,GATv2,0.7814,428.456,188.593
+zheng_fusion,42,1,Greenwich,659,HistAvg,0.9994,596.257,285.229
+zheng_fusion,42,1,Greenwich,659,MLR,0.6641,515.151,189.529
+zheng_fusion,42,1,Greenwich,659,RF,0.656,538.087,187.228
+zheng_fusion,42,1,Greenwich,659,XGBoost,0.6363,526.515,181.603
+zheng_fusion,42,1,Greenwich,659,MLP,0.6558,510.533,187.158
+zheng_fusion,42,1,Greenwich,659,GATv2,0.7265,547.373,207.331
+zheng_fusion,42,1,Hackney,442,HistAvg,0.8267,512.63,325.701
+zheng_fusion,42,1,Hackney,442,MLR,0.4995,366.237,196.81
+zheng_fusion,42,1,Hackney,442,RF,0.5326,391.617,209.832
+zheng_fusion,42,1,Hackney,442,XGBoost,0.5063,361.219,199.469
+zheng_fusion,42,1,Hackney,442,MLP,0.4931,357.909,194.254
+zheng_fusion,42,1,Hackney,442,GATv2,0.6877,479.758,270.956
+zheng_fusion,42,1,Hammersmith and Fulham,276,HistAvg,0.7878,748.498,373.545
+zheng_fusion,42,1,Hammersmith and Fulham,276,MLR,0.6967,659.552,330.33
+zheng_fusion,42,1,Hammersmith and Fulham,276,RF,0.673,677.794,319.098
+zheng_fusion,42,1,Hammersmith and Fulham,276,XGBoost,0.6941,673.634,329.077
+zheng_fusion,42,1,Hammersmith and Fulham,276,MLP,0.6872,646.16,325.807
+zheng_fusion,42,1,Hammersmith and Fulham,276,GATv2,0.6958,690.919,329.884
+zheng_fusion,42,1,Haringey,461,HistAvg,0.8402,761.461,380.81
+zheng_fusion,42,1,Haringey,461,MLR,0.6572,625.971,297.864
+zheng_fusion,42,1,Haringey,461,RF,0.6623,678.695,300.208
+zheng_fusion,42,1,Haringey,461,XGBoost,0.6837,689.043,309.917
+zheng_fusion,42,1,Haringey,461,MLP,0.6346,619.24,287.619
+zheng_fusion,42,1,Haringey,461,GATv2,0.6904,679.712,312.911
+zheng_fusion,42,1,Harrow,432,HistAvg,1.0881,369.502,256.035
+zheng_fusion,42,1,Harrow,432,MLR,0.634,296.505,149.177
+zheng_fusion,42,1,Harrow,432,RF,0.6324,300.483,148.808
+zheng_fusion,42,1,Harrow,432,XGBoost,0.6014,280.506,141.514
+zheng_fusion,42,1,Harrow,432,MLP,0.6201,283.054,145.909
+zheng_fusion,42,1,Harrow,432,GATv2,0.7511,359.967,176.747
+zheng_fusion,42,1,Havering,691,HistAvg,1.6017,456.404,268.356
+zheng_fusion,42,1,Havering,691,MLR,0.712,354.724,119.289
+zheng_fusion,42,1,Havering,691,RF,0.7215,366.109,120.889
+zheng_fusion,42,1,Havering,691,XGBoost,0.879,372.771,147.268
+zheng_fusion,42,1,Havering,691,MLP,0.7073,348.011,118.504
+zheng_fusion,42,1,Havering,691,GATv2,0.7754,365.952,129.914
+zheng_fusion,42,1,Hillingdon,706,HistAvg,1.3003,592.939,309.8
+zheng_fusion,42,1,Hillingdon,706,MLR,0.7117,485.526,169.552
+zheng_fusion,42,1,Hillingdon,706,RF,0.7647,559.197,182.194
+zheng_fusion,42,1,Hillingdon,706,XGBoost,0.7618,527.187,181.497
+zheng_fusion,42,1,Hillingdon,706,MLP,0.7296,499.557,173.832
+zheng_fusion,42,1,Hillingdon,706,GATv2,0.8025,574.675,191.182
+zheng_fusion,42,1,Hounslow,651,HistAvg,1.054,427.703,263.162
+zheng_fusion,42,1,Hounslow,651,MLR,0.6382,361.817,159.345
+zheng_fusion,42,1,Hounslow,651,RF,0.6539,370.987,163.263
+zheng_fusion,42,1,Hounslow,651,XGBoost,0.6377,350.568,159.231
+zheng_fusion,42,1,Hounslow,651,MLP,0.6162,337.407,153.85
+zheng_fusion,42,1,Hounslow,651,GATv2,0.7326,399.646,182.925
+zheng_fusion,42,1,Islington,349,HistAvg,0.7866,736.434,408.65
+zheng_fusion,42,1,Islington,349,MLR,0.5887,621.572,305.82
+zheng_fusion,42,1,Islington,349,RF,0.5871,626.78,305.001
+zheng_fusion,42,1,Islington,349,XGBoost,0.5884,595.045,305.683
+zheng_fusion,42,1,Islington,349,MLP,0.5869,607.002,304.891
+zheng_fusion,42,1,Islington,349,GATv2,0.661,650.191,343.394
+zheng_fusion,42,1,Kensington and Chelsea,260,HistAvg,0.7473,516.034,323.957
+zheng_fusion,42,1,Kensington and Chelsea,260,MLR,0.5986,425.149,259.509
+zheng_fusion,42,1,Kensington and Chelsea,260,RF,0.5484,406.399,237.759
+zheng_fusion,42,1,Kensington and Chelsea,260,XGBoost,0.5507,401.197,238.747
+zheng_fusion,42,1,Kensington and Chelsea,260,MLP,0.5803,401.402,251.594
+zheng_fusion,42,1,Kensington and Chelsea,260,GATv2,0.6059,435.332,262.677
+zheng_fusion,42,1,Kingston upon Thames,391,HistAvg,1.2094,569.502,281.785
+zheng_fusion,42,1,Kingston upon Thames,391,MLR,0.7114,495.003,165.752
+zheng_fusion,42,1,Kingston upon Thames,391,RF,0.7084,518.368,165.062
+zheng_fusion,42,1,Kingston upon Thames,391,XGBoost,0.6785,490.933,158.096
+zheng_fusion,42,1,Kingston upon Thames,391,MLP,0.6924,480.688,161.329
+zheng_fusion,42,1,Kingston upon Thames,391,GATv2,0.7507,513.918,174.916
+zheng_fusion,42,1,Lambeth,577,HistAvg,0.8618,942.451,428.607
+zheng_fusion,42,1,Lambeth,577,MLR,0.6441,835.301,320.379
+zheng_fusion,42,1,Lambeth,577,RF,0.6296,828.417,313.152
+zheng_fusion,42,1,Lambeth,577,XGBoost,0.6209,805.317,308.834
+zheng_fusion,42,1,Lambeth,577,MLP,0.6087,801.273,302.77
+zheng_fusion,42,1,Lambeth,577,GATv2,0.7645,942.394,380.242
+zheng_fusion,42,1,Lewisham,609,HistAvg,0.9859,512.677,290.318
+zheng_fusion,42,1,Lewisham,609,MLR,0.5984,400.521,176.196
+zheng_fusion,42,1,Lewisham,609,RF,0.6069,426.002,178.72
+zheng_fusion,42,1,Lewisham,609,XGBoost,0.6227,437.131,183.374
+zheng_fusion,42,1,Lewisham,609,MLP,0.6006,399.495,176.85
+zheng_fusion,42,1,Lewisham,609,GATv2,0.7202,499.063,212.07
+zheng_fusion,42,1,Merton,457,HistAvg,1.0347,493.948,268.128
+zheng_fusion,42,1,Merton,457,MLR,0.6653,422.94,172.39
+zheng_fusion,42,1,Merton,457,RF,0.6571,438.249,170.263
+zheng_fusion,42,1,Merton,457,XGBoost,0.6766,441.689,175.322
+zheng_fusion,42,1,Merton,457,MLP,0.6558,419.699,169.943
+zheng_fusion,42,1,Merton,457,GATv2,0.7333,486.158,190.01
+zheng_fusion,42,1,Newham,465,HistAvg,0.8322,506.085,319.074
+zheng_fusion,42,1,Newham,465,MLR,0.5694,375.153,218.299
+zheng_fusion,42,1,Newham,465,RF,0.6077,415.179,232.974
+zheng_fusion,42,1,Newham,465,XGBoost,0.615,414.898,235.786
+zheng_fusion,42,1,Newham,465,MLP,0.5755,384.329,220.637
+zheng_fusion,42,1,Newham,465,GATv2,0.6411,444.952,245.788
+zheng_fusion,42,1,Redbridge,539,HistAvg,1.1018,465.014,271.086
+zheng_fusion,42,1,Redbridge,539,MLR,0.682,361.306,167.795
+zheng_fusion,42,1,Redbridge,539,RF,0.6852,369.409,168.573
+zheng_fusion,42,1,Redbridge,539,XGBoost,0.6522,334.046,160.465
+zheng_fusion,42,1,Redbridge,539,MLP,0.6657,344.272,163.785
+zheng_fusion,42,1,Redbridge,539,GATv2,0.6956,354.888,171.144
+zheng_fusion,42,1,Richmond upon Thames,484,HistAvg,1.3166,353.755,244.414
+zheng_fusion,42,1,Richmond upon Thames,484,MLR,0.6485,268.456,120.392
+zheng_fusion,42,1,Richmond upon Thames,484,RF,0.6594,266.909,122.405
+zheng_fusion,42,1,Richmond upon Thames,484,XGBoost,0.6782,271.139,125.892
+zheng_fusion,42,1,Richmond upon Thames,484,MLP,0.6868,257.891,127.504
+zheng_fusion,42,1,Richmond upon Thames,484,GATv2,0.7338,290.939,136.224
+zheng_fusion,42,1,Southwark,583,HistAvg,0.8601,854.25,414.185
+zheng_fusion,42,1,Southwark,583,MLR,0.581,644.255,279.801
+zheng_fusion,42,1,Southwark,583,RF,0.6161,722.073,296.708
+zheng_fusion,42,1,Southwark,583,XGBoost,0.5916,696.828,284.892
+zheng_fusion,42,1,Southwark,583,MLP,0.5819,671.016,280.205
+zheng_fusion,42,1,Southwark,583,GATv2,0.6874,759.526,331.001
+zheng_fusion,42,1,Sutton,421,HistAvg,1.4868,309.593,241.96
+zheng_fusion,42,1,Sutton,421,MLR,0.6465,226.834,105.205
+zheng_fusion,42,1,Sutton,421,RF,0.675,243.169,109.846
+zheng_fusion,42,1,Sutton,421,XGBoost,0.6911,248.006,112.475
+zheng_fusion,42,1,Sutton,421,MLP,0.6417,220.471,104.435
+zheng_fusion,42,1,Sutton,421,GATv2,0.7624,268.388,124.069
+zheng_fusion,42,1,Tower Hamlets,381,HistAvg,0.9492,393.105,269.85
+zheng_fusion,42,1,Tower Hamlets,381,MLR,0.5742,302.307,163.227
+zheng_fusion,42,1,Tower Hamlets,381,RF,0.6036,310.006,171.589
+zheng_fusion,42,1,Tower Hamlets,381,XGBoost,0.585,305.412,166.295
+zheng_fusion,42,1,Tower Hamlets,381,MLP,0.5862,297.25,166.658
+zheng_fusion,42,1,Tower Hamlets,381,GATv2,0.7043,370.877,200.226
+zheng_fusion,42,1,Waltham Forest,492,HistAvg,0.8879,510.268,280.825
+zheng_fusion,42,1,Waltham Forest,492,MLR,0.7183,501.817,227.193
+zheng_fusion,42,1,Waltham Forest,492,RF,0.6405,461.445,202.569
+zheng_fusion,42,1,Waltham Forest,492,XGBoost,0.6609,477.32,209.031
+zheng_fusion,42,1,Waltham Forest,492,MLP,0.6797,470.824,214.988
+zheng_fusion,42,1,Waltham Forest,492,GATv2,0.7107,496.542,224.801
+zheng_fusion,42,1,Wandsworth,481,HistAvg,0.8146,681.466,346.179
+zheng_fusion,42,1,Wandsworth,481,MLR,0.634,569.571,269.459
+zheng_fusion,42,1,Wandsworth,481,RF,0.6413,586.685,272.53
+zheng_fusion,42,1,Wandsworth,481,XGBoost,0.6379,584.862,271.112
+zheng_fusion,42,1,Wandsworth,481,MLP,0.6304,563.556,267.89
+zheng_fusion,42,1,Wandsworth,481,GATv2,0.6822,615.546,289.945
+zheng_fusion,42,1,Westminster,419,HistAvg,0.763,912.576,497.587
+zheng_fusion,42,1,Westminster,419,MLR,0.5828,706.27,380.071
+zheng_fusion,42,1,Westminster,419,RF,0.5606,718.197,365.594
+zheng_fusion,42,1,Westminster,419,XGBoost,0.5787,701.358,377.379
+zheng_fusion,42,1,Westminster,419,MLP,0.5453,670.494,355.606
+zheng_fusion,42,1,Westminster,419,GATv2,0.7046,870.962,459.485
+zheng_fusion,42,1,Barking and Dagenham,364,GATv2-Fusion,0.7302,543.612,215.032
+zheng_fusion,42,1,Barnet,993,GATv2-Fusion,0.7394,322.216,158.131
+zheng_fusion,42,1,Bexley,672,GATv2-Fusion,0.7543,339.862,114.13
+zheng_fusion,42,1,Brent,575,GATv2-Fusion,0.6794,511.411,258.32
+zheng_fusion,42,1,Bromley,1179,GATv2-Fusion,0.6691,175.622,68.044
+zheng_fusion,42,1,Camden,424,GATv2-Fusion,0.7412,573.728,299.308
+zheng_fusion,42,1,City of London,101,GATv2-Fusion,0.6568,820.504,428.019
+zheng_fusion,42,1,Croydon,1019,GATv2-Fusion,0.6995,282.778,115.176
+zheng_fusion,42,1,Ealing,683,GATv2-Fusion,0.7152,516.742,236.142
+zheng_fusion,42,1,Enfield,707,GATv2-Fusion,0.8002,432.223,193.121
+zheng_fusion,42,1,Greenwich,659,GATv2-Fusion,0.7185,527.412,205.043
+zheng_fusion,42,1,Hackney,442,GATv2-Fusion,0.6691,467.287,263.629
+zheng_fusion,42,1,Hammersmith and Fulham,276,GATv2-Fusion,0.7039,710.488,333.728
+zheng_fusion,42,1,Haringey,461,GATv2-Fusion,0.702,676.867,318.184
+zheng_fusion,42,1,Harrow,432,GATv2-Fusion,0.6963,331.943,163.836
+zheng_fusion,42,1,Havering,691,GATv2-Fusion,0.7723,398.059,129.389
+zheng_fusion,42,1,Hillingdon,706,GATv2-Fusion,0.7663,549.917,182.563
+zheng_fusion,42,1,Hounslow,651,GATv2-Fusion,0.7669,421.854,191.492
+zheng_fusion,42,1,Islington,349,GATv2-Fusion,0.632,644.657,328.316
+zheng_fusion,42,1,Kensington and Chelsea,260,GATv2-Fusion,0.6728,445.794,291.677
+zheng_fusion,42,1,Kingston upon Thames,391,GATv2-Fusion,0.7968,555.705,185.662
+zheng_fusion,42,1,Lambeth,577,GATv2-Fusion,0.694,877.343,345.193
+zheng_fusion,42,1,Lewisham,609,GATv2-Fusion,0.7095,482.763,208.927
+zheng_fusion,42,1,Merton,457,GATv2-Fusion,0.7039,462.338,182.411
+zheng_fusion,42,1,Newham,465,GATv2-Fusion,0.6416,450.999,245.969
+zheng_fusion,42,1,Redbridge,539,GATv2-Fusion,0.7802,403.923,191.949
+zheng_fusion,42,1,Richmond upon Thames,484,GATv2-Fusion,0.6705,293.633,124.477
+zheng_fusion,42,1,Southwark,583,GATv2-Fusion,0.6733,703.845,324.245
+zheng_fusion,42,1,Sutton,421,GATv2-Fusion,0.7663,267.296,124.708
+zheng_fusion,42,1,Tower Hamlets,381,GATv2-Fusion,0.6781,345.819,192.765
+zheng_fusion,42,1,Waltham Forest,492,GATv2-Fusion,0.6716,456.29,212.424
+zheng_fusion,42,1,Wandsworth,481,GATv2-Fusion,0.6743,617.118,286.56
+zheng_fusion,42,1,Westminster,419,GATv2-Fusion,0.5869,736.699,382.736

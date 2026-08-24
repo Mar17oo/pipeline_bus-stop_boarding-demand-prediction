@@ -1,7 +1,7 @@
 """
 MERGE RESULTS — consolidate per-config result CSVs into two files
 ====================================================================
-step4_model.py (and the standalone step4c/d/e/i/j/n scripts) each write one
+step4_model.py each write one
 results_cv_<config>.csv + results_summary_<config>.csv pair per run, which
 adds up to a lot of same-schema file pairs cluttering the repo root. This
 script concatenates all of them into all_results_cv.csv /
@@ -43,6 +43,7 @@ group (consumed directly by step4g_gated_analysis.py with its own per-seed
 structure) -- these stay as standalone files.
 """
 
+import os
 import pandas as pd
 
 # (config, n_seeds, seeds) -- see docstring above for how n_seeds/seeds was
@@ -78,15 +79,21 @@ CONFIGS = [
 
 
 def merge(prefix, out_name):
-    frames, counts = [], {}
+    frames, counts, skipped = [], {}, []
     for cfg, n_seeds, seeds in CONFIGS:
         fn = f"{prefix}_{cfg}.csv"
+        if not os.path.exists(fn):
+            skipped.append(fn)
+            continue
         df = pd.read_csv(fn)
         df.insert(0, "config", cfg)
         df.insert(1, "seeds", seeds)
         df.insert(2, "n_seeds", n_seeds)
         frames.append(df)
         counts[cfg] = len(df)
+    if skipped:
+        print(f"{out_name}: skipping {len(skipped)} config(s) with no source file -- "
+              f"not yet run, or the file wasn't kept: {skipped}")
     merged = pd.concat(frames, ignore_index=True)
     expected = sum(counts.values())
     assert len(merged) == expected, f"{out_name}: row count mismatch ({len(merged)} vs {expected})"
