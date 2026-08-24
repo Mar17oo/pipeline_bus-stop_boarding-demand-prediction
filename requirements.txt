@@ -1,0 +1,29 @@
+# Pinned to the exact versions used to produce the frozen results (v-final-results,
+# commit 111d3b6) and confirmed against the live environment on 09 Aug 2026 via
+# `pip list --format=freeze`. Direct project dependencies only (no transitive pins) --
+# pip resolves the rest.
+#
+# torch/torchvision are the CPU-only builds. Install with the CPU wheel index, e.g.:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.4.2
+pandas==3.0.0
+scipy==1.17.0
+scikit-learn==1.8.0
+torch==2.12.0+cpu
+torch-geometric==2.8.0
+xgboost==3.3.0
+geopandas==1.1.3
+shapely==2.1.2
+matplotlib==3.10.8
+osmnx==2.1.0
+requests==2.32.5
+
+# Needed by build_excel.py only (not part of the core reproduction pipeline,
+# see RUNBOOK.md Sec.3.3 -- writes supervisor_comparison_results.xlsx).
+# Unpinned: this package was never installed in the environment
+# requirements.txt's other versions were frozen from, so the exact version
+# used to produce the committed .xlsx is not recorded anywhere. Confirmed
+# missing from a clean `pip install -r requirements.txt` as of this audit
+# (23 Aug 2026) -- build_excel.py currently fails with ModuleNotFoundError.
+openpyxl
