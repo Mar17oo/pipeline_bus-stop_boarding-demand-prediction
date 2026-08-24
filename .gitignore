@@ -8,8 +8,50 @@ data/
 __pycache__/
 *.pyc
 
+# Local virtual environment -- requirements.txt is the source of truth for
+# reproducing it, not the folder itself.
+.venv/
+
 # LaTeX build artifacts (report.pdf itself is NOT excluded, only intermediates)
 pdf_report/*.aux
 pdf_report/*.log
 pdf_report/*.out
 pdf_report/*.toc
+
+# Old restore-point archive from a folder reorganisation, incl. a 124.9MB
+# OSM/Overpass API response cache backup. Kept on local disk on purpose
+# (re-downloading OSM data is slow) but this is a code+data repo, not a
+# backup service -- doesn't belong in the public GitHub history.
+05_archive_deleted_20260716_0701/
+
+# The dissertation manuscript is authored and submitted elsewhere (see
+# WRITING_HANDOFF_v6.md's separate writing workflow); this repo is the
+# code/data/results side only. dissertation.tex and pdf_report/report.tex
+# are both superseded/stale relative to the actual current draft, so
+# publishing them here would mislead anyone who finds this repo.
+# (dissertation_colab.ipynb stays IN the repo -- it's a runnable pipeline
+# mirror, i.e. code, not manuscript text.)
+dissertation.tex
+pdf_report/
+Dissertation_Technical_Report.pdf
+data_and_software_availability_FILLED.tex
+
+# Comparison against supervisor feedback -- not for public upload.
+supervisor_comparison_results.xlsx
+# Consolidated into supplementary_experiments.ipynb (same code, one file
+# instead of six loose scripts). Kept on local disk, not tracked.
+scan_sl_routes.py
+step4k_rf_feature_importance.py
+step4l_multiseed_mlp.py
+step4m_alt_target_activity.py
+step4n_gatv2_edge_attrs.py
+step4o_tabular_ensemble.py
+
+# Figures (*.png, *.pdf) are cheap to regenerate -- seconds to minutes,
+# from step8_dissertation_figures.py / step8b*.py against the result CSVs
+# already tracked below. The CSVs themselves stay tracked: each one is the
+# output of a 33-fold CV run that took 1.5-2h of CPU time, and isn't
+# regenerable without redoing that compute. (fig5_fold_structure.pdf is a
+# figure like the rest, matched by the *.pdf rule -- not excluded specially.)
+*.png
+*.pdf

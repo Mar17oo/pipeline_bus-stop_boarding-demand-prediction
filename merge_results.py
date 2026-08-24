@@ -2,9 +2,9 @@
 MERGE RESULTS — consolidate per-config result CSVs into two files
 ====================================================================
 step4_model.py (and the standalone step4c/d/e/i/j/n scripts) each write one
-results_cv_<config>.csv + results_summary_<config>.csv pair per run. By
-31 Jul 2026 that had grown to 18 same-schema file pairs cluttering the repo
-root. This script concatenates all of them into all_results_cv.csv /
+results_cv_<config>.csv + results_summary_<config>.csv pair per run, which
+adds up to a lot of same-schema file pairs cluttering the repo root. This
+script concatenates all of them into all_results_cv.csv /
 all_results_summary.csv (added 'config', 'seeds', 'n_seeds' columns),
 verifies no rows were lost, and leaves the per-config source files untouched
 (delete them yourself once you've checked the output — see
@@ -15,7 +15,7 @@ recomputed from the source files. Every config here is a single, fixed-seed
 run: SEED=42 is hardcoded in step4_model.py and step4c/e_*.py, and every
 other step4*/step5b script that contributes a config either imports SEED
 from step4_model.py directly or reassigns its own copy of the same value
-(verified by grep across step4*.py, 5 Aug 2026) -- so n_seeds=1 everywhere
+(verified by grep across step4*.py) -- so n_seeds=1 everywhere
 except idw, which has no stochastic component at all (BallTree distance
 weighting is deterministic) and is marked seeds="deterministic" (not "n/a" --
 that string is one of pandas' default NA sentinels and would silently become
@@ -53,11 +53,10 @@ CONFIGS = [
     ("ai23_osm",                1, "42"),
     ("ai23_osm_fastbaselines",  1, "42"),
     ("ai23_osm_sc",             1, "42"),
-    # Added during the reproducibility audit (23 Aug 2026): this config was
-    # created 22 Aug 2026 (see RUNBOOK.md Sec.5, "AI23+SC column added"),
-    # after this CONFIGS list was last written (5 Aug 2026), so it was
-    # silently missing from every merge until now. Re-run this script to
-    # pick it up in all_results_cv.csv / all_results_summary.csv.
+    # ai23_sc (see RUNBOOK.md Sec.5, "AI23+SC" note) was added after this
+    # CONFIGS list was first written, so it was silently missing from every
+    # merge until now. Re-run this script to pick it up in
+    # all_results_cv.csv / all_results_summary.csv.
     ("ai23_sc",                 1, "42"),
     ("func_sim",                1, "42"),
     ("gatv2_edge_attrs",        1, "42"),
