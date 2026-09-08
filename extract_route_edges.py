@@ -1,6 +1,8 @@
 """
 Extract route edges from BUSTO CSVs -> route_edges.csv
-Run once locally. Upload route_edges.csv to Colab alongside stops_features.csv.
+Run once locally. Standalone helper -- step4_model.py rebuilds route edges
+in memory from data/ every run and does not read this file (see RUNBOOK.md
+Sec.3.3).
 """
 import glob
 import pandas as pd

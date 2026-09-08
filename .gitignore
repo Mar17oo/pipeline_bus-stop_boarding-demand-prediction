@@ -29,8 +29,6 @@ pdf_report/*.toc
 # code/data/results side only. dissertation.tex and pdf_report/report.tex
 # are both superseded/stale relative to the actual current draft, so
 # publishing them here would mislead anyone who finds this repo.
-# (dissertation_colab.ipynb stays IN the repo -- it's a runnable pipeline
-# mirror, i.e. code, not manuscript text.)
 dissertation.tex
 pdf_report/
 Dissertation_Technical_Report.pdf
@@ -60,3 +58,16 @@ step4o_tabular_ensemble.py
 # figure like the rest, matched by the *.pdf rule -- not excluded specially.)
 *.png
 *.pdf
+# Out-of-scope tabular-ensemble experiment (RUNBOOK 3.3a) -- regenerable from
+# supplementary_experiments.ipynb §5; kept local only, never upload
+results_cv_tabular_ensemble.csv
+results_summary_tabular_ensemble.csv
+results_ensemble_weights.csv
+tabular_ensemble_run.log
+experiment_log.md
+diagnostics_report.md
+DISSERTATION_BRIEF.md
+footnote_material.txt
+# Overnight bash drivers -- hardcoded paths, superseded by RUNBOOK.md §8
+run_expset7_overnight.sh
+run_tier1_overnight.sh

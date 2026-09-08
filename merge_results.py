@@ -20,10 +20,9 @@ merged files, not the per-config ones -- re-run this script after any new
 results_cv_<config>.csv, before running those.
 
 Only merges the standard per-fold/summary schema. Excludes
-results_cv_colab.csv (wide format), results_cv_multiseed_mlp.csv
-(seed-indexed), and the results_cv_gated_seed*/all_seeds.csv group (own
-per-seed structure, consumed directly by step4g_gated_analysis.py) -- these
-stay standalone.
+results_cv_multiseed_mlp.csv (seed-indexed) and the
+results_cv_gated_seed*/all_seeds.csv group (own per-seed structure,
+consumed directly by step4g_gated_analysis.py) -- these stay standalone.
 """
 
 import os

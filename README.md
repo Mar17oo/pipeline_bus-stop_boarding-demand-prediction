@@ -21,14 +21,14 @@ reproduction instructions, the pipeline script table, the frozen results
 table, and provenance notes for every number. Read that file, not this one,
 for anything beyond a first orientation.
 
-Two ways to check the results without necessarily reading all of RUNBOOK.md:
+To check the results without reading all of RUNBOOK.md:
 
 - **[`reproduce_tables_and_stats.ipynb`](reproduce_tables_and_stats.ipynb)**
   — regenerates every table/statistic from the CSVs already committed here.
   Runtime: well under a minute, no GPU, no raw data folder needed.
-- **[`dissertation_colab.ipynb`](dissertation_colab.ipynb)** — re-runs the
-  full 33-fold CV pipeline in Google Colab (needs the raw feature files
-  uploaded to Drive first — see the notebook's own first cell).
+
+To re-run the full 33-fold CV pipeline from raw data, follow `RUNBOOK.md`
+§8 (local, CPU, ~33h).
 
 ## Data
 

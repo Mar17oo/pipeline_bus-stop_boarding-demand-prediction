@@ -17,8 +17,7 @@ Write-Host "Folders created: docs\  output\" -ForegroundColor Cyan
 # ── Move dissertation documents ───────────────────────────────────────────────
 $docs = @(
     "DISSERTATION_BRIEF.md",
-    "dissertation.tex",
-    "dissertation_colab.ipynb"
+    "dissertation.tex"
 )
 foreach ($f in $docs) {
     if (Test-Path "$root\$f") {

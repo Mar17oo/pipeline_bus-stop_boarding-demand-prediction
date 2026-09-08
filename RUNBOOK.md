@@ -66,27 +66,25 @@ dissartation_2/
 ├── reproduce_tables_and_stats.ipynb  fast (<1 min), no-retrain notebook that regenerates every
 │                                     table/statistic from the committed CSVs — see below
 ├── supplementary_experiments.ipynb   six small follow-up experiments, self-contained sections
-├── dissertation_colab.ipynb          full pipeline, Colab-hosted (needs manual Drive upload of
-│                                     stops_features_osm.csv + route_edges.csv — see its own header)
 ├── *.log                             run logs — evidence for the compute-cost claims (§6)
 ├── *.png                             figures
 ├── COMMANDS_EXPLAINED.md             why each library call was used the way it was
 └── RUNBOOK.md                        this file
 ```
 
-**Two ways to check the results, not just one:** `dissertation_colab.ipynb`
-re-*runs* the 33-fold CV pipeline (hours, needs Colab + manually-uploaded
-feature files). `reproduce_tables_and_stats.ipynb` does not retrain
-anything — it loads the CSVs this repo already committed and regenerates
-every table in the dissertation from them, plus several statistics
-(feature ranges, target skewness, VIF, AI23×OSM cross-correlation, the
-Wilcoxon significance tests) that previously had no committed, re-runnable
-script anywhere in this repo. It ends with a reconciliation table that
-flags any cell where its fresh computation doesn't match the dissertation
-text — currently the two VIF values and the strongest AI23-internal
-correlation (see the notebook's own output for current values; the
-dissertation text hasn't been corrected to match, since this repo doesn't
-contain the manuscript source — see §7 for what does and doesn't live here).
+**Checking the results without a full retrain:**
+`reproduce_tables_and_stats.ipynb` does not retrain anything — it loads
+the CSVs this repo already committed and regenerates every table in the
+dissertation from them, plus several statistics (feature ranges, target
+skewness, VIF, AI23×OSM cross-correlation, the Wilcoxon significance
+tests) that previously had no committed, re-runnable script anywhere in
+this repo. It ends with a reconciliation table that flags any cell where
+its fresh computation doesn't match the dissertation text — currently the
+two VIF values and the strongest AI23-internal correlation (see the
+notebook's own output for current values; the dissertation text hasn't
+been corrected to match, since this repo doesn't contain the manuscript
+source — see §7 for what does and doesn't live here). The full 33-fold
+retrain from raw data is the command sequence in §8.
 
 `.gitignore`d locally (present on disk, not on GitHub): `data/`,
 `dissertation.tex`, `pdf_report/`, `Dissertation_Technical_Report.pdf`,
@@ -136,6 +134,7 @@ loose scripts.
 | `step5b_vc_experiment.py` | V/C target (appendix/exploratory) | Predicts peak volume/capacity ratio instead of boardings. Its `StandardScaler` leakage bug is fixed in code, but the existing results (`results_cv_vc_ai23_osm.csv`) predate the fix and were not re-run (project is frozen). Caveat this table if used. Also has independently-drifted `GATv2Model`/`MLPModel` training regime (MSE not Huber, 1000 epochs not 500, `RF_TREES=300` not 150) — don't treat V/C numbers as on equal footing with the headline ones. |
 | `step6_consolidated_table.py` | Ch.4/5 table | Assembles `consolidated_results_table.csv` from ~14 separate result CSVs. |
 | `step7_borough_extract.py` | Discussion examples | Builds `borough_extract.csv`, prints Camden/Hillingdon/worst-3/closest-3 vs RF. |
+| `step7b_boundary_crossing_production.py` | Discussion examples | Rebuilds the production multigraph (K=5 KNN + route edges, deduplicated — same `build_knn_edge_index`/`build_route_edges` calls as `step4_model.py`, so edge-for-edge identical to training) and computes per-borough boundary-crossing share on it, plus that share's Pearson correlation with the GATv2-MLP WMAPE gap. Distinct from `step5a`'s porosity-graph diagnostic (K=5 KNN only, not deduplicated, no route edges) — the two graphs give different per-borough numbers (e.g. Kensington and Chelsea: 22.7% porosity graph vs 31.9% production graph), so cite whichever this script's output (`boundary_diagnostic_by_borough_production.csv`) matches, not the other one. Needs `data/` (raw BUSTO), same as `step4_model.py`. |
 | `step8_dissertation_figures.py` | Final figures | Generates the dissertation's figures from the frozen results. |
 
 ### 3.3 Utility / ambiguous
@@ -221,8 +220,7 @@ you do, `results_cv_ai23_sc.csv` / `results_summary_ai23_sc.csv` remain the
 only source for that column (as they still are for
 `reproduce_tables_and_stats.ipynb`, see above).
 
-**Kept as separate files** (different schema): `results_cv_colab.csv` /
-`results_summary_colab.csv`, `results_cv_multiseed_mlp.csv` /
+**Kept as separate files** (different schema): `results_cv_multiseed_mlp.csv` /
 `results_summary_multiseed_mlp.csv`, `results_cv_gated_seed{42,142,242}.csv`,
 `results_cv_gated_all_seeds.csv`, `results_rf_feature_importance[_perfold].csv`,
 `results_tuned_hyperparams.csv`, `results_gated_alpha_all_seeds.csv` + per-seed
@@ -390,6 +388,7 @@ python merge_results.py
 # 5. Consolidation and figures
 python step6_consolidated_table.py
 python step7_borough_extract.py results_cv_ai23_osm_sc.csv
+python step7b_boundary_crossing_production.py   # needs data/ (raw BUSTO)
 python step5a_borough_map.py        # needs internet (ONS boundaries)
 python step8_dissertation_figures.py
 

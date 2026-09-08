@@ -1,0 +1,166 @@
+seed,borough,n_test,WMAPE
+42,Barking and Dagenham,364,0.6797
+42,Barnet,993,0.6734
+42,Bexley,672,0.6815
+42,Brent,575,0.6221
+42,Bromley,1179,0.6582
+42,Camden,424,0.5009
+42,City of London,101,0.5737
+42,Croydon,1019,0.6681
+42,Ealing,683,0.6372
+42,Enfield,707,0.6669
+42,Greenwich,659,0.6558
+42,Hackney,442,0.4902
+42,Hammersmith and Fulham,276,0.69
+42,Haringey,461,0.6358
+42,Harrow,432,0.6204
+42,Havering,691,0.7117
+42,Hillingdon,706,0.7299
+42,Hounslow,651,0.6157
+42,Islington,349,0.5861
+42,Kensington and Chelsea,260,0.5757
+42,Kingston upon Thames,391,0.6943
+42,Lambeth,577,0.6061
+42,Lewisham,609,0.601
+42,Merton,457,0.6551
+42,Newham,465,0.5766
+42,Redbridge,539,0.6645
+42,Richmond upon Thames,484,0.6798
+42,Southwark,583,0.5787
+42,Sutton,421,0.6353
+42,Tower Hamlets,381,0.5898
+42,Waltham Forest,492,0.6745
+42,Wandsworth,481,0.6282
+42,Westminster,419,0.5489
+142,Barking and Dagenham,364,0.6829
+142,Barnet,993,0.6724
+142,Bexley,672,0.683
+142,Brent,575,0.621
+142,Bromley,1179,0.6538
+142,Camden,424,0.5036
+142,City of London,101,0.5677
+142,Croydon,1019,0.6675
+142,Ealing,683,0.637
+142,Enfield,707,0.6678
+142,Greenwich,659,0.6544
+142,Hackney,442,0.4908
+142,Hammersmith and Fulham,276,0.6903
+142,Haringey,461,0.6334
+142,Harrow,432,0.6204
+142,Havering,691,0.7169
+142,Hillingdon,706,0.7255
+142,Hounslow,651,0.618
+142,Islington,349,0.5851
+142,Kensington and Chelsea,260,0.5752
+142,Kingston upon Thames,391,0.6929
+142,Lambeth,577,0.6084
+142,Lewisham,609,0.5996
+142,Merton,457,0.6551
+142,Newham,465,0.5798
+142,Redbridge,539,0.6633
+142,Richmond upon Thames,484,0.6725
+142,Southwark,583,0.5745
+142,Sutton,421,0.6359
+142,Tower Hamlets,381,0.5853
+142,Waltham Forest,492,0.6788
+142,Wandsworth,481,0.6281
+142,Westminster,419,0.5457
+242,Barking and Dagenham,364,0.6787
+242,Barnet,993,0.6713
+242,Bexley,672,0.6797
+242,Brent,575,0.6198
+242,Bromley,1179,0.6525
+242,Camden,424,0.5049
+242,City of London,101,0.5611
+242,Croydon,1019,0.6652
+242,Ealing,683,0.6361
+242,Enfield,707,0.6674
+242,Greenwich,659,0.6558
+242,Hackney,442,0.491
+242,Hammersmith and Fulham,276,0.694
+242,Haringey,461,0.6355
+242,Harrow,432,0.6178
+242,Havering,691,0.711
+242,Hillingdon,706,0.7307
+242,Hounslow,651,0.6146
+242,Islington,349,0.585
+242,Kensington and Chelsea,260,0.5791
+242,Kingston upon Thames,391,0.6921
+242,Lambeth,577,0.6087
+242,Lewisham,609,0.6004
+242,Merton,457,0.6549
+242,Newham,465,0.5775
+242,Redbridge,539,0.669
+242,Richmond upon Thames,484,0.679
+242,Southwark,583,0.5772
+242,Sutton,421,0.6356
+242,Tower Hamlets,381,0.5861
+242,Waltham Forest,492,0.6852
+242,Wandsworth,481,0.6256
+242,Westminster,419,0.5443
+342,Barking and Dagenham,364,0.6782
+342,Barnet,993,0.6741
+342,Bexley,672,0.6813
+342,Brent,575,0.6207
+342,Bromley,1179,0.6542
+342,Camden,424,0.5026
+342,City of London,101,0.5623
+342,Croydon,1019,0.6676
+342,Ealing,683,0.6377
+342,Enfield,707,0.6638
+342,Greenwich,659,0.6558
+342,Hackney,442,0.4956
+342,Hammersmith and Fulham,276,0.6908
+342,Haringey,461,0.6374
+342,Harrow,432,0.6185
+342,Havering,691,0.7134
+342,Hillingdon,706,0.7278
+342,Hounslow,651,0.6145
+342,Islington,349,0.5864
+342,Kensington and Chelsea,260,0.578
+342,Kingston upon Thames,391,0.6943
+342,Lambeth,577,0.6074
+342,Lewisham,609,0.6007
+342,Merton,457,0.6534
+342,Newham,465,0.5746
+342,Redbridge,539,0.6634
+342,Richmond upon Thames,484,0.6756
+342,Southwark,583,0.5768
+342,Sutton,421,0.6386
+342,Tower Hamlets,381,0.5887
+342,Waltham Forest,492,0.6758
+342,Wandsworth,481,0.6274
+342,Westminster,419,0.5433
+442,Barking and Dagenham,364,0.6742
+442,Barnet,993,0.6741
+442,Bexley,672,0.6819
+442,Brent,575,0.6241
+442,Bromley,1179,0.6594
+442,Camden,424,0.5017
+442,City of London,101,0.5688
+442,Croydon,1019,0.6698
+442,Ealing,683,0.6359
+442,Enfield,707,0.6692
+442,Greenwich,659,0.6564
+442,Hackney,442,0.4942
+442,Hammersmith and Fulham,276,0.6943
+442,Haringey,461,0.6345
+442,Harrow,432,0.6205
+442,Havering,691,0.7129
+442,Hillingdon,706,0.7318
+442,Hounslow,651,0.6178
+442,Islington,349,0.5866
+442,Kensington and Chelsea,260,0.5749
+442,Kingston upon Thames,391,0.6942
+442,Lambeth,577,0.6079
+442,Lewisham,609,0.601
+442,Merton,457,0.6543
+442,Newham,465,0.5766
+442,Redbridge,539,0.6658
+442,Richmond upon Thames,484,0.6766
+442,Southwark,583,0.5774
+442,Sutton,421,0.6375
+442,Tower Hamlets,381,0.5863
+442,Waltham Forest,492,0.6749
+442,Wandsworth,481,0.6286
+442,Westminster,419,0.5438
